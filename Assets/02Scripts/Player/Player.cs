@@ -7,13 +7,11 @@ public class Player : MonoBehaviour
 {
     private AgentMove _agentMove;
     public event Action JumpEvent;
-    private SpriteRenderer _spriteRenderer;
     [field : SerializeField] public InputReader PlayerInput { get; set; }
 
     private void Awake()
     {
         _agentMove = GetComponent<AgentMove>();
-        _spriteRenderer = GetComponent<SpriteRenderer>();
         PlayerInput.JumpKeyEvent += HandleJumpKeyEvent;
     }
     private void OnDestroy()

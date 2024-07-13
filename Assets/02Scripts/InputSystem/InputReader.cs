@@ -7,7 +7,6 @@ using static Controll;
 [CreateAssetMenu (menuName = "SO/InputReader")]
 public class InputReader : ScriptableObject,IPlayerActions
 {
-
     private Controll _controll;
     public event Action JumpKeyEvent;
     public event Action<bool> AttackEvent;

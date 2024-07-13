@@ -7,38 +7,54 @@ public class AgentMove : MonoBehaviour
     [Header("Setting")]
     public int Movespeed;
     public int JumpPower;
-    public int BoxSize = 1;
+    public bool IsJump;
+    [SerializeField] private Vector2 _boxSize;
 
-    [SerializeField] private LayerMask player;
+    [SerializeField] private LayerMask _whatIsGround;
+    
+    
     [field: SerializeField] public Transform groundChecker { get; set; }
+    public NotifyValue<bool> _isGround = new NotifyValue<bool>();
 
 
     private Rigidbody2D _rigid;
 
+    protected float _xmove;
      
     private void Awake()
     {
         _rigid = GetComponent<Rigidbody2D>();
     }
 
-    public void Movement(Vector2 MoveDir)
+    public void SetMovement(float Xmove)
     {
-        _rigid.velocity = MoveDir.normalized * Movespeed;
+        _xmove = Xmove;
     }
 
-    public void Jump()
+    public void Jump(float multiplier = 1f)
     {
-        _rigid.AddForce(transform.up.normalized * JumpPower);
+        _rigid.velocity = Vector2.zero;
+        _rigid.AddForce(transform.up * JumpPower *multiplier, ForceMode2D.Impulse);
     }
 
-    private void JumpRange()
+    public bool JumpRange()
     {
-        Collider2D[] hit = Physics2D.OverlapBoxAll()
+        Collider2D hit = Physics2D.OverlapBox(groundChecker.position,_boxSize, 0, _whatIsGround);
+
+        return hit;
     }
 
-    private void OnDrawGizmos()
+    private void OnDrawGizmosSelected()
     {
-        
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireCube(groundChecker.position, _boxSize);
+        Gizmos.color = Color.white;
+    }
+
+    private void FixedUpdate()
+    {
+        _isGround.Value = JumpRange();
+        _rigid.velocity = new Vector2(_xmove * Movespeed, _rigid.velocity.y);
     }
 
 }

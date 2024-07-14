@@ -6,6 +6,7 @@ public class PlayerAnimation : MonoBehaviour
 {
     private Animator _animator;
     [field: SerializeField] public InputReader PlayerInput { get; set; }
+    [SerializeField] private AgentMove _agentMove;
 
     private void Awake()
     {
@@ -24,10 +25,23 @@ public class PlayerAnimation : MonoBehaviour
         }
     }
 
+    private void PlayerJumpAnimator()
+    {
+        if(_agentMove._isGround.Value == false)
+        {
+            _animator.SetBool("Jump", true);
+        }
+        else
+        {
+            _animator.SetBool("Jump", false);
+        }
+    }
+
 
     private void Update()
     {
         PlayerMoveAnimator();
+        PlayerJumpAnimator();
     }
 
 }

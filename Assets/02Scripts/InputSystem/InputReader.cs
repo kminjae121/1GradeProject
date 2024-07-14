@@ -11,7 +11,6 @@ public class InputReader : ScriptableObject,IPlayerActions
     public event Action JumpKeyEvent;
     public event Action<bool> AttackEvent;
     public Vector2 Movement { get; private set; }
-    public Vector2 MousePosition { get; private set; }
 
     private void OnEnable()
     {

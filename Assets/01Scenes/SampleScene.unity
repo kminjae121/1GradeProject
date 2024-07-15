@@ -454,7 +454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 761de963939952c4ba45fad9ec34e009, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 10
+  <Health>k__BackingField: 10
 --- !u!95 &394191543
 Animator:
   serializedVersion: 5
@@ -1168,6 +1168,7 @@ MonoBehaviour:
   _player: {fileID: 394191534}
   _playerSkill1: {fileID: 67588890}
   _playerSkill2: {fileID: 1722185066}
+  _agentHealth: {fileID: 394191542}
 --- !u!95 &1770151100
 Animator:
   serializedVersion: 5
@@ -1364,7 +1365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 761de963939952c4ba45fad9ec34e009, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 10000
+  <Health>k__BackingField: 10000
 --- !u!50 &2020501343
 Rigidbody2D:
   serializedVersion: 4

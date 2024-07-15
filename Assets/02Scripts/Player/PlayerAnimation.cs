@@ -10,6 +10,7 @@ public class PlayerAnimation : MonoBehaviour
     [SerializeField] private Player _player;
     [SerializeField] private PlayerSkill _playerSkill1;
     [SerializeField] private PlayerSkill _playerSkill2;
+    [SerializeField] private AgentHealth _agentHealth;
 
     private void Awake()
     {
@@ -76,9 +77,18 @@ public class PlayerAnimation : MonoBehaviour
         }
     }
 
+    private void PlayerDie()
+    {
+        if(_agentHealth.Health <= 0)
+        {
+            _animator.SetBool("Die", true);
+        }
+    }
+
 
     private void Update()
     {
+        PlayerDie();
         PlayerSkill1();
         PlayerSkill2();
         PlayerAttackAnimator();

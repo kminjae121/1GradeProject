@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class AgentHealth : MonoBehaviour
 {
-    [Header("Setting")]
-    [SerializeField] private float Health;
+    [field: SerializeField] public float Health { get; set; }
 
 
 
@@ -22,7 +21,7 @@ public class AgentHealth : MonoBehaviour
     {
         if(Health <= 0)
         {
-            gameObject.SetActive(false);
+            StartCoroutine(Wait());
         }
     }
 
@@ -35,6 +34,12 @@ public class AgentHealth : MonoBehaviour
     public void PlusHealth(float Heal)
     {
         Health += Heal;
+    }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(1.03f);
+        gameObject.SetActive(false);
     }
 
 }

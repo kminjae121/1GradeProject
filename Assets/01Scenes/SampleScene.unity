@@ -149,7 +149,7 @@ Transform:
   m_GameObject: {fileID: 67588888}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.97, y: -0.52, z: 0}
+  m_LocalPosition: {x: 0.36, y: -0.61, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -280,6 +280,7 @@ GameObject:
   - component: {fileID: 394191541}
   - component: {fileID: 394191534}
   - component: {fileID: 394191542}
+  - component: {fileID: 394191544}
   - component: {fileID: 394191538}
   - component: {fileID: 394191540}
   - component: {fileID: 394191543}
@@ -476,6 +477,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &394191544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394191533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c796d1576a26220469ad7078f9cafe56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DashSpeed: 4
+  _playerInput: {fileID: 11400000, guid: 4f8ebb1a14a92be4b9d1e84f3fdb6092, type: 2}
 --- !u!1 &429842321
 GameObject:
   m_ObjectHideFlags: 0
@@ -757,7 +772,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 000000006588f6f2
+  m_ApplyToSortingLayers: 000000006588f6f23f759a640755f97d1962b2e86dd7840f
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -1007,7 +1022,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27d690d403f12764e8f8a3d2fc8c3cd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _skillBox: {x: 10, y: 2}
+  _skillBox: {x: 15, y: 2}
   _agentType:
     serializedVersion: 2
     m_Bits: 64
@@ -1340,7 +1355,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -218724251
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

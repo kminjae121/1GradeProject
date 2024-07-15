@@ -11,6 +11,7 @@ public class PlayerAnimation : MonoBehaviour
     [SerializeField] private PlayerSkill _playerSkill1;
     [SerializeField] private PlayerSkill _playerSkill2;
     [SerializeField] private AgentHealth _agentHealth;
+    [SerializeField] private PlayerDash _playerDash;
 
     private void Awake()
     {
@@ -82,6 +83,14 @@ public class PlayerAnimation : MonoBehaviour
         if(_agentHealth.Health <= 0)
         {
             _animator.SetBool("Die", true);
+        }
+    }
+
+    private void PlayerDash()
+    {
+        if(_playerDash._isDash == false)
+        {
+
         }
     }
 

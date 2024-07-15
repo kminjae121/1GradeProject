@@ -7,6 +7,7 @@ public class PlayerAnimation : MonoBehaviour
     private Animator _animator;
     [field: SerializeField] public InputReader PlayerInput { get; set; }
     [SerializeField] private AgentMove _agentMove;
+    [SerializeField] private Player _player;
 
     private void Awake()
     {
@@ -37,9 +38,22 @@ public class PlayerAnimation : MonoBehaviour
         }
     }
 
+    private void PlayerAttack()
+    {
+        if (_player._isAttack == false)
+        {
+            _animator.SetBool("Attack", true);
+        }
+        else if (_player._isAttack == true)
+        {
+            _animator.SetBool("Attack", false);
+        }
+    }
+
 
     private void Update()
     {
+        PlayerAttack();
         PlayerMoveAnimator();
         PlayerJumpAnimator();
     }

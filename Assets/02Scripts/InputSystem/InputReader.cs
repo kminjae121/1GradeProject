@@ -7,6 +7,7 @@ using static Controll;
 [CreateAssetMenu (menuName = "SO/InputReader")]
 public class InputReader : ScriptableObject,IPlayerActions
 {
+    private Player player;
     private Controll _controll;
     public event Action JumpKeyEvent;
     public event Action AttackEvent;
@@ -45,7 +46,7 @@ public class InputReader : ScriptableObject,IPlayerActions
 
     public void OnAttack(InputAction.CallbackContext context)
     {
-        if(context.performed && _isMouseDown == true)
+        if(context.performed)
         { 
             AttackEvent?.Invoke();
         }

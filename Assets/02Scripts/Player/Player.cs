@@ -1,18 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
     private WaitForSeconds _waitTimeSec;
-    private bool _isAttack;
+    public bool _isAttack;
 
     private AgentAttack _agentAttack;
     private AgentMove _agentMove;
 
     public event Action JumpEvent;
-    [field : SerializeField] public InputReader PlayerInput { get; set; }
+    [field: SerializeField] public InputReader PlayerInput { get; set; }
 
     private void Awake()
     {
@@ -25,11 +24,10 @@ public class Player : MonoBehaviour
     }
     private void HandleAttackEvent()
     {
-        if(_isAttack == true)
+        if (_isAttack == true)
         {
             _agentAttack.Attack();
             StartCoroutine(AttackWait());
-              print("»Ð");
         }
     }
 
@@ -49,28 +47,25 @@ public class Player : MonoBehaviour
 
     private void FilpX()
     {
-        if(PlayerInput.Movement.x < 0)
-        {
-            transform.rotation = Quaternion.Euler(0,-150,0);
-        }
-        else if(transform.rotation == Quaternion.Euler(0, -150, 0) && PlayerInput.Movement.x == 0)
+        if (PlayerInput.Movement.x < 0)
         {
             transform.rotation = Quaternion.Euler(0, -150, 0);
         }
-        else if(PlayerInput.Movement.x > 0)
+        else if (transform.rotation == Quaternion.Euler(0, -150, 0) && PlayerInput.Movement.x == 0)
+        {
+            transform.rotation = Quaternion.Euler(0, -150, 0);
+        }
+        else if (PlayerInput.Movement.x > 0)
         {
             transform.rotation = Quaternion.Euler(0, 0, 0);
-        }    
+        }
     }
 
     IEnumerator AttackWait()
     {
-        PlayerInput._isMouseDown = false;
-        yield return new WaitForSeconds(2f);
-        PlayerInput._isMouseDown = true;
         _isAttack = false;
-        yield return _waitTimeSec;
-        _isAttack = true;   
+        yield return new WaitForSeconds(1.04f);
+        _isAttack = true;
     }
 
     private void Update()

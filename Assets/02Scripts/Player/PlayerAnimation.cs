@@ -18,12 +18,12 @@ public class PlayerAnimation : MonoBehaviour
 
     private void PlayerMoveAnimator()
     {
-        if(PlayerInput.Movement.x != 0)
+        if(PlayerInput.Movement.x != 0 && _playerSkill1.IsSkillAnimator1 == false && _playerSkill2.IsSkillAnimator2 == false)
         {
             _animator.SetBool("Walk", true);
         }
         else
-        {
+        { 
             _animator.SetBool("Walk", false);
         }
     }

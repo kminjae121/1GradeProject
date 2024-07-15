@@ -31,7 +31,7 @@ public class AgentMove : MonoBehaviour
 
     public void SetMovement(float Xmove)
     {
-        _xmove = Xmove;
+            _xmove = Xmove;
     }
 
     public void Jump(float multiplier = 1f)
@@ -58,9 +58,7 @@ public class AgentMove : MonoBehaviour
     {
         _isGround.Value = JumpRange();
         if (IsMove == true)
-        {
             _rigid.velocity = new Vector2(_xmove * Movespeed, _rigid.velocity.y);
-        }
     }
 
 }

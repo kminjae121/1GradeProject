@@ -9,7 +9,10 @@ public class InputReader : ScriptableObject,IPlayerActions
 {
     private Controll _controll;
     public event Action JumpKeyEvent;
-    public event Action<bool> AttackEvent;
+    public event Action AttackEvent;
+    public bool _isAttack;
+
+    public bool IsAttack;
     public Vector2 Movement { get; private set; }
 
     private void OnEnable()
@@ -33,6 +36,14 @@ public class InputReader : ScriptableObject,IPlayerActions
        if(context.performed)
         {
             JumpKeyEvent?.Invoke();
+        }
+    }
+
+    public void OnAttack(InputAction.CallbackContext context)
+    {
+        if(context.performed && _isAttack == true)
+        { 
+            AttackEvent?.Invoke();
         }
     }
 }

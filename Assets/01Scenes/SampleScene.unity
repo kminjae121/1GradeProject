@@ -221,6 +221,7 @@ GameObject:
   m_Component:
   - component: {fileID: 394191537}
   - component: {fileID: 394191535}
+  - component: {fileID: 394191541}
   - component: {fileID: 394191534}
   - component: {fileID: 394191538}
   - component: {fileID: 394191540}
@@ -281,6 +282,7 @@ Transform:
   m_Children:
   - {fileID: 1770151096}
   - {fileID: 1933597749}
+  - {fileID: 1329348249}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -0, y: 0, z: 0}
 --- !u!50 &394191538
@@ -362,6 +364,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &394191541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394191533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ea946b5c3b57bd4c93a13046575bdda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _attackDamage: 1
+  <AttackRange>k__BackingField: {fileID: 1329348249}
+  _boxSize: {x: 0, y: 0}
+  _agentType:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &429842321
 GameObject:
   m_ObjectHideFlags: 0
@@ -818,6 +838,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1329348248
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1329348249}
+  m_Layer: 0
+  m_Name: AttackRange
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1329348249
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329348248}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.84, y: -0.12, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 394191537}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1770151095
 GameObject:
   m_ObjectHideFlags: 0

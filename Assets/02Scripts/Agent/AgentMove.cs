@@ -25,6 +25,7 @@ public class AgentMove : MonoBehaviour
      
     private void Awake()
     {
+        IsMove = true;
         _rigid = GetComponent<Rigidbody2D>();
     }
 

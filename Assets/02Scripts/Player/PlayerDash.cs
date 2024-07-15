@@ -11,6 +11,7 @@ public class PlayerDash : MonoBehaviour
 
     private void Awake()
     {
+        _isDash = true;
         _rbCompo = GetComponent<Rigidbody2D>();
         _playerInput.DashEvent += HandleDash;
     }
@@ -23,12 +24,15 @@ public class PlayerDash : MonoBehaviour
     private void HandleDash()
     {
         if(_isDash == true)
-            _rbCompo.AddForce(transform.right * DashSpeed, ForceMode2D.Impulse);
+        {
+            StartCoroutine(Wait());
+        }
     }
 
     IEnumerator Wait()
     {
-        _rbCompo.AddForce(transform.right * DashSpeed, ForceMode2D.Impulse);
+        Debug.Log("»Ð»Ð");
+        _rbCompo.velocity = Vector2.right * DashSpeed;
         _isDash = false;
         yield return new WaitForSeconds(3f);
         _isDash = true;

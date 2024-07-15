@@ -10,18 +10,26 @@ public class AgentAttack : MonoBehaviour
     public bool IsAttack { get;  set; }
     [SerializeField] private Vector2 _boxSize;
     [SerializeField] private LayerMask _agentType;
+    public bool _isContinuousAttack;
 
-    public void Attack()
+    private void Awake()
     {
-        Collider2D[] hit = Physics2D.OverlapBoxAll(AttackRange.position, _boxSize, 0, _agentType);
-
-        foreach (Collider2D Attack in hit)
+        _isContinuousAttack = false;
+    }
+    public void BasicAttack()
+    {
+        if (_isContinuousAttack == true)
         {
-           Attack.transform.TryGetComponent(out AgentHealth agentHealth);
+            Collider2D[] hit = Physics2D.OverlapBoxAll(AttackRange.position, _boxSize, 0, _agentType);
 
-           agentHealth.MinusHealth(_attackDamage);
+            foreach (Collider2D Attack in hit)
+            {
+                Attack.transform.TryGetComponent(out AgentHealth agentHealth);
+
+                agentHealth.MinusHealth(_attackDamage);
+            }
+            print("æ∆¿’");
         }
-        print("æ∆¿’");
     }
 
     private void OnDrawGizmos()

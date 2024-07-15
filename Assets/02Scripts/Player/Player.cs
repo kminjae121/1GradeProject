@@ -5,7 +5,9 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     private WaitForSeconds _waitTimeSec;
-    public bool _isAttack;
+    private WaitForSeconds _waitTimeSecond;
+    public bool _isAttack { get; set; }
+    public bool _isJump { get; set; }
 
     private AgentAttack _agentAttack;
     private AgentMove _agentMove;
@@ -15,18 +17,19 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
-        _waitTimeSec = new WaitForSeconds(0.5f);
+        _waitTimeSec = new WaitForSeconds(0.9f);
+        _waitTimeSecond = new WaitForSeconds(0.08f);
         _agentAttack = GetComponent<AgentAttack>();
         _agentMove = GetComponent<AgentMove>();
         _isAttack = true;
+        _isJump = true;
         PlayerInput.AttackEvent += HandleAttackEvent;
         PlayerInput.JumpKeyEvent += HandleJumpKeyEvent;
     }
     private void HandleAttackEvent()
     {
-        if (_isAttack == true)
+        if (_isAttack == true && _agentMove._isGround.Value)
         {
-            _agentAttack.Attack();
             StartCoroutine(AttackWait());
         }
     }
@@ -38,7 +41,7 @@ public class Player : MonoBehaviour
     }
     private void HandleJumpKeyEvent()
     {
-        if (_agentMove._isGround.Value)
+        if (_agentMove._isGround.Value && _isJump == true)
         {
             JumpEvent?.Invoke();
             _agentMove.Jump();
@@ -63,15 +66,26 @@ public class Player : MonoBehaviour
 
     IEnumerator AttackWait()
     {
+        _isJump = false;
+        _agentMove.IsMove = false;
         _isAttack = false;
-        yield return new WaitForSeconds(1.04f);
+        _agentAttack._isContinuousAttack = true;
+        _agentAttack.BasicAttack();
+        yield return new WaitForSeconds(0.5f);
+        _agentAttack._isContinuousAttack = true;
+        _agentAttack.BasicAttack();
+        yield return _waitTimeSec;
         _isAttack = true;
+        _agentMove.IsMove = true;
+        _isJump = true;
     }
 
     private void Update()
     {
-        FilpX();
+        if (_agentMove.IsMove == true)
+        {
+            FilpX();
+        }
         _agentMove.SetMovement(PlayerInput.Movement.x);
     }
-
 }

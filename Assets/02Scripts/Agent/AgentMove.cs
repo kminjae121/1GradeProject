@@ -7,7 +7,9 @@ public class AgentMove : MonoBehaviour
     [Header("Setting")]
     public int Movespeed;
     public int JumpPower;
-    public bool IsJump;
+    public bool IsJump { get; set; }
+    public bool IsMove { get; set;}
+
     [SerializeField] private Vector2 _boxSize;
 
     [SerializeField] private LayerMask _whatIsGround;
@@ -54,7 +56,10 @@ public class AgentMove : MonoBehaviour
     private void FixedUpdate()
     {
         _isGround.Value = JumpRange();
-        _rigid.velocity = new Vector2(_xmove * Movespeed, _rigid.velocity.y);
+        if (IsMove == true)
+        {
+            _rigid.velocity = new Vector2(_xmove * Movespeed, _rigid.velocity.y);
+        }
     }
 
 }

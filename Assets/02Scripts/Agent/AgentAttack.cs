@@ -21,8 +21,7 @@ public class AgentAttack : MonoBehaviour
 
            agentHealth.MinusHealth(_attackDamage);
         }
-
-        print("æ∆¿’ ª–");
+        print("æ∆¿’");
     }
 
     private void OnDrawGizmos()

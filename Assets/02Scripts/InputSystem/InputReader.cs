@@ -10,9 +10,8 @@ public class InputReader : ScriptableObject,IPlayerActions
     private Controll _controll;
     public event Action JumpKeyEvent;
     public event Action AttackEvent;
-    public bool _isAttack;
+    public bool _isMouseDown;
 
-    public bool IsAttack;
     public Vector2 Movement { get; private set; }
 
     private void OnEnable()
@@ -24,6 +23,11 @@ public class InputReader : ScriptableObject,IPlayerActions
         _controll.Player.SetCallbacks(this);
         _controll.Player.Enable();
         
+    }
+
+    private void Awake()
+    {
+        _isMouseDown = true;
     }
 
     public void OnMove(InputAction.CallbackContext context)
@@ -41,7 +45,7 @@ public class InputReader : ScriptableObject,IPlayerActions
 
     public void OnAttack(InputAction.CallbackContext context)
     {
-        if(context.performed && _isAttack == true)
+        if(context.performed && _isMouseDown == true)
         { 
             AttackEvent?.Invoke();
         }

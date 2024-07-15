@@ -9,7 +9,6 @@ public class Player : MonoBehaviour
     private bool _isAttack;
 
     private AgentAttack _agentAttack;
-    private AgentHealth _agentHealth;
     private AgentMove _agentMove;
 
     public event Action JumpEvent;
@@ -17,22 +16,20 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
-        _waitTimeSec = new WaitForSeconds(3f);
+        _waitTimeSec = new WaitForSeconds(0.5f);
         _agentAttack = GetComponent<AgentAttack>();
-        _agentHealth = GetComponent<AgentHealth>();
         _agentMove = GetComponent<AgentMove>();
+        _isAttack = true;
         PlayerInput.AttackEvent += HandleAttackEvent;
         PlayerInput.JumpKeyEvent += HandleJumpKeyEvent;
-        _isAttack = true;
     }
-
     private void HandleAttackEvent()
     {
-        if (_isAttack == true)
+        if(_isAttack == true)
         {
             _agentAttack.Attack();
-            PlayerInput.IsAttack = false;
             StartCoroutine(AttackWait());
+              print("»Ð");
         }
     }
 
@@ -68,8 +65,9 @@ public class Player : MonoBehaviour
 
     IEnumerator AttackWait()
     {
-        yield return new WaitForSeconds(2);
-        PlayerInput.IsAttack = true;
+        PlayerInput._isMouseDown = false;
+        yield return new WaitForSeconds(2f);
+        PlayerInput._isMouseDown = true;
         _isAttack = false;
         yield return _waitTimeSec;
         _isAttack = true;   

@@ -89,7 +89,7 @@ public class PlayerSkill : MonoBehaviour
     {
         Gizmos.color = color;
         Gizmos.DrawWireCube(_skillRange.position, _skillBox);
-        Gizmos.color = color;    
+        Gizmos.color = Color.white;    
     }
 
     IEnumerator Wait()

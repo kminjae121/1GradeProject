@@ -8,6 +8,8 @@ public class PlayerAnimation : MonoBehaviour
     [field: SerializeField] public InputReader PlayerInput { get; set; }
     [SerializeField] private AgentMove _agentMove;
     [SerializeField] private Player _player;
+    [SerializeField] private PlayerSkill _playerSkill1;
+    [SerializeField] private PlayerSkill _playerSkill2;
 
     private void Awake()
     {
@@ -38,7 +40,7 @@ public class PlayerAnimation : MonoBehaviour
         }
     }
 
-    private void PlayerAttack()
+    private void PlayerAttackAnimator()
     {
         if (_player._isAttack == false)
         {
@@ -50,10 +52,36 @@ public class PlayerAnimation : MonoBehaviour
         }
     }
 
+    private void PlayerSkill1()
+    {
+        if(_playerSkill1.IsSkillAnimator1 == true)
+        {
+            _animator.SetBool("Skill1", true);
+        }
+        else if(_playerSkill1.IsSkillAnimator1 == false)
+        {
+            _animator.SetBool("Skill1", false);
+        }
+    }
+
+    private void PlayerSkill2()
+    {
+        if(_playerSkill2.IsSkillAnimator2 == true)
+        {
+            _animator.SetBool("Skill2", true);
+        }
+        else if(_playerSkill2.IsSkillAnimator2 == false)
+        {
+            _animator.SetBool("Skill2", false);
+        }
+    }
+
 
     private void Update()
     {
-        PlayerAttack();
+        PlayerSkill1();
+        PlayerSkill2();
+        PlayerAttackAnimator();
         PlayerMoveAnimator();
         PlayerJumpAnimator();
     }

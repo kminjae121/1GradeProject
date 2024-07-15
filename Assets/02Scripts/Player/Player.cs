@@ -28,7 +28,7 @@ public class Player : MonoBehaviour
     }
     private void HandleAttackEvent()
     {
-        if (_isAttack == true && _agentMove._isGround.Value)
+        if (_isAttack == true && _agentMove._isGround.Value && PlayerSkill.IsSkilling == true)
         {
             StartCoroutine(AttackWait());
         }
@@ -66,6 +66,7 @@ public class Player : MonoBehaviour
 
     IEnumerator AttackWait()
     {
+        PlayerSkill.IsSkilling = false;
         _isJump = false;
         _agentMove.IsMove = false;
         _isAttack = false;
@@ -78,6 +79,7 @@ public class Player : MonoBehaviour
         _isAttack = true;
         _agentMove.IsMove = true;
         _isJump = true;
+        PlayerSkill.IsSkilling = true;
     }
 
     private void Update()

@@ -7,13 +7,15 @@ using static Controll;
 [CreateAssetMenu (menuName = "SO/InputReader")]
 public class InputReader : ScriptableObject,IPlayerActions
 {
-    private Player player;
     private Controll _controll;
     public event Action JumpKeyEvent;
     public event Action AttackEvent;
+    public event Action Skill1Event;
+    public event Action Skill2Event;
+
     public bool _isMouseDown;
 
-    public Vector2 Movement { get; private set; }
+    public Vector2 Movement { get;  set; }
 
     private void OnEnable()
     {
@@ -49,6 +51,22 @@ public class InputReader : ScriptableObject,IPlayerActions
         if(context.performed)
         { 
             AttackEvent?.Invoke();
+        }
+    }
+
+    public void OnSkill1(InputAction.CallbackContext context)
+    {
+        if(context.performed)
+        {
+            Skill1Event?.Invoke();
+        }
+    }
+
+    public void OnSkill2(InputAction.CallbackContext context)
+    {
+        if(context.performed)
+        {
+            Skill2Event?.Invoke();
         }
     }
 }

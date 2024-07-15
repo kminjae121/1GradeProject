@@ -28,7 +28,6 @@ public class AgentAttack : MonoBehaviour
 
                 agentHealth.MinusHealth(_attackDamage);
             }
-            print("æ∆¿’");
         }
     }
 

@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
-        _waitTimeSec = new WaitForSeconds(0.9f);
+        _waitTimeSec = new WaitForSeconds(0.65f);
         _waitTimeSecond = new WaitForSeconds(0.08f);
         _agentAttack = GetComponent<AgentAttack>();
         _agentMove = GetComponent<AgentMove>();
@@ -75,10 +75,11 @@ public class Player : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         _agentAttack._isContinuousAttack = true;
         _agentAttack.BasicAttack();
-        yield return _waitTimeSec;
-        _isAttack = true;
+        yield return new WaitForSeconds(0.25f);
         _agentMove.IsMove = true;
         _isJump = true;
+        yield return _waitTimeSec;
+        _isAttack = true;
         PlayerSkill.IsSkilling = true;
     }
 

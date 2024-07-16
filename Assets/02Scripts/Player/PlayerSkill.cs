@@ -56,7 +56,7 @@ public class PlayerSkill : MonoBehaviour
     }
     private void HandleSkill()
     {
-        if (IsSkill == true && IsSkilling != false && _agentMove._isGround.Value)
+        if (_skill == Skill.Skill1 && IsSkill == true && IsSkilling != false && _agentMove._isGround.Value)
         {
             SkillTool();
             StartCoroutine(Wait(0));
@@ -65,7 +65,7 @@ public class PlayerSkill : MonoBehaviour
 
     private void HandleSkill2()
     {
-        if(IsSkill2 == true && IsSkilling != false && _agentMove._isGround.Value)
+        if(_skill ==Skill.Skill2 && IsSkill2 == true && IsSkilling != false && _agentMove._isGround.Value)
         {
             SkillTool();
             StartCoroutine(Wait2());

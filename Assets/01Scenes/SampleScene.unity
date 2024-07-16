@@ -361,7 +361,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 3.14
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 45f8a929355294f41a49d8ec7d0d1311, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -489,8 +489,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c796d1576a26220469ad7078f9cafe56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DashSpeed: 4
+  DashSpeed: 20
   _playerInput: {fileID: 11400000, guid: 4f8ebb1a14a92be4b9d1e84f3fdb6092, type: 2}
+  _boxCollider: {fileID: 1770151098}
 --- !u!1 &429842321
 GameObject:
   m_ObjectHideFlags: 0
@@ -1184,6 +1185,7 @@ MonoBehaviour:
   _playerSkill1: {fileID: 67588890}
   _playerSkill2: {fileID: 1722185066}
   _agentHealth: {fileID: 394191542}
+  _playerDash: {fileID: 394191544}
 --- !u!95 &1770151100
 Animator:
   serializedVersion: 5

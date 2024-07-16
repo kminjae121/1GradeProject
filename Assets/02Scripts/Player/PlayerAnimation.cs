@@ -86,17 +86,22 @@ public class PlayerAnimation : MonoBehaviour
         }
     }
 
-    private void PlayerDash()
+    private void PlayerDashAnimator()
     {
-        if(_playerDash._isDash == false)
+        if(_playerDash._IsDashAnimation == true)
         {
-
+            _animator.SetBool("Dash", true);
+        }
+        else
+        {
+            _animator.SetBool("Dash", false);
         }
     }
 
 
     private void Update()
     {
+        PlayerDashAnimator();
         PlayerDie();
         PlayerSkill1();
         PlayerSkill2();

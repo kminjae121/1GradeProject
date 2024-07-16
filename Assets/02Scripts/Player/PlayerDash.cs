@@ -26,7 +26,7 @@ public class PlayerDash : MonoBehaviour
         _playerInput.DashEvent -= HandleDash;
     }
 
-    private void HandleDash()
+    public void HandleDash()
     {
         if(_isDash == true && PlayerSkill.IsSkilling == true)
         {
@@ -44,12 +44,13 @@ public class PlayerDash : MonoBehaviour
         _rbCompo.velocity = new Vector2(transform.right.x * DashSpeed,zero);
         _rbCompo.gravityScale = 0;
         _boxCollider.isTrigger = true;
-        yield return new WaitForSeconds(0.9f);
+        yield return new WaitForSeconds(0.3f);
         _boxCollider.isTrigger = false;
-        _agentMove.IsMove = true;
-        PlayerSkill.IsSkilling = true;
-        _IsDashAnimation = false;
         _rbCompo.gravityScale = 3.14f;
+        yield return new WaitForSeconds(0.6f);
+        _agentMove.IsMove = true;
+        _IsDashAnimation = false;
+        PlayerSkill.IsSkilling = true;
         yield return new WaitForSeconds(3f);
         _isDash = true;
     }

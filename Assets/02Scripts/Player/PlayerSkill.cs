@@ -15,9 +15,13 @@ public class PlayerSkill : MonoBehaviour
     [SerializeField] private LayerMask _agentType;
     [SerializeField] private Transform _skillRange;
     [SerializeField] private int _skillDamage;
-    [SerializeField] private int _waitTime;
+    [SerializeField] private float _waitTime;
     [SerializeField] private Player _player;
     [SerializeField] private AgentMove _agentMove;
+    [SerializeField] private PlayerDash _playerDash;
+    [SerializeField] private Rigidbody2D _rbCompo;
+    [SerializeField] private BoxCollider2D _boxCollider;
+    [field: SerializeField] public float DashSpeed { get; set; }
     public bool IsSkill { get; set; }
     public bool IsSkillAnimator1 { get; set; }
     public bool IsSkill2 { get; set; }
@@ -55,7 +59,7 @@ public class PlayerSkill : MonoBehaviour
         if (IsSkill == true && IsSkilling != false && _agentMove._isGround.Value)
         {
             SkillTool();
-            StartCoroutine(Wait());
+            StartCoroutine(Wait(0));
         }
     }
 
@@ -70,7 +74,6 @@ public class PlayerSkill : MonoBehaviour
 
     private void Update()
     {
-        
     }
 
     private void SkillTool()
@@ -92,12 +95,19 @@ public class PlayerSkill : MonoBehaviour
         Gizmos.color = Color.white;    
     }
 
-    IEnumerator Wait()
+    IEnumerator Wait(float zero)
     {
         _agentMove.IsMove = false;
         IsSkillAnimator1 = true;
         IsSkilling = false;
         IsSkill = false;
+        _rbCompo.velocity = Vector2.zero;
+        _rbCompo.velocity = new Vector2(transform.right.x * DashSpeed, zero);
+        _rbCompo.gravityScale = 0;
+        _boxCollider.isTrigger = true;
+        yield return new WaitForSeconds(0.25f);
+        _rbCompo.gravityScale = 3.14f;
+        _boxCollider.isTrigger = false;
         yield return new WaitForSeconds(_waitTime);
         IsSkilling = true;
         IsSkillAnimator1 = false;

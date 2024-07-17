@@ -11,14 +11,21 @@ public class Player : MonoBehaviour
 
     private AgentAttack _agentAttack;
     private AgentMove _agentMove;
+    private AgentHealth _agentHealth;
 
     public event Action JumpEvent;
     [field: SerializeField] public InputReader PlayerInput { get; set; }
+
+    [field: SerializeField] public float Coin { get; set; }
+    [SerializeField] private PlayerStat _playerStat;
+    public float AttackDamage;
+    public float Health;
 
     private void Awake()
     {
         _waitTimeSec = new WaitForSeconds(0.65f);
         _waitTimeSecond = new WaitForSeconds(0.08f);
+        _agentHealth = GetComponent<AgentHealth>();
         _agentAttack = GetComponent<AgentAttack>();
         _agentMove = GetComponent<AgentMove>();
         _isAttack = true;
@@ -26,6 +33,8 @@ public class Player : MonoBehaviour
         PlayerInput.AttackEvent += HandleAttackEvent;
         PlayerInput.JumpKeyEvent += HandleJumpKeyEvent;
     }
+
+    
     private void HandleAttackEvent()
     {
         if (_isAttack == true && _agentMove._isGround.Value && PlayerSkill.IsSkilling == true)
@@ -71,10 +80,10 @@ public class Player : MonoBehaviour
         _agentMove.IsMove = false;
         _isAttack = false;
         _agentAttack._isContinuousAttack = true;
-        _agentAttack.BasicAttack();
+        _agentAttack.BasicAttack(AttackDamage);
         yield return new WaitForSeconds(0.5f);
         _agentAttack._isContinuousAttack = true;
-        _agentAttack.BasicAttack();
+        _agentAttack.BasicAttack(AttackDamage);
         yield return new WaitForSeconds(0.25f);
         _agentMove.IsMove = true;
         _isJump = true;
@@ -85,6 +94,10 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+        Health = _playerStat.Health;
+        AttackDamage = _playerStat.AttackDamage;
+
+        _agentHealth.SetHealth(Health);
         if (_agentMove.IsMove == true)
         {
             FilpX();

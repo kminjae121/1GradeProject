@@ -80,7 +80,7 @@ public class PlayerAnimation : MonoBehaviour
 
     private void PlayerDie()
     {
-        if(_agentHealth.Health <= 0)
+        if(_agentHealth.health <= 0)
         {
             _animator.SetBool("Die", true);
         }

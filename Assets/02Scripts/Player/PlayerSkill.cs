@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 enum Skill
 {
@@ -29,12 +27,18 @@ public class PlayerSkill : MonoBehaviour
 
     public static bool IsSkilling;
 
+    public bool IsTrue { get; set; } = true;
+
+    public bool IsFalse { get; set; } = false;
+
+    public float GravityScale { get; set; } = 3.14f;
+
     [SerializeField] private Skill _skill;
     [SerializeField] private InputReader _playerInput;
     [SerializeField] private Color color;
-  
 
-    private void OnEnable()
+
+    private void Awake()
     {
         IsSkilling = true;
         IsSkill = true;
@@ -65,7 +69,7 @@ public class PlayerSkill : MonoBehaviour
 
     private void HandleSkill2()
     {
-        if(_skill ==Skill.Skill2 && IsSkill2 == true && IsSkilling != false && _agentMove._isGround.Value)
+        if (_skill == Skill.Skill2 && IsSkill2 == true && IsSkilling != false && _agentMove._isGround.Value)
         {
             SkillTool();
             StartCoroutine(Wait2());
@@ -79,54 +83,84 @@ public class PlayerSkill : MonoBehaviour
     private void SkillTool()
     {
         Collider2D[] Skill = Physics2D.OverlapBoxAll(_skillRange.position, _skillBox, 0, _agentType);
-        
-        foreach(Collider2D skill in Skill)
+
+        foreach (Collider2D skill in Skill)
         {
             skill.transform.TryGetComponent(out AgentHealth agentHealth);
 
             agentHealth.MinusHealth(_skillDamage);
         }
-    } 
+    }
 
     private void OnDrawGizmos()
     {
         Gizmos.color = color;
         Gizmos.DrawWireCube(_skillRange.position, _skillBox);
-        Gizmos.color = Color.white;    
+        Gizmos.color = Color.white;
     }
 
-    IEnumerator Wait(float zero)
+
+    private void MoveTrue(bool Not, bool Yes)
     {
-        _agentMove.IsMove = false;
-        IsSkillAnimator1 = true;
-        IsSkilling = false;
-        IsSkill = false;
+        IsSkilling = Yes;
+        IsSkillAnimator1 = Not;
+        _agentMove.IsMove = Yes;
+    }
+
+    private void GravityTrue(float GravityScale, bool Not)
+    {
+        _rbCompo.gravityScale = GravityScale;
+        _boxCollider.isTrigger = Not;
+    }
+
+    private void MoveFalse(bool Not, bool Yes)
+    {
+        _agentMove.IsMove = Not;
+        IsSkillAnimator1 = Yes;
+        IsSkilling = Not;
+        IsSkill = Not;
+    }
+
+    private void Jump(float zero)
+    {
         _rbCompo.velocity = Vector2.zero;
         _rbCompo.velocity = new Vector2(transform.right.x * DashSpeed, zero);
         _rbCompo.gravityScale = 0;
         _boxCollider.isTrigger = true;
+    }
+    IEnumerator Wait(float zero)
+    {
+        MoveFalse(IsFalse, IsTrue);
+        Jump(zero);
         yield return new WaitForSeconds(0.25f);
-        _rbCompo.gravityScale = 3.14f;
-        _boxCollider.isTrigger = false;
+        GravityTrue(GravityScale, IsFalse);
         yield return new WaitForSeconds(_waitTime);
-        IsSkilling = true;
-        IsSkillAnimator1 = false;
-        _agentMove.IsMove = true;
+        MoveTrue(IsFalse, IsTrue);
         yield return new WaitForSeconds(3);
         IsSkill = true;
+    }
+    private void MoveTrue2(bool Not, bool Yes)
+    {
+        IsSkilling = Yes;
+        IsSkillAnimator2 = Not;
+        _agentMove.IsMove = Yes;
+    }
+    private void MoveFalse2(bool Not, bool Yes)
+    {
+        _agentMove.IsMove = Not;
+        IsSkillAnimator2 = Yes;
+        IsSkilling = Not;
+        IsSkill2 = Not;
     }
 
     IEnumerator Wait2()
     {
-        _agentMove.IsMove = false;
-        IsSkillAnimator2 = true;
-        IsSkilling = false;
-        IsSkill2 = false;
+        MoveFalse2(IsFalse, IsTrue);
         yield return new WaitForSeconds(_waitTime);
-        IsSkilling = true;
-        IsSkillAnimator2 = false;
-        _agentMove.IsMove = true;
+        MoveTrue2(IsFalse, IsTrue);
         yield return new WaitForSeconds(5);
         IsSkill2 = true;
     }
+
+
 }

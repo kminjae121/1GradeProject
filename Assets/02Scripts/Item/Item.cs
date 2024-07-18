@@ -54,6 +54,6 @@ public class Item : MonoBehaviour
         _player.TryGetComponent(out Player player);
 
         player.Coin += 1;
-        
+        player.Health += 1;
     }
 }

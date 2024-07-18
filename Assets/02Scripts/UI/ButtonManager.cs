@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ButtonManager : MonoBehaviour
 {
@@ -10,14 +11,48 @@ public class ButtonManager : MonoBehaviour
     [SerializeField] private GameObject MainStore;
     [SerializeField] private PlayerSkill _playerSkill2;
     [SerializeField] private PlayerSkill _playerSkill;
+    private bool IsStore;
+
+    [SerializeField] private Button _Skill2Button;
+    [SerializeField] private Button _Skill1Button;
 
 
     private void Awake()
     {
-        //MainStore.SetActive(false);
+        if (_playerSkill2.IsSkill2 == true)
+        {
+            _Skill2Button.interactable = false;
+        }
+        if (_playerSkill.IsSkill == true)
+        {
+            _Skill1Button.interactable = false;
+        }
+        IsStore = false;
+        MainStore.SetActive(false);
         StatStore.SetActive(false);
         SkillStore.SetActive(false);
     }
+
+
+    private void Update()
+    {
+        StartStore();
+    }
+
+    private void StartStore()
+    {
+        if (IsStore == false && Input.GetKeyDown(KeyCode.Escape))
+        {
+            MainStore.SetActive(true);
+            IsStore = true;
+        }
+        else if(IsStore == true && Input.GetKeyDown(KeyCode.Escape))
+        {
+            MainStore.SetActive(false);
+            IsStore = false;
+        }
+    }
+
     public void PlusHealth()
     {
         if(_coin.Coin >= 5)
@@ -57,8 +92,9 @@ public class ButtonManager : MonoBehaviour
 
     public void StudySkill1()
     {
-        if (_coin.Coin >= 15)
+        if (_coin.Coin >= 15 && _playerSkill.IsSkill == false)
         {
+            _Skill1Button.interactable = false;
             _coin.Coin -= 15;
             _playerSkill.IsSkill = true;
         }
@@ -66,8 +102,9 @@ public class ButtonManager : MonoBehaviour
 
     public void StudySkill2()
     {
-        if (_coin.Coin >= 20)
+        if (_coin.Coin >= 20 && _playerSkill2.IsSkill2 == false)
         {
+            _Skill2Button.interactable = false;
             _coin.Coin -= 20;
             _playerSkill2.IsSkill2 = true;
         }

@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c91d8f818b4803c489011a3bf418091a, type: 3}
   m_Name: PlayerStat
   m_EditorClassIdentifier: 
-  <Coin>k__BackingField: 13
-  <AttackDamage>k__BackingField: 70
-  <Health>k__BackingField: 20
-  <MaxHealth>k__BackingField: 30
-  <IsQTrue>k__BackingField: 0
-  <IsETrue>k__BackingField: 0
+  <Coin>k__BackingField: 7
+  <AttackDamage>k__BackingField: 10
+  <Health>k__BackingField: 10
+  <MaxHealth>k__BackingField: 10
+  <IsQTrue>k__BackingField: 1
+  <IsETrue>k__BackingField: 1

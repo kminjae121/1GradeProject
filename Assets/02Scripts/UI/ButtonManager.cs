@@ -1,0 +1,75 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ButtonManager : MonoBehaviour
+{
+    [SerializeField] private Player _coin;
+    [SerializeField] private GameObject StatStore;
+    [SerializeField] private GameObject SkillStore;
+    [SerializeField] private GameObject MainStore;
+    [SerializeField] private PlayerSkill _playerSkill2;
+    [SerializeField] private PlayerSkill _playerSkill;
+
+
+    private void Awake()
+    {
+        //MainStore.SetActive(false);
+        StatStore.SetActive(false);
+        SkillStore.SetActive(false);
+    }
+    public void PlusHealth()
+    {
+        if(_coin.Coin >= 5)
+        {
+            _coin.Coin -= 5;
+            _coin.MaxHealth += 10;
+        }    
+    }
+
+    public void EnterStatStore()
+    {
+        StatStore.SetActive(true);
+        MainStore.SetActive(false);
+    }
+    public void EnterSkillStore()
+    {
+        SkillStore.SetActive(true);
+        MainStore.SetActive(false);
+    }
+
+    public void ExitMainStore()
+    {
+        MainStore.SetActive(true);
+        StatStore.SetActive(false);
+        SkillStore.SetActive(false);
+    }
+
+    public void PlusAttackDamage()
+    {
+        if(_coin.Coin >= 10)
+        {
+            _coin.Coin -= 10;
+            _coin.AttackDamage += 10;
+        }
+    }
+
+
+    public void StudySkill1()
+    {
+        if (_coin.Coin >= 15)
+        {
+            _coin.Coin -= 15;
+            _playerSkill.IsSkill = true;
+        }
+    }
+
+    public void StudySkill2()
+    {
+        if (_coin.Coin >= 20)
+        {
+            _coin.Coin -= 20;
+            _playerSkill2.IsSkill2 = true;
+        }
+    }
+}

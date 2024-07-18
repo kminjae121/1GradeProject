@@ -160,9 +160,9 @@ TextureImporter:
       name: 3. attack 1_1
       rect:
         serializedVersion: 2
-        x: 130
+        x: 129
         y: 11
-        width: 22
+        width: 23
         height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -182,7 +182,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 240
-        y: 10
+        y: 11
         width: 63
         height: 44
       alignment: 0
@@ -224,8 +224,8 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 462
-        y: 10
-        width: 70
+        y: 11
+        width: 71
         height: 43
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -330,7 +330,7 @@ TextureImporter:
         serializedVersion: 2
         x: 1048
         y: 11
-        width: 81
+        width: 83
         height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -370,9 +370,9 @@ TextureImporter:
       name: 3. attack 1_11
       rect:
         serializedVersion: 2
-        x: 1279
+        x: 1278
         y: 11
-        width: 38
+        width: 39
         height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -391,9 +391,9 @@ TextureImporter:
       name: 3. attack 1_12
       rect:
         serializedVersion: 2
-        x: 1373
+        x: 1376
         y: 11
-        width: 38
+        width: 35
         height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -434,7 +434,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1606
-        y: 11
+        y: 10
         width: 31
         height: 44
       alignment: 0
@@ -454,9 +454,9 @@ TextureImporter:
       name: 3. attack 1_15
       rect:
         serializedVersion: 2
-        x: 1722
+        x: 1721
         y: 11
-        width: 29
+        width: 30
         height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -512,6 +512,7 @@ TextureImporter:
       3. attack 1_14: 1176212869
       3. attack 1_15: -604734280
       3. attack 1_16: -819892358
+      3. attack 1_17: 426421803
       3. attack 1_2: -2069333859
       3. attack 1_3: 1837490267
       3. attack 1_4: 1918368482

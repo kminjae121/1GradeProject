@@ -5,22 +5,20 @@ using UnityEngine;
 public class AgentHealth : MonoBehaviour
 {
     [field: SerializeField] public float health { get; set; }
-
+    [field: SerializeField] public AgentMove _agentMove { get; set; }
 
 
     private void Awake()
     {
         
     }
-    private void Update()
-    {
-        Die();
-    }
+    
 
     private void Die()
     {
         if(health <= 0)
         {
+            _agentMove.IsMove = false;
             StartCoroutine(Wait());
         }
     }
@@ -43,6 +41,10 @@ public class AgentHealth : MonoBehaviour
     {
         yield return new WaitForSeconds(1.03f);
         gameObject.SetActive(false);
+    }
+    private void LateUpdate()
+    {
+        Die();
     }
 
 }

@@ -57,6 +57,7 @@ public class AgentMove : MonoBehaviour
     private void FixedUpdate()
     {
         _isGround.Value = JumpRange();
+
         if (IsMove == true)
             _rigid.velocity = new Vector2(_xmove * Movespeed, _rigid.velocity.y);
     }

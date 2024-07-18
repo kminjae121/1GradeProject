@@ -12,13 +12,14 @@ public class PlayerSkill : MonoBehaviour
     [SerializeField] private Vector2 _skillBox;
     [SerializeField] private LayerMask _agentType;
     [SerializeField] private Transform _skillRange;
-    [SerializeField] private int _skillDamage;
+    [SerializeField] private float _skillDamage;
     [SerializeField] private float _waitTime;
     [SerializeField] private Player _player;
     [SerializeField] private AgentMove _agentMove;
     [SerializeField] private PlayerDash _playerDash;
     [SerializeField] private Rigidbody2D _rbCompo;
     [SerializeField] private BoxCollider2D _boxCollider;
+    [SerializeField] private PlayerStat _playerStat;
     [field: SerializeField] public float DashSpeed { get; set; }
     public bool IsSkill { get; set; }
     public bool IsSkillAnimator1 { get; set; }
@@ -41,8 +42,6 @@ public class PlayerSkill : MonoBehaviour
     private void Awake()
     {
         IsSkilling = true;
-        IsSkill = true;
-        IsSkill2 = true;
         if (_skill == Skill.Skill1)
         {
             _playerInput.Skill1Event += HandleSkill;
@@ -51,6 +50,12 @@ public class PlayerSkill : MonoBehaviour
         {
             _playerInput.Skill2Event += HandleSkill2;
         }
+    }
+
+    private void Start()
+    {
+        IsSkill = _playerStat.IsQTrue;
+        IsSkill2 = _playerStat.IsETrue;
     }
 
     private void OnDestroy()
@@ -78,6 +83,8 @@ public class PlayerSkill : MonoBehaviour
 
     private void Update()
     {
+        _playerStat.IsETrue = IsSkill;
+        _playerStat.IsQTrue = IsSkill2;
     }
 
     private void SkillTool()
@@ -88,7 +95,7 @@ public class PlayerSkill : MonoBehaviour
         {
             skill.transform.TryGetComponent(out AgentHealth agentHealth);
 
-            agentHealth.MinusHealth(_skillDamage);
+            agentHealth.MinusHealth(_skillDamage += _player.AttackDamage);
         }
     }
 

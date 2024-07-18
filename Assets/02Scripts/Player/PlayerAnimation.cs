@@ -42,6 +42,14 @@ public class PlayerAnimation : MonoBehaviour
         }
     }
 
+    private void PlayerDie()
+    {
+        if (_agentHealth.health <= 0)
+        {
+            _animator.SetBool("Die", true);
+        }
+    }
+
     private void PlayerAttackAnimator()
     {
         if (_player._isAttack == false)
@@ -78,14 +86,6 @@ public class PlayerAnimation : MonoBehaviour
         }
     }
 
-    private void PlayerDie()
-    {
-        if(_agentHealth.health <= 0)
-        {
-            _animator.SetBool("Die", true);
-        }
-    }
-
     private void PlayerDashAnimator()
     {
         if(_playerDash._IsDashAnimation == true)
@@ -102,12 +102,15 @@ public class PlayerAnimation : MonoBehaviour
     private void Update()
     {
         PlayerDashAnimator();
-        PlayerDie();
+
         PlayerSkill1();
         PlayerSkill2();
         PlayerAttackAnimator();
         PlayerMoveAnimator();
         PlayerJumpAnimator();
     }
-
+    private void LateUpdate()
+    {
+        PlayerDie();
+    }
 }

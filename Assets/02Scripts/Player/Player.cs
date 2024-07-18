@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     private WaitForSeconds _waitTimeSecond;
     public bool _isAttack { get; set; }
     public bool _isJump { get; set; }
+    public bool _isChangeHealth;
 
     private AgentAttack _agentAttack;
     private AgentMove _agentMove;
@@ -15,26 +16,45 @@ public class Player : MonoBehaviour
 
     public event Action JumpEvent;
     [field: SerializeField] public InputReader PlayerInput { get; set; }
-
     [field: SerializeField] public float Coin { get; set; }
     [SerializeField] private PlayerStat _playerStat;
-    public float AttackDamage;
-    public float Health;
+    public float AttackDamage { get; set; }
+    public float Health { get; set; }
+    public float MaxHealth { get; set; }
 
     private void Awake()
     {
+        GetComp();
         _waitTimeSec = new WaitForSeconds(0.65f);
         _waitTimeSecond = new WaitForSeconds(0.08f);
-        _agentHealth = GetComponent<AgentHealth>();
-        _agentAttack = GetComponent<AgentAttack>();
-        _agentMove = GetComponent<AgentMove>();
         _isAttack = true;
         _isJump = true;
         PlayerInput.AttackEvent += HandleAttackEvent;
         PlayerInput.JumpKeyEvent += HandleJumpKeyEvent;
     }
 
-    
+
+    private void Start()
+    {
+        StatSetStart();
+    }
+
+    private void GetComp()
+    {
+        _agentHealth = GetComponent<AgentHealth>();
+        _agentAttack = GetComponent<AgentAttack>();
+        _agentMove = GetComponent<AgentMove>();
+    }
+
+    private void StatSetStart()
+    {
+        MaxHealth = _playerStat.MaxHealth;
+        Health = _playerStat.MaxHealth;
+        AttackDamage = _playerStat.AttackDamage;
+        Coin = _playerStat.Coin;
+    }
+
+
     private void HandleAttackEvent()
     {
         if (_isAttack == true && _agentMove._isGround.Value && PlayerSkill.IsSkilling == true)
@@ -92,16 +112,29 @@ public class Player : MonoBehaviour
         PlayerSkill.IsSkilling = true;
     }
 
+    private void SetStat()
+    {
+        _playerStat.AttackDamage = AttackDamage;
+        _playerStat.Coin = Coin;
+        _playerStat.Health = Health;
+        _playerStat.MaxHealth = MaxHealth;
+    }
     private void Update()
     {
-        Health = _playerStat.Health;
-        AttackDamage = _playerStat.AttackDamage;
+        SetStat();
 
         _agentHealth.SetHealth(Health);
+
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            Health -= 1;
+        }
+
         if (_agentMove.IsMove == true)
         {
             FilpX();
         }
         _agentMove.SetMovement(PlayerInput.Movement.x);
     }
+
 }

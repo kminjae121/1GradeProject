@@ -6382,6 +6382,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0.25560188
       objectReference: {fileID: 0}
+    - target: {fileID: 6912719897178803256, guid: 1c51af1295f78764eafe9276bb29cf4a, type: 3}
+      propertyPath: <IsSkill2>k__BackingField
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8261080403101071905, guid: 1c51af1295f78764eafe9276bb29cf4a, type: 3}
       propertyPath: CollisionModule.m_Planes.Array.data[0]
       value: 

@@ -26,7 +26,15 @@ public class ButtonManager : MonoBehaviour
     }
 
 
-    private void Start()
+
+
+    private void Update()
+    {
+        SkillStoreClose();
+        StartStore();
+    }
+
+    private void SkillStoreClose()
     {
         if (_playerSkill2.IsSkill2 == true)
         {
@@ -36,11 +44,6 @@ public class ButtonManager : MonoBehaviour
         {
             _Skill1Button.interactable = false;
         }
-    }
-
-    private void Update()
-    {
-        StartStore();
     }
 
     private void StartStore()
@@ -110,7 +113,7 @@ public class ButtonManager : MonoBehaviour
         {
             _Skill2Button.interactable = false;
             _coin.Coin -= 20;
-            ;
+            _playerSkill2.IsSkill2 = true;
         }
     }
 }

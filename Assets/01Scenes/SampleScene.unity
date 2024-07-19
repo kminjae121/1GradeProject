@@ -6360,7 +6360,27 @@ PrefabInstance:
       objectReference: {fileID: 1016252100}
     - target: {fileID: 1600567817193054303, guid: 1c51af1295f78764eafe9276bb29cf4a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812693479737833342, guid: 1c51af1295f78764eafe9276bb29cf4a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000174101203769427, guid: 1c51af1295f78764eafe9276bb29cf4a, type: 3}
+      propertyPath: m_Size.x
+      value: 2.3756971
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000174101203769427, guid: 1c51af1295f78764eafe9276bb29cf4a, type: 3}
+      propertyPath: m_Size.y
+      value: 4.5358
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000174101203769427, guid: 1c51af1295f78764eafe9276bb29cf4a, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.55116034
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000174101203769427, guid: 1c51af1295f78764eafe9276bb29cf4a, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.25560188
       objectReference: {fileID: 0}
     - target: {fileID: 8261080403101071905, guid: 1c51af1295f78764eafe9276bb29cf4a, type: 3}
       propertyPath: CollisionModule.m_Planes.Array.data[0]
@@ -6404,6 +6424,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8607908190774803385, guid: 1c51af1295f78764eafe9276bb29cf4a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9189705551000226130, guid: 1c51af1295f78764eafe9276bb29cf4a, type: 3}
+      propertyPath: m_IncludeLayers.m_Bits
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

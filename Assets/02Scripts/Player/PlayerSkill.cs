@@ -92,11 +92,16 @@ public class PlayerSkill : MonoBehaviour
     private void Update()
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         _playerStat.IsETrue = IsSkill;
         _playerStat.IsQTrue = IsSkill2;
 
 =======
 >>>>>>> parent of a81b128 (Make UI)
+=======
+        _playerStat.IsETrue = IsSkill;
+        _playerStat.IsQTrue = IsSkill2;
+>>>>>>> parent of 2bc94a7 (attackFix)
     }
 
     private void SkillTool()
@@ -109,7 +114,11 @@ public class PlayerSkill : MonoBehaviour
 
             agentHealth.MinusHealth(_skillDamage);
         }
+<<<<<<< HEAD
     } 
+=======
+    }
+>>>>>>> parent of 2bc94a7 (attackFix)
 
     private void OnDrawGizmos()
     {
@@ -127,7 +136,25 @@ public class PlayerSkill : MonoBehaviour
 >>>>>>> parent of 507bcb3 (CoinAndUI)
     }
 
+<<<<<<< HEAD
     IEnumerator Wait(float zero)
+=======
+    private void GravityTrue(float GravityScale, bool Not)
+    {
+        _rbCompo.gravityScale = GravityScale;
+        _boxCollider.isTrigger = Not;
+    }
+
+    private void MoveFalse(bool Not, bool Yes)
+    {
+        _agentMove.IsMove = Not;
+        IsSkillAnimator1 = Yes;
+        IsSkilling = Not;
+        IsSkill = Not;
+    }
+
+    private void Jump(float zero)
+>>>>>>> parent of 2bc94a7 (attackFix)
     {
         _agentMove.IsMove = false;
         IsSkillAnimator1 = true;
@@ -146,6 +173,22 @@ public class PlayerSkill : MonoBehaviour
         _agentMove.IsMove = true;
         yield return new WaitForSeconds(3);
         IsSkill = true;
+<<<<<<< HEAD
+=======
+    }
+    private void MoveTrue2(bool Not, bool Yes)
+    {
+        IsSkilling = Yes;
+        IsSkillAnimator2 = Not;
+        _agentMove.IsMove = Yes;
+    }
+    private void MoveFalse2(bool Not, bool Yes)
+    {
+        _agentMove.IsMove = Not;
+        IsSkillAnimator2 = Yes;
+        IsSkilling = Not;
+        IsSkill2 = Not;
+>>>>>>> parent of 2bc94a7 (attackFix)
     }
 
     IEnumerator Wait2()

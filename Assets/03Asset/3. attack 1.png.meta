@@ -168,6 +168,7 @@ TextureImporter:
         height: 0
 =======
         x: 130
+<<<<<<< HEAD
         y: 11
         width: 22
         height: 44
@@ -178,6 +179,11 @@ TextureImporter:
         width: 23
         height: 44
 >>>>>>> parent of ef0db5a (FixAnImation)
+=======
+        y: 0
+        width: 98
+        height: 66
+>>>>>>> parent of 2bc94a7 (attackFix)
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -201,12 +207,18 @@ TextureImporter:
         serializedVersion: 2
         x: 240
 <<<<<<< HEAD
+<<<<<<< HEAD
         y: 10
 =======
         y: 11
 >>>>>>> parent of ef0db5a (FixAnImation)
         width: 63
         height: 44
+=======
+        y: 0
+        width: 102
+        height: 66
+>>>>>>> parent of 2bc94a7 (attackFix)
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,9 +237,15 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 348
+<<<<<<< HEAD
         y: 11
         width: 71
         height: 45
+=======
+        y: 0
+        width: 108
+        height: 66
+>>>>>>> parent of 2bc94a7 (attackFix)
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,6 +265,7 @@ TextureImporter:
         serializedVersion: 2
         x: 462
 <<<<<<< HEAD
+<<<<<<< HEAD
         y: 10
         width: 70
 =======
@@ -254,6 +273,11 @@ TextureImporter:
         width: 71
 >>>>>>> parent of ef0db5a (FixAnImation)
         height: 43
+=======
+        y: 0
+        width: 106
+        height: 66
+>>>>>>> parent of 2bc94a7 (attackFix)
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -272,9 +296,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 576
-        y: 11
-        width: 60
-        height: 44
+        y: 0
+        width: 108
+        height: 66
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -293,9 +317,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 700
-        y: 11
-        width: 81
-        height: 44
+        y: 0
+        width: 98
+        height: 66
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -314,9 +338,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 820
-        y: 11
-        width: 77
-        height: 44
+        y: 0
+        width: 92
+        height: 66
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -335,9 +359,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 934
-        y: 11
-        width: 80
-        height: 44
+        y: 0
+        width: 92
+        height: 66
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -356,6 +380,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1048
+<<<<<<< HEAD
         y: 11
 <<<<<<< HEAD
         width: 81
@@ -363,6 +388,11 @@ TextureImporter:
         width: 83
 >>>>>>> parent of ef0db5a (FixAnImation)
         height: 44
+=======
+        y: 0
+        width: 92
+        height: 66
+>>>>>>> parent of 2bc94a7 (attackFix)
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -381,9 +411,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1152
-        y: 11
-        width: 80
-        height: 44
+        y: 0
+        width: 102
+        height: 66
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -403,6 +433,7 @@ TextureImporter:
         serializedVersion: 2
 <<<<<<< HEAD
         x: 1279
+<<<<<<< HEAD
         y: 11
         width: 38
 =======
@@ -411,6 +442,11 @@ TextureImporter:
         width: 39
 >>>>>>> parent of ef0db5a (FixAnImation)
         height: 44
+=======
+        y: 0
+        width: 89
+        height: 66
+>>>>>>> parent of 2bc94a7 (attackFix)
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -434,10 +470,16 @@ TextureImporter:
         width: 38
 =======
         x: 1376
+<<<<<<< HEAD
         y: 11
         width: 35
 >>>>>>> parent of ef0db5a (FixAnImation)
         height: 44
+=======
+        y: 0
+        width: 106
+        height: 66
+>>>>>>> parent of 2bc94a7 (attackFix)
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -456,9 +498,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1492
-        y: 11
-        width: 31
-        height: 44
+        y: 0
+        width: 104
+        height: 66
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -478,12 +520,18 @@ TextureImporter:
         serializedVersion: 2
         x: 1606
 <<<<<<< HEAD
+<<<<<<< HEAD
         y: 11
 =======
         y: 10
 >>>>>>> parent of ef0db5a (FixAnImation)
         width: 31
         height: 44
+=======
+        y: 0
+        width: 104
+        height: 66
+>>>>>>> parent of 2bc94a7 (attackFix)
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -503,6 +551,7 @@ TextureImporter:
         serializedVersion: 2
 <<<<<<< HEAD
         x: 1722
+<<<<<<< HEAD
         y: 11
         width: 29
 =======
@@ -511,6 +560,11 @@ TextureImporter:
         width: 30
 >>>>>>> parent of ef0db5a (FixAnImation)
         height: 44
+=======
+        y: 0
+        width: 102
+        height: 66
+>>>>>>> parent of 2bc94a7 (attackFix)
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -529,9 +583,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1843
-        y: 11
-        width: 22
-        height: 44
+        y: 0
+        width: 95
+        height: 66
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

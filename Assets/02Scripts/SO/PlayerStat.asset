@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   <Coin>k__BackingField: 0
   <AttackDamage>k__BackingField: 0
   <Health>k__BackingField: 0
@@ -30,3 +31,11 @@ MonoBehaviour:
 >>>>>>> parent of ef0db5a (FixAnImation)
   <IsQTrue>k__BackingField: 0
   <IsETrue>k__BackingField: 0
+=======
+  <Coin>k__BackingField: 7
+  <AttackDamage>k__BackingField: 10
+  <Health>k__BackingField: 10
+  <MaxHealth>k__BackingField: 10
+  <IsQTrue>k__BackingField: 1
+  <IsETrue>k__BackingField: 1
+>>>>>>> parent of 2bc94a7 (attackFix)

@@ -13,7 +13,6 @@ public class InputReader : ScriptableObject,IPlayerActions
     public event Action Skill1Event;
     public event Action Skill2Event;
     public event Action DashEvent;
-    public event Action IntractionEvent;
 
     public bool _isMouseDown;
 

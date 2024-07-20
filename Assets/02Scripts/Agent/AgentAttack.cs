@@ -5,7 +5,7 @@ using UnityEngine;
 public class AgentAttack : MonoBehaviour
 {
     [Header ("Setting")]
-    public float _attackDamage;
+    [SerializeField] private float _attackDamage;
     [field: SerializeField] public Transform AttackRange { get; set; }
     public bool IsAttack { get;  set; }
     [SerializeField] private Vector2 _boxSize;
@@ -14,10 +14,9 @@ public class AgentAttack : MonoBehaviour
 
     private void Awake()
     {
-
         _isContinuousAttack = false;
     }
-    public void BasicAttack(float AttackDamage)
+    public void BasicAttack()
     {
         if (_isContinuousAttack == true)
         {
@@ -27,7 +26,7 @@ public class AgentAttack : MonoBehaviour
             {
                 Attack.transform.TryGetComponent(out AgentHealth agentHealth);
 
-                agentHealth.MinusHealth(AttackDamage);
+                agentHealth.MinusHealth(_attackDamage);
             }
         }
     }

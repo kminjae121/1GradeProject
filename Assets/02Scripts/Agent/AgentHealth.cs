@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class AgentHealth : MonoBehaviour
 {
+<<<<<<< HEAD
     [field: SerializeField] public float health { get; set; }
     [field: SerializeField] public AgentMove _agentMove { get; set; }
+=======
+    [field: SerializeField] public float Health { get; set; }
+
+>>>>>>> parent of 507bcb3 (CoinAndUI)
 
 
     private void Awake()
@@ -16,25 +21,22 @@ public class AgentHealth : MonoBehaviour
 
     private void Die()
     {
-        if(health <= 0)
+        if(Health <= 0)
         {
             _agentMove.IsMove = false;
             StartCoroutine(Wait());
         }
     }
 
-    public void SetHealth(float Health)
-    {
-        health = Health;
-    }
+
     public void MinusHealth(float AttackDamage)
     {
-        health -= AttackDamage;
+        Health -= AttackDamage;
     }
 
     public void PlusHealth(float Heal)
     {
-        health += Heal;
+        Health += Heal;
     }
 
     IEnumerator Wait()

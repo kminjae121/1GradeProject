@@ -86,6 +86,17 @@ public class PlayerAnimation : MonoBehaviour
         }
     }
 
+<<<<<<< HEAD
+=======
+    private void PlayerDie()
+    {
+        if(_agentHealth.Health <= 0)
+        {
+            _animator.SetBool("Die", true);
+        }
+    }
+
+>>>>>>> parent of 507bcb3 (CoinAndUI)
     private void PlayerDashAnimator()
     {
         if(_playerDash._IsDashAnimation == true)

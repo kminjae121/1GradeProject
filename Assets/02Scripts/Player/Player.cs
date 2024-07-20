@@ -12,26 +12,34 @@ public class Player : MonoBehaviour
 
     private AgentAttack _agentAttack;
     private AgentMove _agentMove;
-    private AgentHealth _agentHealth;
 
     public event Action JumpEvent;
     [field: SerializeField] public InputReader PlayerInput { get; set; }
+<<<<<<< HEAD
     [field: SerializeField] public float Coin { get; set; }
     [SerializeField] private PlayerStat _playerStat;
     public float AttackDamage { get; set; }
     public float Health { get; set; }
     public float MaxHealth { get; set; }
+=======
+>>>>>>> parent of 507bcb3 (CoinAndUI)
 
     private void Awake()
     {
         GetComp();
         _waitTimeSec = new WaitForSeconds(0.65f);
         _waitTimeSecond = new WaitForSeconds(0.08f);
+<<<<<<< HEAD
+=======
+        _agentAttack = GetComponent<AgentAttack>();
+        _agentMove = GetComponent<AgentMove>();
+>>>>>>> parent of 507bcb3 (CoinAndUI)
         _isAttack = true;
         _isJump = true;
         PlayerInput.AttackEvent += HandleAttackEvent;
         PlayerInput.JumpKeyEvent += HandleJumpKeyEvent;
     }
+<<<<<<< HEAD
 
 
     private void Start()
@@ -55,6 +63,8 @@ public class Player : MonoBehaviour
     }
 
 
+=======
+>>>>>>> parent of 507bcb3 (CoinAndUI)
     private void HandleAttackEvent()
     {
         if (_isAttack == true && _agentMove._isGround.Value && PlayerSkill.IsSkilling == true)
@@ -100,10 +110,10 @@ public class Player : MonoBehaviour
         _agentMove.IsMove = false;
         _isAttack = false;
         _agentAttack._isContinuousAttack = true;
-        _agentAttack.BasicAttack(AttackDamage);
+        _agentAttack.BasicAttack();
         yield return new WaitForSeconds(0.5f);
         _agentAttack._isContinuousAttack = true;
-        _agentAttack.BasicAttack(AttackDamage);
+        _agentAttack.BasicAttack();
         yield return new WaitForSeconds(0.25f);
         _agentMove.IsMove = true;
         _isJump = true;
@@ -121,6 +131,7 @@ public class Player : MonoBehaviour
     }
     private void Update()
     {
+<<<<<<< HEAD
         SetStat();
 
         _agentHealth.SetHealth(Health);
@@ -130,6 +141,8 @@ public class Player : MonoBehaviour
             Health -= 1;
         }
 
+=======
+>>>>>>> parent of 507bcb3 (CoinAndUI)
         if (_agentMove.IsMove == true)
         {
             FilpX();

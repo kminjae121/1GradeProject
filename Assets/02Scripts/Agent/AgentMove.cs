@@ -31,7 +31,7 @@ public class AgentMove : MonoBehaviour
 
     public void SetMovement(float Xmove)
     {
-        _xmove = Xmove;
+            _xmove = Xmove;
     }
 
     public void Jump(float multiplier = 1f)

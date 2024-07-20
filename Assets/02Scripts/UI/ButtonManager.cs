@@ -44,11 +44,6 @@ public class ButtonManager : MonoBehaviour
         StartStore();
     }
 
-    private void Update()
-    {
-        StartStore();
-    }
-
     private void StartStore()
     {
         if (IsStore == false && Input.GetKeyDown(KeyCode.Escape))
@@ -116,12 +111,8 @@ public class ButtonManager : MonoBehaviour
         if (_coin.Coin >= 20)
         {
             _coin.Coin -= 20;
-<<<<<<< HEAD
             _playerSkill2.IsSkill2 = true;
 
-=======
-            ;
->>>>>>> parent of c1fe26a (fix Store)
         }
     }
 }

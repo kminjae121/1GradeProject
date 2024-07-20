@@ -127,6 +127,7 @@ NavMeshSettings:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &15998165
 =======
 --- !u!1 &67588888
@@ -632,6 +633,8 @@ CanvasRenderer:
 >>>>>>> parent of 507bcb3 (CoinAndUI)
 =======
 >>>>>>> parent of 507bcb3 (CoinAndUI)
+=======
+>>>>>>> parent of a81b128 (Make UI)
 --- !u!1 &136537374
 GameObject:
   m_ObjectHideFlags: 3
@@ -720,6 +723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1877,6 +1881,8 @@ RectTransform:
   m_Pivot: {x: 0, y: 0}
 =======
 >>>>>>> parent of a81b128 (Make UI)
+=======
+>>>>>>> parent of a81b128 (Make UI)
 --- !u!1 &394191533 stripped
 =======
 --- !u!1 &394191533
@@ -1929,6 +1935,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!114 &394191541 stripped
@@ -2145,6 +2152,8 @@ MonoBehaviour:
 >>>>>>> parent of 507bcb3 (CoinAndUI)
 =======
 >>>>>>> parent of 507bcb3 (CoinAndUI)
+=======
+>>>>>>> parent of a81b128 (Make UI)
 --- !u!1 &429842321
 GameObject:
   m_ObjectHideFlags: 0
@@ -2471,6 +2480,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3225,6 +3235,8 @@ CanvasRenderer:
   m_CullTransparentMesh: 1
 =======
 >>>>>>> parent of a81b128 (Make UI)
+=======
+>>>>>>> parent of a81b128 (Make UI)
 --- !u!1001 &943011220
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3332,9 +3344,14 @@ Transform:
 >>>>>>> parent of 507bcb3 (CoinAndUI)
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
+<<<<<<< HEAD
   m_Children:
   - {fileID: 1477831936}
   m_Father: {fileID: 394191537}
+=======
+  m_Children: []
+  m_Father: {fileID: 1595741130}
+>>>>>>> parent of a81b128 (Make UI)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3454,6 +3471,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _item: {fileID: 394191534}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1012580851
 GameObject:
   m_ObjectHideFlags: 0
@@ -3550,6 +3568,8 @@ CanvasRenderer:
 >>>>>>> parent of 507bcb3 (CoinAndUI)
 =======
 >>>>>>> parent of 507bcb3 (CoinAndUI)
+=======
+>>>>>>> parent of a81b128 (Make UI)
 --- !u!1 &1016252098
 GameObject:
   m_ObjectHideFlags: 0
@@ -3680,6 +3700,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10046,6 +10067,8 @@ CanvasRenderer:
   m_CullTransparentMesh: 1
 =======
 >>>>>>> parent of a81b128 (Make UI)
+=======
+>>>>>>> parent of a81b128 (Make UI)
 --- !u!1 &1595741126
 =======
 --- !u!1 &1329348248
@@ -10133,6 +10156,7 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_GameObject: {fileID: 1750365254}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
 =======
@@ -15104,6 +15128,9 @@ Transform:
 =======
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
 >>>>>>> parent of a81b128 (Make UI)
+=======
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+>>>>>>> parent of a81b128 (Make UI)
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -15111,7 +15138,11 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Father: {fileID: 323024722}
+=======
+  m_Father: {fileID: 1595741130}
+>>>>>>> parent of a81b128 (Make UI)
 =======
   m_Father: {fileID: 1595741130}
 >>>>>>> parent of a81b128 (Make UI)
@@ -15260,6 +15291,7 @@ Animator:
 <<<<<<< HEAD
   m_GameObject: {fileID: 1750365254}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1 &1883193868
 =======
@@ -16030,6 +16062,8 @@ CanvasRenderer:
 >>>>>>> parent of 507bcb3 (CoinAndUI)
 =======
 >>>>>>> parent of 507bcb3 (CoinAndUI)
+=======
+>>>>>>> parent of a81b128 (Make UI)
 --- !u!1 &2020501338
 GameObject:
   m_ObjectHideFlags: 0
@@ -16180,6 +16214,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   <health>k__BackingField: 100000
   <_agentMove>k__BackingField: {fileID: 394191541}
 =======
@@ -16194,6 +16229,9 @@ MonoBehaviour:
 =======
   <Health>k__BackingField: 10000
 >>>>>>> parent of 507bcb3 (CoinAndUI)
+=======
+  <health>k__BackingField: 100
+>>>>>>> parent of a81b128 (Make UI)
 --- !u!50 &2020501343
 Rigidbody2D:
   serializedVersion: 4
@@ -16221,6 +16259,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 5
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -16746,6 +16785,8 @@ CanvasRenderer:
   m_CullTransparentMesh: 1
 =======
 >>>>>>> parent of a81b128 (Make UI)
+=======
+>>>>>>> parent of a81b128 (Make UI)
 --- !u!1 &2082530162
 =======
 --- !u!1 &2021196703
@@ -17094,6 +17135,7 @@ PrefabInstance:
       propertyPath: _playerStat
       value: 
 <<<<<<< HEAD
+<<<<<<< HEAD
       objectReference: {fileID: 1016252100}
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -17151,6 +17193,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1016252100}
 =======
+=======
+>>>>>>> parent of a81b128 (Make UI)
       objectReference: {fileID: 11400000, guid: 05b3401297cc6ee48bad1ff84b18ada3, type: 2}
     - target: {fileID: 4848256464941602356, guid: 1c51af1295f78764eafe9276bb29cf4a, type: 3}
       propertyPath: m_SortingLayer
@@ -17164,6 +17208,9 @@ PrefabInstance:
       propertyPath: _whatIsGround.m_Bits
       value: 8
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+>>>>>>> parent of a81b128 (Make UI)
+=======
 >>>>>>> parent of a81b128 (Make UI)
     - target: {fileID: 8607908190774803385, guid: 1c51af1295f78764eafe9276bb29cf4a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21885,6 +21932,7 @@ SceneRoots:
   - {fileID: 1595741130}
   - {fileID: 2082530165}
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 325617571}
   - {fileID: 1406252590}
   - {fileID: 514993902}
@@ -21896,3 +21944,5 @@ SceneRoots:
 >>>>>>> parent of 507bcb3 (CoinAndUI)
 =======
 >>>>>>> parent of 507bcb3 (CoinAndUI)
+=======
+>>>>>>> parent of a81b128 (Make UI)

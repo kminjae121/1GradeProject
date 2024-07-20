@@ -95,6 +95,14 @@ public class PlayerAnimation : MonoBehaviour
     }
 
 
+    private void PlayerDie()
+    {
+        if(_agentHealth.health <= 0)
+        {
+            _animator.SetBool("Die", true);
+        }
+    }
+
     private void PlayerDashAnimator()
     {
         if(_playerDash._IsDashAnimation == true)

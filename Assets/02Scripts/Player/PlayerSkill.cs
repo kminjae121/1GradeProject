@@ -21,9 +21,12 @@ public class PlayerSkill : MonoBehaviour
     [SerializeField] private PlayerDash _playerDash;
     [SerializeField] private Rigidbody2D _rbCompo;
     [SerializeField] private BoxCollider2D _boxCollider;
+<<<<<<< HEAD
 
     [SerializeField] private PlayerStat _playerStat;
 
+=======
+>>>>>>> parent of a81b128 (Make UI)
     [field: SerializeField] public float DashSpeed { get; set; }
     public bool IsSkill { get; set; }
     public bool IsSkillAnimator1 { get; set; }
@@ -52,6 +55,7 @@ public class PlayerSkill : MonoBehaviour
         }
     }
 
+<<<<<<< HEAD
 
     private void Start()
     {
@@ -60,6 +64,8 @@ public class PlayerSkill : MonoBehaviour
     }
 
 
+=======
+>>>>>>> parent of a81b128 (Make UI)
     private void OnDestroy()
     {
         _playerInput.Skill1Event -= HandleSkill;
@@ -85,9 +91,12 @@ public class PlayerSkill : MonoBehaviour
 
     private void Update()
     {
+<<<<<<< HEAD
         _playerStat.IsETrue = IsSkill;
         _playerStat.IsQTrue = IsSkill2;
 
+=======
+>>>>>>> parent of a81b128 (Make UI)
     }
 
     private void SkillTool()

@@ -12,9 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c91d8f818b4803c489011a3bf418091a, type: 3}
   m_Name: PlayerStat
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   <Coin>k__BackingField: 0
   <AttackDamage>k__BackingField: 0
   <Health>k__BackingField: 0
   <MaxHealth>k__BackingField: 0
+=======
+  <AttackDamage>k__BackingField: 1
+  <Health>k__BackingField: 10
+>>>>>>> parent of a81b128 (Make UI)
   <IsQTrue>k__BackingField: 0
   <IsETrue>k__BackingField: 0

@@ -8,11 +8,15 @@ public class AgentHealth : MonoBehaviour
 <<<<<<< HEAD
 
     [field: SerializeField] public float health { get; set; }
+<<<<<<< HEAD
 =======
     [field: SerializeField] public float Health { get; set; }
 >>>>>>> parent of 507bcb3 (CoinAndUI)
 
     [field: SerializeField] public AgentMove _agentMove { get; set; }
+=======
+
+>>>>>>> parent of a81b128 (Make UI)
 
 =======
 >>>>>>> parent of 507bcb3 (CoinAndUI)

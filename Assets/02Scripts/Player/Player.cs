@@ -8,7 +8,6 @@ public class Player : MonoBehaviour
     private WaitForSeconds _waitTimeSecond;
     public bool _isAttack { get; set; }
     public bool _isJump { get; set; }
-    public bool _isChangeHealth;
 
     private AgentAttack _agentAttack;
     private AgentMove _agentMove;
@@ -17,11 +16,14 @@ public class Player : MonoBehaviour
     [field: SerializeField] public InputReader PlayerInput { get; set; }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> parent of a81b128 (Make UI)
     [field: SerializeField] public float Coin { get; set; }
     [SerializeField] private PlayerStat _playerStat;
-    public float AttackDamage { get; set; }
-    public float Health { get; set; }
-    public float MaxHealth { get; set; }
+    public float AttackDamage;
+    public float Health;
 
 =======
 >>>>>>> parent of 507bcb3 (CoinAndUI)
@@ -30,9 +32,9 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
-        GetComp();
         _waitTimeSec = new WaitForSeconds(0.65f);
         _waitTimeSecond = new WaitForSeconds(0.08f);
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -43,6 +45,11 @@ public class Player : MonoBehaviour
         _agentAttack = GetComponent<AgentAttack>();
         _agentMove = GetComponent<AgentMove>();
 
+=======
+        _agentHealth = GetComponent<AgentHealth>();
+        _agentAttack = GetComponent<AgentAttack>();
+        _agentMove = GetComponent<AgentMove>();
+>>>>>>> parent of a81b128 (Make UI)
         _isAttack = true;
         _isJump = true;
         PlayerInput.AttackEvent += HandleAttackEvent;
@@ -51,6 +58,7 @@ public class Player : MonoBehaviour
 <<<<<<< HEAD
 <<<<<<< HEAD
 
+<<<<<<< HEAD
 
     private void Start()
     {
@@ -75,6 +83,9 @@ public class Player : MonoBehaviour
 >>>>>>> parent of 507bcb3 (CoinAndUI)
 =======
 >>>>>>> parent of 507bcb3 (CoinAndUI)
+=======
+    
+>>>>>>> parent of a81b128 (Make UI)
     private void HandleAttackEvent()
     {
         if (_isAttack == true && _agentMove._isGround.Value && PlayerSkill.IsSkilling == true)
@@ -132,15 +143,9 @@ public class Player : MonoBehaviour
         PlayerSkill.IsSkilling = true;
     }
 
-    private void SetStat()
-    {
-        _playerStat.AttackDamage = AttackDamage;
-        _playerStat.Coin = Coin;
-        _playerStat.Health = Health;
-        _playerStat.MaxHealth = MaxHealth;
-    }
     private void Update()
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         SetStat();
@@ -155,11 +160,16 @@ public class Player : MonoBehaviour
 >>>>>>> parent of 507bcb3 (CoinAndUI)
 =======
 >>>>>>> parent of 507bcb3 (CoinAndUI)
+=======
+        Health = _playerStat.Health;
+        AttackDamage = _playerStat.AttackDamage;
+
+        _agentHealth.SetHealth(Health);
+>>>>>>> parent of a81b128 (Make UI)
         if (_agentMove.IsMove == true)
         {
             FilpX();
         }
         _agentMove.SetMovement(PlayerInput.Movement.x);
     }
-
 }

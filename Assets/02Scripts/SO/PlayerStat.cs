@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = ("PlayerStat"))]
-public class PlayerStat : ScriptableObject
+public class  PlayerStat: ScriptableObject
 {
     [field: SerializeField] public float AttackDamage { get; set; }
     [field: SerializeField] public float Health { get; set; }

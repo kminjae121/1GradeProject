@@ -77,27 +77,16 @@ public class PlayerAnimation : MonoBehaviour
             _animator.SetBool("Skill2", false);
         }
     }
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    private void PlayerDie()
-    {
-        if(_agentHealth.Health <= 0)
-=======
     private void PlayerDie()
     {
         if(_agentHealth.health <= 0)
->>>>>>> parent of a81b128 (Make UI)
+
         {
             _animator.SetBool("Die", true);
         }
     }
 
-<<<<<<< HEAD
->>>>>>> parent of 507bcb3 (CoinAndUI)
-=======
->>>>>>> parent of a81b128 (Make UI)
+
     private void PlayerDashAnimator()
     {
         if(_playerDash._IsDashAnimation == true)

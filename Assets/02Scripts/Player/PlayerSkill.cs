@@ -21,10 +21,9 @@ public class PlayerSkill : MonoBehaviour
     [SerializeField] private PlayerDash _playerDash;
     [SerializeField] private Rigidbody2D _rbCompo;
     [SerializeField] private BoxCollider2D _boxCollider;
-<<<<<<< HEAD
-=======
+
     [SerializeField] private PlayerStat _playerStat;
->>>>>>> parent of c1fe26a (fix Store)
+
     [field: SerializeField] public float DashSpeed { get; set; }
     public bool IsSkill { get; set; }
     public bool IsSkillAnimator1 { get; set; }
@@ -53,15 +52,14 @@ public class PlayerSkill : MonoBehaviour
         }
     }
 
-<<<<<<< HEAD
-=======
+
     private void Start()
     {
         IsSkill = _playerStat.IsQTrue;
         IsSkill2 = _playerStat.IsETrue;
     }
 
->>>>>>> parent of 2bc94a7 (attackFix)
+
     private void OnDestroy()
     {
         _playerInput.Skill1Event -= HandleSkill;
@@ -87,29 +85,23 @@ public class PlayerSkill : MonoBehaviour
 
     private void Update()
     {
-<<<<<<< HEAD
-=======
         _playerStat.IsETrue = IsSkill;
         _playerStat.IsQTrue = IsSkill2;
->>>>>>> parent of 2bc94a7 (attackFix)
+
     }
 
     private void SkillTool()
     {
         Collider2D[] Skill = Physics2D.OverlapBoxAll(_skillRange.position, _skillBox, 0, _agentType);
-        
-        foreach(Collider2D skill in Skill)
+
+        foreach (Collider2D skill in Skill)
         {
             skill.transform.TryGetComponent(out AgentHealth agentHealth);
 
             agentHealth.MinusHealth(_skillDamage);
         }
-<<<<<<< HEAD
-    } 
-=======
-    }
->>>>>>> parent of 2bc94a7 (attackFix)
 
+    }
     private void OnDrawGizmos()
     {
         Gizmos.color = color;
@@ -117,9 +109,9 @@ public class PlayerSkill : MonoBehaviour
         Gizmos.color = Color.white;    
     }
 
-<<<<<<< HEAD
-    IEnumerator Wait(float zero)
-=======
+
+
+
 
     private void MoveTrue(bool Not, bool Yes)
     {
@@ -143,7 +135,6 @@ public class PlayerSkill : MonoBehaviour
     }
 
     private void Jump(float zero)
->>>>>>> parent of 2bc94a7 (attackFix)
     {
         _agentMove.IsMove = false;
         IsSkillAnimator1 = true;
@@ -162,8 +153,6 @@ public class PlayerSkill : MonoBehaviour
         _agentMove.IsMove = true;
         yield return new WaitForSeconds(3);
         IsSkill = true;
-<<<<<<< HEAD
-=======
     }
     private void MoveTrue2(bool Not, bool Yes)
     {
@@ -177,7 +166,6 @@ public class PlayerSkill : MonoBehaviour
         IsSkillAnimator2 = Yes;
         IsSkilling = Not;
         IsSkill2 = Not;
->>>>>>> parent of 2bc94a7 (attackFix)
     }
 
     IEnumerator Wait2()

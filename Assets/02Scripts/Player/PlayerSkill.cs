@@ -100,8 +100,8 @@ public class PlayerSkill : MonoBehaviour
 
             agentHealth.MinusHealth(_skillDamage);
         }
-
     }
+
     private void OnDrawGizmos()
     {
         Gizmos.color = color;
@@ -110,7 +110,10 @@ public class PlayerSkill : MonoBehaviour
     }
 
 
+    IEnumerator Wait(float zero)
+    {
 
+    }
 
 
     private void MoveTrue(bool Not, bool Yes)

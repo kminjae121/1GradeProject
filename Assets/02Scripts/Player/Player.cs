@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
 
     private AgentAttack _agentAttack;
     private AgentMove _agentMove;
+    private AgentHealth _agentHealth;
 
     public event Action JumpEvent;
     [field: SerializeField] public InputReader PlayerInput { get; set; }

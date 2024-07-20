@@ -12,52 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c91d8f818b4803c489011a3bf418091a, type: 3}
   m_Name: PlayerStat
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  <Coin>k__BackingField: 99897
-=======
-  <Coin>k__BackingField: 7
->>>>>>> parent of 2bc94a7 (attackFix)
-=======
-  <Coin>k__BackingField: 99897
->>>>>>> parent of c1fe26a (fix Store)
-=======
-  <Coin>k__BackingField: 7
->>>>>>> parent of 2bc94a7 (attackFix)
-=======
-  <Coin>k__BackingField: 99897
->>>>>>> parent of c1fe26a (fix Store)
-  <AttackDamage>k__BackingField: 10
-  <Health>k__BackingField: 10
-  <MaxHealth>k__BackingField: 10
-  <IsQTrue>k__BackingField: 1
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-  <Coin>k__BackingField: 13
-  <AttackDamage>k__BackingField: 70
-  <Health>k__BackingField: 20
-  <MaxHealth>k__BackingField: 30
-=======
-  <AttackDamage>k__BackingField: 1
-  <Health>k__BackingField: 10
->>>>>>> parent of a81b128 (Make UI)
+  <Coin>k__BackingField: 0
+  <AttackDamage>k__BackingField: 0
+  <Health>k__BackingField: 0
+  <MaxHealth>k__BackingField: 0
   <IsQTrue>k__BackingField: 0
->>>>>>> parent of ef0db5a (FixAnImation)
-=======
->>>>>>> parent of c1fe26a (fix Store)
-=======
->>>>>>> parent of c1fe26a (fix Store)
   <IsETrue>k__BackingField: 0
-=======
-  <IsETrue>k__BackingField: 1
->>>>>>> parent of 2bc94a7 (attackFix)
-=======
-  <IsETrue>k__BackingField: 1
->>>>>>> parent of 2bc94a7 (attackFix)

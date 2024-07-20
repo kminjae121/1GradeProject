@@ -10,11 +10,12 @@ public class ButtonManager : MonoBehaviour
     [SerializeField] private GameObject MainStore;
     [SerializeField] private PlayerSkill _playerSkill2;
     [SerializeField] private PlayerSkill _playerSkill;
+    public bool IsStore;
 
 
     private void Awake()
     {
-<<<<<<< HEAD
+
         IsStore = false;
         MainStore.SetActive(false);
         StatStore.SetActive(false);
@@ -46,19 +47,15 @@ public class ButtonManager : MonoBehaviour
             MainStore.SetActive(true);
             IsStore = true;
         }
-        else if(IsStore == true && Input.GetKeyDown(KeyCode.Escape))
+        else if (IsStore == true && Input.GetKeyDown(KeyCode.Escape))
         {
             MainStore.SetActive(false);
             IsStore = false;
         }
     }
 
-=======
-        //MainStore.SetActive(false);
-        StatStore.SetActive(false);
-        SkillStore.SetActive(false);
-    }
->>>>>>> parent of ef0db5a (FixAnImation)
+
+
     public void PlusHealth()
     {
         if(_coin.Coin >= 5)
@@ -110,7 +107,7 @@ public class ButtonManager : MonoBehaviour
         if (_coin.Coin >= 20)
         {
             _coin.Coin -= 20;
-            ;
+            
         }
     }
 }

@@ -16,12 +16,15 @@ public class Player : MonoBehaviour
     public event Action JumpEvent;
     [field: SerializeField] public InputReader PlayerInput { get; set; }
 <<<<<<< HEAD
+<<<<<<< HEAD
     [field: SerializeField] public float Coin { get; set; }
     [SerializeField] private PlayerStat _playerStat;
     public float AttackDamage { get; set; }
     public float Health { get; set; }
     public float MaxHealth { get; set; }
 
+=======
+>>>>>>> parent of 507bcb3 (CoinAndUI)
 =======
 >>>>>>> parent of 507bcb3 (CoinAndUI)
 
@@ -31,7 +34,10 @@ public class Player : MonoBehaviour
         _waitTimeSec = new WaitForSeconds(0.65f);
         _waitTimeSecond = new WaitForSeconds(0.08f);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 507bcb3 (CoinAndUI)
 =======
 >>>>>>> parent of 507bcb3 (CoinAndUI)
         _agentAttack = GetComponent<AgentAttack>();
@@ -42,6 +48,7 @@ public class Player : MonoBehaviour
         PlayerInput.AttackEvent += HandleAttackEvent;
         PlayerInput.JumpKeyEvent += HandleJumpKeyEvent;
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -64,6 +71,8 @@ public class Player : MonoBehaviour
         AttackDamage = _playerStat.AttackDamage;
         Coin = _playerStat.Coin;
     }
+=======
+>>>>>>> parent of 507bcb3 (CoinAndUI)
 =======
 >>>>>>> parent of 507bcb3 (CoinAndUI)
     private void HandleAttackEvent()
@@ -133,6 +142,7 @@ public class Player : MonoBehaviour
     private void Update()
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         SetStat();
 
         _agentHealth.SetHealth(Health);
@@ -141,6 +151,8 @@ public class Player : MonoBehaviour
         {
             Health -= 1;
         }
+=======
+>>>>>>> parent of 507bcb3 (CoinAndUI)
 =======
 >>>>>>> parent of 507bcb3 (CoinAndUI)
         if (_agentMove.IsMove == true)

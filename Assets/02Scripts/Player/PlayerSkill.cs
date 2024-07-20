@@ -93,51 +93,32 @@ public class PlayerSkill : MonoBehaviour
     private void SkillTool()
     {
         Collider2D[] Skill = Physics2D.OverlapBoxAll(_skillRange.position, _skillBox, 0, _agentType);
-
-        foreach (Collider2D skill in Skill)
+        
+        foreach(Collider2D skill in Skill)
         {
             skill.transform.TryGetComponent(out AgentHealth agentHealth);
 
             agentHealth.MinusHealth(_skillDamage);
         }
-    }
+    } 
 
     private void OnDrawGizmos()
     {
         Gizmos.color = color;
         Gizmos.DrawWireCube(_skillRange.position, _skillBox);
         Gizmos.color = Color.white;    
+<<<<<<< HEAD
     }
 
 
     IEnumerator Wait(float zero)
     {
 
+=======
+>>>>>>> parent of 507bcb3 (CoinAndUI)
     }
 
-
-    private void MoveTrue(bool Not, bool Yes)
-    {
-        IsSkilling = Yes;
-        IsSkillAnimator1 = Not;
-        _agentMove.IsMove = Yes;
-    }
-
-    private void GravityTrue(float GravityScale, bool Not)
-    {
-        _rbCompo.gravityScale = GravityScale;
-        _boxCollider.isTrigger = Not;
-    }
-
-    private void MoveFalse(bool Not, bool Yes)
-    {
-        _agentMove.IsMove = Not;
-        IsSkillAnimator1 = Yes;
-        IsSkilling = Not;
-        IsSkill = Not;
-    }
-
-    private void Jump(float zero)
+    IEnumerator Wait(float zero)
     {
         _agentMove.IsMove = false;
         IsSkillAnimator1 = true;
@@ -157,23 +138,17 @@ public class PlayerSkill : MonoBehaviour
         yield return new WaitForSeconds(3);
         IsSkill = true;
     }
-    private void MoveTrue2(bool Not, bool Yes)
-    {
-        IsSkilling = Yes;
-        IsSkillAnimator2 = Not;
-        _agentMove.IsMove = Yes;
-    }
-    private void MoveFalse2(bool Not, bool Yes)
-    {
-        _agentMove.IsMove = Not;
-        IsSkillAnimator2 = Yes;
-        IsSkilling = Not;
-        IsSkill2 = Not;
-    }
 
     IEnumerator Wait2()
     {
+<<<<<<< HEAD
         MoveFalse2();
+=======
+        _agentMove.IsMove = false;
+        IsSkillAnimator2 = true;
+        IsSkilling = false;
+        IsSkill2 = false;
+>>>>>>> parent of 507bcb3 (CoinAndUI)
         yield return new WaitForSeconds(_waitTime);
         IsSkilling = true;
         IsSkillAnimator2 = false;

@@ -80,8 +80,12 @@ public class PlayerAnimation : MonoBehaviour
     private void PlayerDie()
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if(_agentHealth.health <= 0)
 
+=======
+        if(_agentHealth.Health <= 0)
+>>>>>>> parent of 507bcb3 (CoinAndUI)
 =======
         if(_agentHealth.Health <= 0)
 >>>>>>> parent of 507bcb3 (CoinAndUI)

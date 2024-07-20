@@ -126,7 +126,11 @@ NavMeshSettings:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &15998165
+=======
+--- !u!1 &67588888
+>>>>>>> parent of 507bcb3 (CoinAndUI)
 =======
 --- !u!1 &67588888
 >>>>>>> parent of 507bcb3 (CoinAndUI)
@@ -142,10 +146,13 @@ GameObject:
   m_Component:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - component: {fileID: 15998166}
   m_Layer: 5
   m_Name: Fill Area
 =======
+=======
+>>>>>>> parent of 507bcb3 (CoinAndUI)
 =======
 >>>>>>> parent of 507bcb3 (CoinAndUI)
   - component: {fileID: 67588889}
@@ -153,6 +160,9 @@ GameObject:
   m_Layer: 0
   m_Name: Skill1
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 507bcb3 (CoinAndUI)
+=======
 >>>>>>> parent of 507bcb3 (CoinAndUI)
 =======
 >>>>>>> parent of 507bcb3 (CoinAndUI)
@@ -161,6 +171,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!224 &15998166
@@ -173,10 +184,15 @@ Transform:
 --- !u!4 &67588889
 Transform:
 >>>>>>> parent of 507bcb3 (CoinAndUI)
+=======
+--- !u!4 &67588889
+Transform:
+>>>>>>> parent of 507bcb3 (CoinAndUI)
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_GameObject: {fileID: 15998165}
@@ -235,6 +251,8 @@ RectTransform:
 =======
 =======
 >>>>>>> parent of 507bcb3 (CoinAndUI)
+=======
+>>>>>>> parent of 507bcb3 (CoinAndUI)
   m_GameObject: {fileID: 67588888}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -246,6 +264,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &67588890
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 507bcb3 (CoinAndUI)
+=======
 >>>>>>> parent of 507bcb3 (CoinAndUI)
 =======
 >>>>>>> parent of 507bcb3 (CoinAndUI)
@@ -254,6 +275,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_GameObject: {fileID: 107349829}
@@ -351,6 +373,8 @@ CanvasRenderer:
 =======
 =======
 >>>>>>> parent of 507bcb3 (CoinAndUI)
+=======
+>>>>>>> parent of 507bcb3 (CoinAndUI)
   m_GameObject: {fileID: 67588888}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -375,6 +399,9 @@ CanvasRenderer:
   color: {r: 0, g: 1, b: 0.25246763, a: 1}
 --- !u!1 &74243748
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 507bcb3 (CoinAndUI)
+=======
 >>>>>>> parent of 507bcb3 (CoinAndUI)
 =======
 >>>>>>> parent of 507bcb3 (CoinAndUI)
@@ -385,6 +412,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   - component: {fileID: 111720310}
@@ -405,10 +433,16 @@ GameObject:
   m_Layer: 0
   m_Name: BlackThunder
 >>>>>>> parent of 507bcb3 (CoinAndUI)
+=======
+  - component: {fileID: 74243749}
+  m_Layer: 0
+  m_Name: BlackThunder
+>>>>>>> parent of 507bcb3 (CoinAndUI)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_IsActive: 1
@@ -424,10 +458,16 @@ Transform:
 --- !u!4 &74243749
 Transform:
 >>>>>>> parent of 507bcb3 (CoinAndUI)
+=======
+  m_IsActive: 0
+--- !u!4 &74243749
+Transform:
+>>>>>>> parent of 507bcb3 (CoinAndUI)
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_GameObject: {fileID: 111720309}
@@ -571,6 +611,8 @@ CanvasRenderer:
 =======
 =======
 >>>>>>> parent of 507bcb3 (CoinAndUI)
+=======
+>>>>>>> parent of 507bcb3 (CoinAndUI)
   m_GameObject: {fileID: 74243748}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
@@ -582,9 +624,12 @@ CanvasRenderer:
   m_Father: {fileID: 394191537}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> parent of 507bcb3 (CoinAndUI)
 =======
 >>>>>>> parent of a81b128 (Make UI)
+=======
+>>>>>>> parent of 507bcb3 (CoinAndUI)
 =======
 >>>>>>> parent of 507bcb3 (CoinAndUI)
 --- !u!1 &136537374
@@ -678,7 +723,11 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &145687593
+=======
+--- !u!1 &394191533
+>>>>>>> parent of 507bcb3 (CoinAndUI)
 =======
 --- !u!1 &394191533
 >>>>>>> parent of 507bcb3 (CoinAndUI)
@@ -686,6 +735,7 @@ GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
@@ -1100,6 +1150,9 @@ GameObject:
   m_TagString: Untagged
 =======
   m_PrefabAsset: {fileID: 0}
+=======
+  m_PrefabAsset: {fileID: 0}
+>>>>>>> parent of 507bcb3 (CoinAndUI)
   serializedVersion: 6
   m_Component:
   - component: {fileID: 394191537}
@@ -1114,11 +1167,15 @@ GameObject:
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
+<<<<<<< HEAD
+>>>>>>> parent of 507bcb3 (CoinAndUI)
+=======
 >>>>>>> parent of 507bcb3 (CoinAndUI)
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!224 &229005885
 RectTransform:
@@ -1143,10 +1200,14 @@ RectTransform:
 =======
 --- !u!114 &394191534
 >>>>>>> parent of 507bcb3 (CoinAndUI)
+=======
+--- !u!114 &394191534
+>>>>>>> parent of 507bcb3 (CoinAndUI)
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 229005884}
@@ -1850,6 +1911,8 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
 =======
 >>>>>>> parent of 507bcb3 (CoinAndUI)
+=======
+>>>>>>> parent of 507bcb3 (CoinAndUI)
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 394191533}
   m_Enabled: 1
@@ -1864,6 +1927,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1877,6 +1941,9 @@ MonoBehaviour:
 =======
   m_PrefabAsset: {fileID: 0}
 >>>>>>> parent of 507bcb3 (CoinAndUI)
+=======
+  m_PrefabAsset: {fileID: 0}
+>>>>>>> parent of 507bcb3 (CoinAndUI)
   m_GameObject: {fileID: 394191533}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1885,7 +1952,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 507bcb3 (CoinAndUI)
 =======
 >>>>>>> parent of 507bcb3 (CoinAndUI)
   Movespeed: 10
@@ -2067,9 +2137,12 @@ MonoBehaviour:
   _playerInput: {fileID: 11400000, guid: 4f8ebb1a14a92be4b9d1e84f3fdb6092, type: 2}
   _boxCollider: {fileID: 1770151098}
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> parent of 507bcb3 (CoinAndUI)
 =======
 >>>>>>> parent of a81b128 (Make UI)
+=======
+>>>>>>> parent of 507bcb3 (CoinAndUI)
 =======
 >>>>>>> parent of 507bcb3 (CoinAndUI)
 --- !u!1 &429842321
@@ -2398,6 +2471,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3215,6 +3289,9 @@ PrefabInstance:
 =======
 --- !u!1 &949652362
 >>>>>>> parent of 507bcb3 (CoinAndUI)
+=======
+--- !u!1 &949652362
+>>>>>>> parent of 507bcb3 (CoinAndUI)
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3238,14 +3315,20 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 972600364}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
 =======
+=======
+>>>>>>> parent of 507bcb3 (CoinAndUI)
   m_GameObject: {fileID: 949652362}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 12.88, y: -1.71, z: -0.07691395}
+<<<<<<< HEAD
+>>>>>>> parent of 507bcb3 (CoinAndUI)
+=======
 >>>>>>> parent of 507bcb3 (CoinAndUI)
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3253,6 +3336,7 @@ Transform:
   - {fileID: 1477831936}
   m_Father: {fileID: 394191537}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3464,6 +3548,8 @@ CanvasRenderer:
 >>>>>>> parent of a81b128 (Make UI)
 =======
 >>>>>>> parent of 507bcb3 (CoinAndUI)
+=======
+>>>>>>> parent of 507bcb3 (CoinAndUI)
 --- !u!1 &1016252098
 GameObject:
   m_ObjectHideFlags: 0
@@ -3597,7 +3683,11 @@ BoxCollider2D:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1025482496
+=======
+--- !u!1 &1329348248
+>>>>>>> parent of 507bcb3 (CoinAndUI)
 =======
 --- !u!1 &1329348248
 >>>>>>> parent of 507bcb3 (CoinAndUI)
@@ -3609,6 +3699,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - component: {fileID: 1025482497}
   - component: {fileID: 1025482499}
   - component: {fileID: 1025482498}
@@ -3619,11 +3710,17 @@ GameObject:
   m_Layer: 0
   m_Name: AttackRange
 >>>>>>> parent of 507bcb3 (CoinAndUI)
+=======
+  - component: {fileID: 1329348249}
+  m_Layer: 0
+  m_Name: AttackRange
+>>>>>>> parent of 507bcb3 (CoinAndUI)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!224 &1025482497
 RectTransform:
@@ -8512,10 +8609,15 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1722185066
 MonoBehaviour:
+=======
+--- !u!4 &1329348249
+Transform:
+>>>>>>> parent of 507bcb3 (CoinAndUI)
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1722185064}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -9993,6 +10095,18 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1477831935
 >>>>>>> parent of 507bcb3 (CoinAndUI)
+=======
+  m_GameObject: {fileID: 1329348248}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.49, y: -0.76, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 394191537}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1477831935
+>>>>>>> parent of 507bcb3 (CoinAndUI)
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10017,10 +10131,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 1750365254}
 <<<<<<< HEAD
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
 =======
+=======
+>>>>>>> parent of 507bcb3 (CoinAndUI)
   m_GameObject: {fileID: 1477831935}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.052379567, z: 0, w: 0.99862725}
@@ -14853,6 +14970,72 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1722185064}
   serializedVersion: 2
+<<<<<<< HEAD
+=======
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.36, y: -0.07, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 394191537}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1722185066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722185064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27d690d403f12764e8f8a3d2fc8c3cd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _skillBox: {x: 15, y: 2}
+  _agentType:
+    serializedVersion: 2
+    m_Bits: 64
+  _skillRange: {fileID: 1722185065}
+  _skillDamage: 30
+  _waitTime: 1
+  _player: {fileID: 394191534}
+  _agentMove: {fileID: 394191535}
+  _playerDash: {fileID: 0}
+  _rbCompo: {fileID: 394191538}
+  _boxCollider: {fileID: 1770151098}
+  <DashSpeed>k__BackingField: 0
+  _skill: 1
+  _playerInput: {fileID: 11400000, guid: 4f8ebb1a14a92be4b9d1e84f3fdb6092, type: 2}
+  color: {r: 0.9563484, g: 0, b: 1, a: 1}
+--- !u!1 &1770151095
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1770151096}
+  - component: {fileID: 1770151097}
+  - component: {fileID: 1770151098}
+  - component: {fileID: 1770151099}
+  - component: {fileID: 1770151100}
+  m_Layer: 0
+  m_Name: PlayerSprite
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1770151096
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770151095}
+  serializedVersion: 2
+>>>>>>> parent of 507bcb3 (CoinAndUI)
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.36, y: -0.07, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -14927,6 +15110,7 @@ Transform:
   m_Children: []
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Father: {fileID: 323024722}
 =======
   m_Father: {fileID: 1595741130}
@@ -14941,6 +15125,10 @@ Transform:
 =======
   m_Father: {fileID: 394191537}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+  m_Father: {fileID: 394191537}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of 507bcb3 (CoinAndUI)
 --- !u!212 &1770151097
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15039,6 +15227,9 @@ BoxCollider2D:
   m_Size: {x: 1.4957346, y: 4.464451}
   m_EdgeRadius: 0
 --- !u!114 &1770151099
+<<<<<<< HEAD
+>>>>>>> parent of 507bcb3 (CoinAndUI)
+=======
 >>>>>>> parent of 507bcb3 (CoinAndUI)
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15046,6 +15237,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770151095}
+<<<<<<< HEAD
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d67b7b213b549e249a7be7590b119a3a, type: 3}
@@ -15160,11 +15352,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1883193868}
+=======
+>>>>>>> parent of 507bcb3 (CoinAndUI)
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: 11500000, guid: d67b7b213b549e249a7be7590b119a3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
@@ -15185,10 +15380,23 @@ MonoBehaviour:
   m_PixelsPerUnitMultiplier: 0.01
 --- !u!222 &1883193871
 CanvasRenderer:
+=======
+  <PlayerInput>k__BackingField: {fileID: 11400000, guid: 4f8ebb1a14a92be4b9d1e84f3fdb6092, type: 2}
+  _agentMove: {fileID: 394191535}
+  _player: {fileID: 394191534}
+  _playerSkill1: {fileID: 67588890}
+  _playerSkill2: {fileID: 1722185066}
+  _agentHealth: {fileID: 394191542}
+  _playerDash: {fileID: 394191544}
+--- !u!95 &1770151100
+Animator:
+  serializedVersion: 5
+>>>>>>> parent of 507bcb3 (CoinAndUI)
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1883193868}
   m_CullTransparentMesh: 1
 --- !u!114 &1896197747 stripped
@@ -15203,6 +15411,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1956147397
+=======
+  m_GameObject: {fileID: 1770151095}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3485b20d3cefe084ca7bbbfc8373ee4c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &1933597748
+>>>>>>> parent of 507bcb3 (CoinAndUI)
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -15210,22 +15435,35 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 1956147398}
   - component: {fileID: 1956147400}
   - component: {fileID: 1956147399}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
+=======
+  - component: {fileID: 1933597749}
+  m_Layer: 0
+  m_Name: GroundChecker
+  m_TagString: Player
+>>>>>>> parent of 507bcb3 (CoinAndUI)
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 --- !u!224 &1956147398
 RectTransform:
+=======
+--- !u!4 &1933597749
+Transform:
+>>>>>>> parent of 507bcb3 (CoinAndUI)
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1956147397}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -15772,6 +16010,8 @@ CanvasRenderer:
 =======
 =======
 >>>>>>> parent of 507bcb3 (CoinAndUI)
+=======
+>>>>>>> parent of 507bcb3 (CoinAndUI)
   m_GameObject: {fileID: 1933597748}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -15782,9 +16022,12 @@ CanvasRenderer:
   m_Father: {fileID: 394191537}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> parent of 507bcb3 (CoinAndUI)
 =======
 >>>>>>> parent of a81b128 (Make UI)
+=======
+>>>>>>> parent of 507bcb3 (CoinAndUI)
 =======
 >>>>>>> parent of 507bcb3 (CoinAndUI)
 --- !u!1 &2020501338
@@ -15936,6 +16179,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   <health>k__BackingField: 100000
   <_agentMove>k__BackingField: {fileID: 394191541}
 =======
@@ -15944,6 +16188,9 @@ MonoBehaviour:
 =======
   <health>k__BackingField: 100
 >>>>>>> parent of a81b128 (Make UI)
+=======
+  <Health>k__BackingField: 10000
+>>>>>>> parent of 507bcb3 (CoinAndUI)
 =======
   <Health>k__BackingField: 10000
 >>>>>>> parent of 507bcb3 (CoinAndUI)
@@ -15977,6 +16224,7 @@ Rigidbody2D:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &2020501344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16001,6 +16249,9 @@ MonoBehaviour:
 =======
 --- !u!1 &2021196703
 >>>>>>> parent of 507bcb3 (CoinAndUI)
+=======
+--- !u!1 &2021196703
+>>>>>>> parent of 507bcb3 (CoinAndUI)
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -16009,21 +16260,28 @@ GameObject:
   serializedVersion: 6
   m_Component:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - component: {fileID: 2038517169}
   m_Layer: 5
   m_Name: Point
 =======
+=======
+>>>>>>> parent of 507bcb3 (CoinAndUI)
   - component: {fileID: 2021196704}
   - component: {fileID: 2021196706}
   - component: {fileID: 2021196705}
   m_Layer: 0
   m_Name: Particle System
+<<<<<<< HEAD
+>>>>>>> parent of 507bcb3 (CoinAndUI)
+=======
 >>>>>>> parent of 507bcb3 (CoinAndUI)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!224 &2038517169
 RectTransform:
@@ -16120,6 +16378,8 @@ MonoBehaviour:
 --- !u!114 &2045652138
 MonoBehaviour:
 =======
+=======
+>>>>>>> parent of 507bcb3 (CoinAndUI)
 --- !u!4 &2021196704
 Transform:
 >>>>>>> parent of 507bcb3 (CoinAndUI)
@@ -16127,6 +16387,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_GameObject: {fileID: 2045652134}
   m_Enabled: 1
@@ -16339,10 +16600,25 @@ GameObject:
   m_IsActive: 1
 --- !u!224 &2057945574
 RectTransform:
+=======
+  m_GameObject: {fileID: 2021196703}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.052379567, z: 0, w: 0.99862725}
+  m_LocalPosition: {x: -12.54, y: 1.45, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 74243749}
+  m_LocalEulerAnglesHint: {x: 0, y: 6.005, z: 0}
+--- !u!199 &2021196705
+ParticleSystemRenderer:
+  serializedVersion: 6
+>>>>>>> parent of 507bcb3 (CoinAndUI)
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 2057945573}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -16586,6 +16862,8 @@ ParticleSystemRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> parent of 507bcb3 (CoinAndUI)
   m_GameObject: {fileID: 2021196703}
   m_Enabled: 1
   m_CastShadows: 0
@@ -16661,6 +16939,9 @@ ParticleSystem:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2021196703}
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 507bcb3 (CoinAndUI)
 =======
 >>>>>>> parent of 507bcb3 (CoinAndUI)
   serializedVersion: 8
@@ -16735,6 +17016,7 @@ ParticleSystem:
   randomSeed: 0
   InitialModule:
     serializedVersion: 3
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     m_TransformParent: {fileID: 0}
@@ -16929,6 +17211,8 @@ PrefabInstance:
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c51af1295f78764eafe9276bb29cf4a, type: 3}
 =======
+=======
+>>>>>>> parent of 507bcb3 (CoinAndUI)
 =======
 >>>>>>> parent of 507bcb3 (CoinAndUI)
     enabled: 1
@@ -21576,6 +21860,9 @@ PrefabInstance:
         m_RotationOrder: 4
     vectorLabel1_3: W
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 507bcb3 (CoinAndUI)
+=======
 >>>>>>> parent of 507bcb3 (CoinAndUI)
 =======
 >>>>>>> parent of 507bcb3 (CoinAndUI)
@@ -21591,6 +21878,7 @@ SceneRoots:
   - {fileID: 2020501339}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 4012940158817870208}
   - {fileID: 943011220}
   - {fileID: 2123621126}
@@ -21604,5 +21892,7 @@ SceneRoots:
 >>>>>>> parent of 507bcb3 (CoinAndUI)
 =======
 >>>>>>> parent of a81b128 (Make UI)
+=======
+>>>>>>> parent of 507bcb3 (CoinAndUI)
 =======
 >>>>>>> parent of 507bcb3 (CoinAndUI)

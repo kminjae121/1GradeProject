@@ -6619,6 +6619,7 @@ PrefabInstance:
 =======
     - target: {fileID: 1600567817193054303, guid: 1c51af1295f78764eafe9276bb29cf4a, type: 3}
       propertyPath: m_IsActive
+<<<<<<< HEAD
       value: 1
       objectReference: {fileID: 0}
 <<<<<<< HEAD
@@ -6633,6 +6634,30 @@ PrefabInstance:
 >>>>>>> parent of c1fe26a (fix Store)
 =======
 >>>>>>> parent of ef0db5a (FixAnImation)
+=======
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812693479737833342, guid: 1c51af1295f78764eafe9276bb29cf4a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000174101203769427, guid: 1c51af1295f78764eafe9276bb29cf4a, type: 3}
+      propertyPath: m_Size.x
+      value: 2.3756971
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000174101203769427, guid: 1c51af1295f78764eafe9276bb29cf4a, type: 3}
+      propertyPath: m_Size.y
+      value: 4.5358
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000174101203769427, guid: 1c51af1295f78764eafe9276bb29cf4a, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.55116034
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000174101203769427, guid: 1c51af1295f78764eafe9276bb29cf4a, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.25560188
+      objectReference: {fileID: 0}
+>>>>>>> parent of c1fe26a (fix Store)
     - target: {fileID: 8261080403101071905, guid: 1c51af1295f78764eafe9276bb29cf4a, type: 3}
       propertyPath: CollisionModule.m_Planes.Array.data[0]
       value: 

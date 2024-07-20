@@ -19,11 +19,6 @@ public class AgentHealth : MonoBehaviour
     {
         
     }
-    private void Update()
-    {
-        Die();
-    }
-
     private void Die()
     {
         if(health <= 0)
@@ -51,6 +46,11 @@ public class AgentHealth : MonoBehaviour
     {
         yield return new WaitForSeconds(1.03f);
         gameObject.SetActive(false);
+    }
+
+    private void LateUpdate()
+    {
+        Die();
     }
 
 }

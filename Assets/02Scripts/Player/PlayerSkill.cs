@@ -43,8 +43,6 @@ public class PlayerSkill : MonoBehaviour
     private void OnEnable()
     {
         IsSkilling = true;
-        IsSkill = true;
-        IsSkill2 = true;
         if (_skill == Skill.Skill1)
         {
             _playerInput.Skill1Event += HandleSkill;
@@ -89,13 +87,8 @@ public class PlayerSkill : MonoBehaviour
 
     private void Update()
     {
-
-        _playerStat.IsETrue = IsSkill;
-        _playerStat.IsQTrue = IsSkill2;
-
-        _playerStat.IsETrue = IsSkill;
-        _playerStat.IsQTrue = IsSkill2;
-
+        _playerStat.IsQTrue = IsSkill;
+        _playerStat.IsETrue = IsSkill2;
     }
 
     private void SkillTool()
@@ -150,7 +143,6 @@ public class PlayerSkill : MonoBehaviour
         _agentMove.IsMove = Not;
         IsSkillAnimator1 = Yes;
         IsSkilling = Not;
-        IsSkill = Not;
     }
 
     private void Jump(float zero)
@@ -171,7 +163,6 @@ public class PlayerSkill : MonoBehaviour
         _agentMove.IsMove = Not;
         IsSkillAnimator2 = Yes;
         IsSkilling = Not;
-        IsSkill2 = Not;
     }
 
     IEnumerator Wait2()

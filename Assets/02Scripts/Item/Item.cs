@@ -40,7 +40,7 @@ public class Item : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, _player.transform.position, MoveSpeed * Time.deltaTime);
         }
 
-        if(_player.transform.position == transform.position)
+        if(transform.position == _player.transform.position)
         {
             PlusPoint();
             gameObject.SetActive(false);

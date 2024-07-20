@@ -25,7 +25,7 @@ public class TextManager : MonoBehaviour
 
     private void HealthTextMachine()
     {
-        HealthText.text = $"현재 최대 채력: {_player.MaxHealth}";
+        HealthText.text = $"현재최대체력: {_player.MaxHealth}";
     }
 
     private void DamageTextMachine()

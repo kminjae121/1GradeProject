@@ -121,7 +121,6 @@ public class Player : MonoBehaviour
         }
         SetStat();
 
-        _agentHealth.SetHealth(Health);
         if (_agentMove.IsMove == true)
         {
             FilpX();
@@ -131,8 +130,8 @@ public class Player : MonoBehaviour
 
     private void SetStat()
     {
-        Health = _playerStat.Health;
+        _playerStat.MaxHealth = MaxHealth;
         AttackDamage = _playerStat.AttackDamage;
-        Coin = _playerStat.Coin;
+        _playerStat.Coin = Coin;
     }
 }

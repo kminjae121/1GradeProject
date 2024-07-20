@@ -24,9 +24,12 @@ public class PlayerSkill : MonoBehaviour
 <<<<<<< HEAD
 
     [SerializeField] private PlayerStat _playerStat;
+<<<<<<< HEAD
 
 =======
 >>>>>>> parent of a81b128 (Make UI)
+=======
+>>>>>>> parent of c1fe26a (fix Store)
     [field: SerializeField] public float DashSpeed { get; set; }
     public bool IsSkill { get; set; }
     public bool IsSkillAnimator1 { get; set; }

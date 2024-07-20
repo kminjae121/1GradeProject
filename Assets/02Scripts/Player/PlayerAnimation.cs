@@ -42,14 +42,6 @@ public class PlayerAnimation : MonoBehaviour
         }
     }
 
-    private void PlayerDie()
-    {
-        if (_agentHealth.health <= 0)
-        {
-            _animator.SetBool("Die", true);
-        }
-    }
-
     private void PlayerAttackAnimator()
     {
         if (_player._isAttack == false)
@@ -87,16 +79,25 @@ public class PlayerAnimation : MonoBehaviour
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     private void PlayerDie()
     {
         if(_agentHealth.Health <= 0)
+=======
+    private void PlayerDie()
+    {
+        if(_agentHealth.health <= 0)
+>>>>>>> parent of a81b128 (Make UI)
         {
             _animator.SetBool("Die", true);
         }
     }
 
+<<<<<<< HEAD
 >>>>>>> parent of 507bcb3 (CoinAndUI)
+=======
+>>>>>>> parent of a81b128 (Make UI)
     private void PlayerDashAnimator()
     {
         if(_playerDash._IsDashAnimation == true)
@@ -113,15 +114,12 @@ public class PlayerAnimation : MonoBehaviour
     private void Update()
     {
         PlayerDashAnimator();
-
+        PlayerDie();
         PlayerSkill1();
         PlayerSkill2();
         PlayerAttackAnimator();
         PlayerMoveAnimator();
         PlayerJumpAnimator();
     }
-    private void LateUpdate()
-    {
-        PlayerDie();
-    }
+
 }

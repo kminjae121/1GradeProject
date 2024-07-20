@@ -159,7 +159,11 @@ public partial class @Controll: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""3807c8a4-17d7-4018-bdf8-e8aedce286bf"",
+<<<<<<< HEAD
                     ""path"": ""<Keyboard>/r"",
+=======
+                    ""path"": ""<Keyboard>/q"",
+>>>>>>> parent of a81b128 (Make UI)
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

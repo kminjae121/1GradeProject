@@ -46,7 +46,6 @@ public class PlayerSkill : MonoBehaviour
         {
             _playerInput.Skill1Event += HandleSkill;
         }
-        
         if (_skill == Skill.Skill2)
         {
             _playerInput.Skill2Event += HandleSkill2;
@@ -55,14 +54,8 @@ public class PlayerSkill : MonoBehaviour
 
     private void Start()
     {
-        if (_skill == Skill.Skill1)
-        {
-            IsSkill = _playerStat.IsQTrue;
-        }
-        if(_skill == Skill.Skill2)
-        {
-            IsSkill2 = _playerStat.IsETrue;
-        }
+        IsSkill = _playerStat.IsQTrue;
+        IsSkill2 = _playerStat.IsETrue;
     }
 
     private void OnDestroy()
@@ -90,15 +83,8 @@ public class PlayerSkill : MonoBehaviour
 
     private void Update()
     {
-        if (_skill == Skill.Skill1)
-        {
-            _playerStat.IsQTrue = IsSkill;
-        }
-
-        if(_skill == Skill.Skill2)
-        {
-            _playerStat.IsETrue = IsSkill2;
-        }
+        _playerStat.IsETrue = IsSkill;
+        _playerStat.IsQTrue = IsSkill2;
     }
 
     private void SkillTool()
@@ -112,7 +98,6 @@ public class PlayerSkill : MonoBehaviour
             agentHealth.MinusHealth(_skillDamage += _player.AttackDamage);
         }
     }
-
 
     private void OnDrawGizmos()
     {
@@ -140,6 +125,7 @@ public class PlayerSkill : MonoBehaviour
         _agentMove.IsMove = Not;
         IsSkillAnimator1 = Yes;
         IsSkilling = Not;
+        IsSkill = Not;
     }
 
     private void Jump(float zero)
@@ -158,6 +144,7 @@ public class PlayerSkill : MonoBehaviour
         yield return new WaitForSeconds(_waitTime);
         MoveTrue(IsFalse, IsTrue);
         yield return new WaitForSeconds(3);
+        IsSkill = true;
     }
     private void MoveTrue2(bool Not, bool Yes)
     {
@@ -170,6 +157,7 @@ public class PlayerSkill : MonoBehaviour
         _agentMove.IsMove = Not;
         IsSkillAnimator2 = Yes;
         IsSkilling = Not;
+        IsSkill2 = Not;
     }
 
     IEnumerator Wait2()
@@ -178,6 +166,7 @@ public class PlayerSkill : MonoBehaviour
         yield return new WaitForSeconds(_waitTime);
         MoveTrue2(IsFalse, IsTrue);
         yield return new WaitForSeconds(5);
+        IsSkill2 = true;
     }
 
 

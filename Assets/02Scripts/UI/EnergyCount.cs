@@ -22,6 +22,6 @@ public class EnergyCount : MonoBehaviour
 
     private void ItemUI(float Count)
     {
-        _energyText.text = $":   {Count}°³";
+        _energyText.text = $": {Count}°³";
     }
 }

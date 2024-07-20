@@ -4977,12 +4977,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <PlayerInput>k__BackingField: {fileID: 11400000, guid: 4f8ebb1a14a92be4b9d1e84f3fdb6092, type: 2}
-  _agentMove: {fileID: 5066224448728887903}
-  _player: {fileID: 4716613815781631421}
+  _agentMove: {fileID: 4592051249157383455}
+  _player: {fileID: 1137329458371564838}
   _playerSkill1: {fileID: 7465814708045824092}
   _playerSkill2: {fileID: 6912719897178803256}
-  _agentHealth: {fileID: 8046745477510157780}
-  _playerDash: {fileID: 4598447326373174768}
+  _agentHealth: {fileID: 51314946069688579}
+  _playerDash: {fileID: 3683963026485211433}
 --- !u!95 &743437690264225018
 Animator:
   serializedVersion: 5
@@ -5014,13 +5014,13 @@ GameObject:
   m_Component:
   - component: {fileID: 8607908190774803385}
   - component: {fileID: 6169518855109763368}
-  - component: {fileID: 5066224448728887903}
-  - component: {fileID: 1602216768326649252}
-  - component: {fileID: 4716613815781631421}
-  - component: {fileID: 8046745477510157780}
-  - component: {fileID: 4598447326373174768}
   - component: {fileID: 9189705551000226130}
   - component: {fileID: 3275449409129701447}
+  - component: {fileID: 51314946069688579}
+  - component: {fileID: 4592051249157383455}
+  - component: {fileID: 4187206014127218950}
+  - component: {fileID: 1137329458371564838}
+  - component: {fileID: 3683963026485211433}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -5103,91 +5103,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5066224448728887903
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1367077361949010511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcab04f5ffadaf6448e1e85cab00be95, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Movespeed: 10
-  JumpPower: 8
-  _boxSize: {x: 1.2, y: 0.5}
-  _whatIsGround:
-    serializedVersion: 2
-    m_Bits: 8
-  <groundChecker>k__BackingField: {fileID: 8774110431363124453}
-  _isGround:
-    _value: 0
---- !u!114 &1602216768326649252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1367077361949010511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ea946b5c3b57bd4c93a13046575bdda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _attackDamage: 1
-  <AttackRange>k__BackingField: {fileID: 9176587421165500233}
-  _boxSize: {x: 3, y: 3}
-  _agentType:
-    serializedVersion: 2
-    m_Bits: 64
-  _isContinuousAttack: 0
---- !u!114 &4716613815781631421
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1367077361949010511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7e9a5c2ef41aac499c1193358bc65c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isChangeHealth: 0
-  <PlayerInput>k__BackingField: {fileID: 11400000, guid: 4f8ebb1a14a92be4b9d1e84f3fdb6092, type: 2}
-  <Coin>k__BackingField: 0
-  _playerStat: {fileID: 11400000, guid: 05b3401297cc6ee48bad1ff84b18ada3, type: 2}
---- !u!114 &8046745477510157780
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1367077361949010511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 761de963939952c4ba45fad9ec34e009, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <health>k__BackingField: 0
-  <_agentMove>k__BackingField: {fileID: 5066224448728887903}
---- !u!114 &4598447326373174768
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1367077361949010511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c796d1576a26220469ad7078f9cafe56, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DashSpeed: 30
-  _playerInput: {fileID: 11400000, guid: 4f8ebb1a14a92be4b9d1e84f3fdb6092, type: 2}
-  _boxCollider: {fileID: 6000174101203769427}
 --- !u!50 &9189705551000226130
 Rigidbody2D:
   serializedVersion: 4
@@ -5236,6 +5151,91 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &51314946069688579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367077361949010511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 761de963939952c4ba45fad9ec34e009, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <health>k__BackingField: 0
+  <_agentMove>k__BackingField: {fileID: 4592051249157383455}
+--- !u!114 &4592051249157383455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367077361949010511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcab04f5ffadaf6448e1e85cab00be95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Movespeed: 10
+  JumpPower: 15
+  _boxSize: {x: 2, y: 1}
+  _whatIsGround:
+    serializedVersion: 2
+    m_Bits: 8
+  <groundChecker>k__BackingField: {fileID: 8774110431363124453}
+  _isGround:
+    _value: 0
+--- !u!114 &4187206014127218950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367077361949010511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ea946b5c3b57bd4c93a13046575bdda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _attackDamage: 0
+  <AttackRange>k__BackingField: {fileID: 9176587421165500233}
+  _boxSize: {x: 3, y: 2}
+  _agentType:
+    serializedVersion: 2
+    m_Bits: 0
+  _isContinuousAttack: 0
+--- !u!114 &1137329458371564838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367077361949010511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7e9a5c2ef41aac499c1193358bc65c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isChangeHealth: 0
+  <PlayerInput>k__BackingField: {fileID: 11400000, guid: 4f8ebb1a14a92be4b9d1e84f3fdb6092, type: 2}
+  <Coin>k__BackingField: 0
+  _playerStat: {fileID: 11400000, guid: 05b3401297cc6ee48bad1ff84b18ada3, type: 2}
+--- !u!114 &3683963026485211433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367077361949010511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c796d1576a26220469ad7078f9cafe56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DashSpeed: 20
+  _playerInput: {fileID: 11400000, guid: 4f8ebb1a14a92be4b9d1e84f3fdb6092, type: 2}
+  _boxCollider: {fileID: 6000174101203769427}
 --- !u!1 &1600567817193054303
 GameObject:
   m_ObjectHideFlags: 0
@@ -5324,7 +5324,7 @@ Transform:
   m_GameObject: {fileID: 3051839426412170538}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.32, y: -2.17, z: 0}
+  m_LocalPosition: {x: -0.26, y: -2.17, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10276,15 +10276,13 @@ MonoBehaviour:
   _skillRange: {fileID: 1483511102502754776}
   _skillDamage: 10
   _waitTime: 0.75
-  _player: {fileID: 4716613815781631421}
-  _agentMove: {fileID: 5066224448728887903}
-  _playerDash: {fileID: 4598447326373174768}
+  _player: {fileID: 0}
+  _agentMove: {fileID: 0}
+  _playerDash: {fileID: 0}
   _rbCompo: {fileID: 9189705551000226130}
   _boxCollider: {fileID: 6000174101203769427}
   _playerStat: {fileID: 11400000, guid: 05b3401297cc6ee48bad1ff84b18ada3, type: 2}
   <DashSpeed>k__BackingField: 20
-  <IsSkill>k__BackingField: 0
-  <IsSkill2>k__BackingField: 0
   _skill: 0
   _playerInput: {fileID: 11400000, guid: 4f8ebb1a14a92be4b9d1e84f3fdb6092, type: 2}
   color: {r: 0, g: 1, b: 0.25246763, a: 1}
@@ -10339,15 +10337,13 @@ MonoBehaviour:
   _skillRange: {fileID: 3430869576770824124}
   _skillDamage: 30
   _waitTime: 1
-  _player: {fileID: 4716613815781631421}
-  _agentMove: {fileID: 5066224448728887903}
-  _playerDash: {fileID: 4598447326373174768}
+  _player: {fileID: 0}
+  _agentMove: {fileID: 0}
+  _playerDash: {fileID: 0}
   _rbCompo: {fileID: 9189705551000226130}
   _boxCollider: {fileID: 6000174101203769427}
   _playerStat: {fileID: 11400000, guid: 05b3401297cc6ee48bad1ff84b18ada3, type: 2}
   <DashSpeed>k__BackingField: 0
-  <IsSkill>k__BackingField: 0
-  <IsSkill2>k__BackingField: 0
   _skill: 1
   _playerInput: {fileID: 11400000, guid: 4f8ebb1a14a92be4b9d1e84f3fdb6092, type: 2}
   color: {r: 0.9563484, g: 0, b: 1, a: 1}

@@ -87,4 +87,8 @@ public class InputReader : ScriptableObject,IPlayerActions
             IntractionEvent?.Invoke();
         }
     }
+
+    public void OnNewaction(InputAction.CallbackContext context)
+    {
+    }
 }

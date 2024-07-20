@@ -11,54 +11,29 @@ public class Player : MonoBehaviour
 
     private AgentAttack _agentAttack;
     private AgentMove _agentMove;
+    private AgentHealth _agentHealth;
 
     public event Action JumpEvent;
     [field: SerializeField] public InputReader PlayerInput { get; set; }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> parent of a81b128 (Make UI)
+    public float MaxHealth { get;  set; }
     [field: SerializeField] public float Coin { get; set; }
     [SerializeField] private PlayerStat _playerStat;
     public float AttackDamage;
+
+
     public float Health;
 
-=======
->>>>>>> parent of 507bcb3 (CoinAndUI)
-=======
->>>>>>> parent of 507bcb3 (CoinAndUI)
 
     private void Awake()
     {
+        GetComp();
         _waitTimeSec = new WaitForSeconds(0.65f);
         _waitTimeSecond = new WaitForSeconds(0.08f);
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> parent of 507bcb3 (CoinAndUI)
-=======
->>>>>>> parent of 507bcb3 (CoinAndUI)
-        _agentAttack = GetComponent<AgentAttack>();
-        _agentMove = GetComponent<AgentMove>();
-
-=======
-        _agentHealth = GetComponent<AgentHealth>();
-        _agentAttack = GetComponent<AgentAttack>();
-        _agentMove = GetComponent<AgentMove>();
->>>>>>> parent of a81b128 (Make UI)
         _isAttack = true;
         _isJump = true;
         PlayerInput.AttackEvent += HandleAttackEvent;
         PlayerInput.JumpKeyEvent += HandleJumpKeyEvent;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-<<<<<<< HEAD
 
     private void Start()
     {
@@ -79,13 +54,6 @@ public class Player : MonoBehaviour
         AttackDamage = _playerStat.AttackDamage;
         Coin = _playerStat.Coin;
     }
-=======
->>>>>>> parent of 507bcb3 (CoinAndUI)
-=======
->>>>>>> parent of 507bcb3 (CoinAndUI)
-=======
-    
->>>>>>> parent of a81b128 (Make UI)
     private void HandleAttackEvent()
     {
         if (_isAttack == true && _agentMove._isGround.Value && PlayerSkill.IsSkilling == true)
@@ -145,31 +113,26 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        SetStat();
-
         _agentHealth.SetHealth(Health);
 
         if (Input.GetKeyDown(KeyCode.T))
         {
             Health -= 1;
         }
-=======
->>>>>>> parent of 507bcb3 (CoinAndUI)
-=======
->>>>>>> parent of 507bcb3 (CoinAndUI)
-=======
-        Health = _playerStat.Health;
-        AttackDamage = _playerStat.AttackDamage;
+        SetStat();
 
         _agentHealth.SetHealth(Health);
->>>>>>> parent of a81b128 (Make UI)
         if (_agentMove.IsMove == true)
         {
             FilpX();
         }
         _agentMove.SetMovement(PlayerInput.Movement.x);
+    }
+
+    private void SetStat()
+    {
+        Health = _playerStat.Health;
+        AttackDamage = _playerStat.AttackDamage;
+        Coin = _playerStat.Coin;
     }
 }

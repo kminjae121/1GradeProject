@@ -1,6 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ButtonManager : MonoBehaviour
 {
@@ -10,16 +9,12 @@ public class ButtonManager : MonoBehaviour
     [SerializeField] private GameObject MainStore;
     [SerializeField] private PlayerSkill _playerSkill2;
     [SerializeField] private PlayerSkill _playerSkill;
-<<<<<<< HEAD
     public bool IsStore;
-=======
->>>>>>> parent of ef0db5a (FixAnImation)
-
+    [SerializeField] private Button _Skill2Button;
+    [SerializeField] private Button _Skill1Button;
 
     private void Awake()
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
         IsStore = false;
         MainStore.SetActive(false);
         StatStore.SetActive(false);
@@ -29,8 +24,6 @@ public class ButtonManager : MonoBehaviour
 
     private void Start()
     {
-=======
->>>>>>> parent of 2bc94a7 (attackFix)
         if (_playerSkill2.IsSkill2 == true)
         {
             _Skill2Button.interactable = false;
@@ -51,10 +44,6 @@ public class ButtonManager : MonoBehaviour
         StartStore();
     }
 
-    private void Update()
-    {
-        StartStore();
-    }
 
     private void StartStore()
     {
@@ -70,21 +59,13 @@ public class ButtonManager : MonoBehaviour
         }
     }
 
-
-
-=======
-        //MainStore.SetActive(false);
-        StatStore.SetActive(false);
-        SkillStore.SetActive(false);
-    }
->>>>>>> parent of ef0db5a (FixAnImation)
     public void PlusHealth()
     {
-        if(_coin.Coin >= 5)
+        if (_coin.Coin >= 5)
         {
             _coin.Coin -= 5;
             _coin.MaxHealth += 10;
-        }    
+        }
     }
 
     public void EnterStatStore()
@@ -107,7 +88,7 @@ public class ButtonManager : MonoBehaviour
 
     public void PlusAttackDamage()
     {
-        if(_coin.Coin >= 10)
+        if (_coin.Coin >= 10)
         {
             _coin.Coin -= 10;
             _coin.AttackDamage += 10;
@@ -117,27 +98,21 @@ public class ButtonManager : MonoBehaviour
 
     public void StudySkill1()
     {
-        if (_coin.Coin >= 15)
+        if (_coin.Coin >= 15 && _Skill2Button.interactable == false)
         {
             _coin.Coin -= 15;
             _playerSkill.IsSkill = true;
+            _Skill1Button.interactable = true;
         }
     }
 
     public void StudySkill2()
     {
-        if (_coin.Coin >= 20)
+        if (_coin.Coin >= 20 && _Skill2Button.interactable == false)
         {
             _coin.Coin -= 20;
-<<<<<<< HEAD
             _playerSkill2.IsSkill2 = true;
-<<<<<<< HEAD
-
-=======
->>>>>>> parent of 2bc94a7 (attackFix)
-=======
-            ;
->>>>>>> parent of c1fe26a (fix Store)
+            _Skill2Button.interactable = true;
         }
     }
 }

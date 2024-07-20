@@ -21,15 +21,10 @@ public class PlayerSkill : MonoBehaviour
     [SerializeField] private PlayerDash _playerDash;
     [SerializeField] private Rigidbody2D _rbCompo;
     [SerializeField] private BoxCollider2D _boxCollider;
-<<<<<<< HEAD
+
 
     [SerializeField] private PlayerStat _playerStat;
-<<<<<<< HEAD
 
-=======
->>>>>>> parent of a81b128 (Make UI)
-=======
->>>>>>> parent of c1fe26a (fix Store)
     [field: SerializeField] public float DashSpeed { get; set; }
     public bool IsSkill { get; set; }
     public bool IsSkillAnimator1 { get; set; }
@@ -41,6 +36,8 @@ public class PlayerSkill : MonoBehaviour
     [SerializeField] private Skill _skill;
     [SerializeField] private InputReader _playerInput;
     [SerializeField] private Color color;
+    private bool IsTrue = true;
+    private bool IsFalse = false;
   
 
     private void OnEnable()
@@ -58,7 +55,7 @@ public class PlayerSkill : MonoBehaviour
         }
     }
 
-<<<<<<< HEAD
+
 
     private void Start()
     {
@@ -67,8 +64,6 @@ public class PlayerSkill : MonoBehaviour
     }
 
 
-=======
->>>>>>> parent of a81b128 (Make UI)
     private void OnDestroy()
     {
         _playerInput.Skill1Event -= HandleSkill;
@@ -94,54 +89,56 @@ public class PlayerSkill : MonoBehaviour
 
     private void Update()
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
+
         _playerStat.IsETrue = IsSkill;
         _playerStat.IsQTrue = IsSkill2;
 
-=======
->>>>>>> parent of a81b128 (Make UI)
-=======
         _playerStat.IsETrue = IsSkill;
         _playerStat.IsQTrue = IsSkill2;
->>>>>>> parent of 2bc94a7 (attackFix)
+
     }
 
     private void SkillTool()
     {
         Collider2D[] Skill = Physics2D.OverlapBoxAll(_skillRange.position, _skillBox, 0, _agentType);
-        
-        foreach(Collider2D skill in Skill)
+
+        foreach (Collider2D skill in Skill)
         {
             skill.transform.TryGetComponent(out AgentHealth agentHealth);
 
             agentHealth.MinusHealth(_skillDamage);
         }
-<<<<<<< HEAD
-    } 
-=======
     }
->>>>>>> parent of 2bc94a7 (attackFix)
 
     private void OnDrawGizmos()
     {
         Gizmos.color = color;
         Gizmos.DrawWireCube(_skillRange.position, _skillBox);
         Gizmos.color = Color.white;    
-<<<<<<< HEAD
+
     }
+
+
 
 
     IEnumerator Wait(float zero)
     {
-
-=======
->>>>>>> parent of 507bcb3 (CoinAndUI)
+        MoveFalse(IsFalse, IsTrue);
+        Jump(zero);
+        yield return new WaitForSeconds(0.25f);
+        GravityTrue(3.14f,IsFalse);
+        yield return new WaitForSeconds(_waitTime);
+        MoveTrue(IsFalse, IsTrue);
+        yield return new WaitForSeconds(3);
+        IsSkill = true;
     }
 
-<<<<<<< HEAD
-    IEnumerator Wait(float zero)
-=======
+    private void MoveTrue(bool Not, bool Yes)
+    {
+        IsSkilling = Yes;
+        IsSkillAnimator1 = Not;
+        _agentMove.IsMove = Yes;
+    }
     private void GravityTrue(float GravityScale, bool Not)
     {
         _rbCompo.gravityScale = GravityScale;
@@ -157,27 +154,11 @@ public class PlayerSkill : MonoBehaviour
     }
 
     private void Jump(float zero)
->>>>>>> parent of 2bc94a7 (attackFix)
     {
-        _agentMove.IsMove = false;
-        IsSkillAnimator1 = true;
-        IsSkilling = false;
-        IsSkill = false;
         _rbCompo.velocity = Vector2.zero;
         _rbCompo.velocity = new Vector2(transform.right.x * DashSpeed, zero);
         _rbCompo.gravityScale = 0;
         _boxCollider.isTrigger = true;
-        yield return new WaitForSeconds(0.25f);
-        _rbCompo.gravityScale = 3.14f;
-        _boxCollider.isTrigger = false;
-        yield return new WaitForSeconds(_waitTime);
-        IsSkilling = true;
-        IsSkillAnimator1 = false;
-        _agentMove.IsMove = true;
-        yield return new WaitForSeconds(3);
-        IsSkill = true;
-<<<<<<< HEAD
-=======
     }
     private void MoveTrue2(bool Not, bool Yes)
     {
@@ -191,23 +172,13 @@ public class PlayerSkill : MonoBehaviour
         IsSkillAnimator2 = Yes;
         IsSkilling = Not;
         IsSkill2 = Not;
->>>>>>> parent of 2bc94a7 (attackFix)
     }
 
     IEnumerator Wait2()
     {
-<<<<<<< HEAD
-        MoveFalse2();
-=======
-        _agentMove.IsMove = false;
-        IsSkillAnimator2 = true;
-        IsSkilling = false;
-        IsSkill2 = false;
->>>>>>> parent of 507bcb3 (CoinAndUI)
+        MoveFalse2(IsFalse, IsTrue);
         yield return new WaitForSeconds(_waitTime);
-        IsSkilling = true;
-        IsSkillAnimator2 = false;
-        _agentMove.IsMove = true;
+        MoveTrue2(IsFalse, IsTrue);
         yield return new WaitForSeconds(5);
         IsSkill2 = true;
     }

@@ -1,26 +1,17 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class AgentHealth : MonoBehaviour
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 
     [field: SerializeField] public float health { get; set; }
-<<<<<<< HEAD
-=======
-    [field: SerializeField] public float Health { get; set; }
->>>>>>> parent of 507bcb3 (CoinAndUI)
+
 
     [field: SerializeField] public AgentMove _agentMove { get; set; }
-=======
 
->>>>>>> parent of a81b128 (Make UI)
-
-=======
->>>>>>> parent of 507bcb3 (CoinAndUI)
-    [field: SerializeField] public float Health { get; set; }
 
 
 
@@ -35,21 +26,25 @@ public class AgentHealth : MonoBehaviour
 
     private void Die()
     {
-        if(Health <= 0)
+        if(health <= 0)
         {
             StartCoroutine(Wait());
         }
     }
 
+    public void SetHealth(float Health)
+    {
+        health = Health;
+    }
 
     public void MinusHealth(float AttackDamage)
     {
-        Health -= AttackDamage;
+        health -= AttackDamage;
     }
 
     public void PlusHealth(float Heal)
     {
-        Health += Heal;
+        health += Heal;
     }
 
     IEnumerator Wait()

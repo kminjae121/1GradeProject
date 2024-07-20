@@ -77,22 +77,6 @@ public class PlayerAnimation : MonoBehaviour
             _animator.SetBool("Skill2", false);
         }
     }
-    private void PlayerDie()
-    {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        if(_agentHealth.health <= 0)
-
-=======
-        if(_agentHealth.Health <= 0)
->>>>>>> parent of 507bcb3 (CoinAndUI)
-=======
-        if(_agentHealth.Health <= 0)
->>>>>>> parent of 507bcb3 (CoinAndUI)
-        {
-            _animator.SetBool("Die", true);
-        }
-    }
 
 
     private void PlayerDie()
@@ -119,7 +103,6 @@ public class PlayerAnimation : MonoBehaviour
     private void Update()
     {
         PlayerDashAnimator();
-        PlayerDie();
         PlayerSkill1();
         PlayerSkill2();
         PlayerAttackAnimator();
@@ -127,4 +110,8 @@ public class PlayerAnimation : MonoBehaviour
         PlayerJumpAnimator();
     }
 
+    private void LateUpdate()
+    {
+        PlayerDie();
+    }
 }

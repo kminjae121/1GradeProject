@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8444876f53a3b342bd3a50f68381772, type: 3}
   m_Name: PlayerInputReader
   m_EditorClassIdentifier: 
+  _isMouseDown: 0

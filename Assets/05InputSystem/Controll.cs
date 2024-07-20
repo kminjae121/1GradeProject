@@ -84,16 +84,7 @@ public partial class @Controll: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""Interaction"",
                     ""type"": ""Button"",
-                    ""id"": ""6b29f4fa-b91a-49d1-afed-919aef4d0a5f"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""New action"",
-                    ""type"": ""Button"",
-                    ""id"": ""27d01328-3ab8-4dc7-b474-e62d4004d85c"",
+                    ""id"": ""713a06c1-8fd5-434f-9c61-dbd5b2dead72"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -159,15 +150,7 @@ public partial class @Controll: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""3807c8a4-17d7-4018-bdf8-e8aedce286bf"",
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    ""path"": ""<Keyboard>/r"",
-=======
                     ""path"": ""<Keyboard>/q"",
->>>>>>> parent of a81b128 (Make UI)
-=======
-                    ""path"": ""<Keyboard>/q"",
->>>>>>> parent of a81b128 (Make UI)
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -199,23 +182,12 @@ public partial class @Controll: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""584be567-ffcd-4990-8591-df51083c889e"",
+                    ""id"": ""4a641517-c78a-4a73-898f-a9c086c08b1d"",
                     ""path"": ""<Keyboard>/f"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""KeyBoardAndMouse"",
                     ""action"": ""Interaction"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""9bddfabe-fb5e-4847-b5a0-4e7ae5689f4b"",
-                    ""path"": """",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""New action"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -250,7 +222,6 @@ public partial class @Controll: IInputActionCollection2, IDisposable
         m_Player_Skill2 = m_Player.FindAction("Skill2", throwIfNotFound: true);
         m_Player_Dash = m_Player.FindAction("Dash", throwIfNotFound: true);
         m_Player_Interaction = m_Player.FindAction("Interaction", throwIfNotFound: true);
-        m_Player_Newaction = m_Player.FindAction("New action", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -319,7 +290,6 @@ public partial class @Controll: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Skill2;
     private readonly InputAction m_Player_Dash;
     private readonly InputAction m_Player_Interaction;
-    private readonly InputAction m_Player_Newaction;
     public struct PlayerActions
     {
         private @Controll m_Wrapper;
@@ -331,7 +301,6 @@ public partial class @Controll: IInputActionCollection2, IDisposable
         public InputAction @Skill2 => m_Wrapper.m_Player_Skill2;
         public InputAction @Dash => m_Wrapper.m_Player_Dash;
         public InputAction @Interaction => m_Wrapper.m_Player_Interaction;
-        public InputAction @Newaction => m_Wrapper.m_Player_Newaction;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -362,9 +331,6 @@ public partial class @Controll: IInputActionCollection2, IDisposable
             @Interaction.started += instance.OnInteraction;
             @Interaction.performed += instance.OnInteraction;
             @Interaction.canceled += instance.OnInteraction;
-            @Newaction.started += instance.OnNewaction;
-            @Newaction.performed += instance.OnNewaction;
-            @Newaction.canceled += instance.OnNewaction;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -390,9 +356,6 @@ public partial class @Controll: IInputActionCollection2, IDisposable
             @Interaction.started -= instance.OnInteraction;
             @Interaction.performed -= instance.OnInteraction;
             @Interaction.canceled -= instance.OnInteraction;
-            @Newaction.started -= instance.OnNewaction;
-            @Newaction.performed -= instance.OnNewaction;
-            @Newaction.canceled -= instance.OnNewaction;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -428,6 +391,5 @@ public partial class @Controll: IInputActionCollection2, IDisposable
         void OnSkill2(InputAction.CallbackContext context);
         void OnDash(InputAction.CallbackContext context);
         void OnInteraction(InputAction.CallbackContext context);
-        void OnNewaction(InputAction.CallbackContext context);
     }
 }

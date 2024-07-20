@@ -13,8 +13,7 @@ public class InputReader : ScriptableObject,IPlayerActions
     public event Action Skill1Event;
     public event Action Skill2Event;
     public event Action DashEvent;
-
-    public bool _isMouseDown;
+    public event Action IntractionEvent;
 
     public Vector2 Movement { get;  set; }
 
@@ -27,11 +26,6 @@ public class InputReader : ScriptableObject,IPlayerActions
         _controll.Player.SetCallbacks(this);
         _controll.Player.Enable();
         
-    }
-
-    private void Awake()
-    {
-        _isMouseDown = true;
     }
 
     public void OnMove(InputAction.CallbackContext context)
@@ -85,9 +79,5 @@ public class InputReader : ScriptableObject,IPlayerActions
         {
             IntractionEvent?.Invoke();
         }
-    }
-
-    public void OnNewaction(InputAction.CallbackContext context)
-    {
     }
 }

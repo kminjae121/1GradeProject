@@ -136,69 +136,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 3. attack 2_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 162
-        height: 66
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 574cb633e4a906c45b9b3b896ce04117
-      internalID: 2499441512027160518
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 3. attack 2_1
-      rect:
-        serializedVersion: 2
-        x: 162
-        y: 0
-        width: 162
-        height: 66
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: db61e8ddbe0ab7c4291e9734db27fbdd
-      internalID: 5420816231341700402
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 3. attack 2_2
-      rect:
-        serializedVersion: 2
-        x: 324
-        y: 0
-        width: 162
-        height: 66
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cc0188dcaefe68349ac12847e076d530
-      internalID: 4292191108073575506
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: 3. attack 2_3
       rect:
         serializedVersion: 2
@@ -207,7 +144,7 @@ TextureImporter:
         width: 0
         height: 0
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -222,7 +159,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5c2be91a22894844eb0b6ac8293481a7
     internalID: 0
     vertices: []
     indices: 

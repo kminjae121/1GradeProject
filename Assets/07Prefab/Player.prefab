@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9108920805898001195}
   - component: {fileID: 1585761632987441028}
   - component: {fileID: 391059403094196145}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -223,7 +223,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0, g: 0.87798667, b: 1, a: 1}
+      maxColor: {r: 0.78616345, g: 0.0074165133, b: 0.05758691, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -4845,7 +4845,7 @@ GameObject:
   - component: {fileID: 6000174101203769427}
   - component: {fileID: 309573730778333537}
   - component: {fileID: 743437690264225018}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PlayerSprite
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -4951,18 +4951,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.23367065, y: 0.017774582}
+  m_Offset: {x: -0.55116034, y: 0.25560188}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.3, y: 4.5}
+    oldSize: {x: 3.4, y: 5}
     newSize: {x: 2.3, y: 4.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.4957346, y: 4.464451}
+  m_Size: {x: 2.3756971, y: 4.5358}
   m_EdgeRadius: 0
 --- !u!114 &309573730778333537
 MonoBehaviour:
@@ -5021,7 +5021,7 @@ GameObject:
   - component: {fileID: 4598447326373174768}
   - component: {fileID: 9189705551000226130}
   - component: {fileID: 3275449409129701447}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -5245,7 +5245,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3116834372432791971}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Black
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5277,7 +5277,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 532700243399279526}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EatRange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5308,7 +5308,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8774110431363124453}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GroundChecker
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -5339,13 +5339,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5228745423635027373}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BlueThunder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5228745423635027373
 Transform:
   m_ObjectHideFlags: 0
@@ -5373,7 +5373,7 @@ GameObject:
   - component: {fileID: 4570145702662907282}
   - component: {fileID: 8261080403101071905}
   - component: {fileID: 6606111700670946757}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10203,7 +10203,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9176587421165500233}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AttackRange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10235,7 +10235,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1483511102502754776}
   - component: {fileID: 7465814708045824092}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Skill1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10283,6 +10283,8 @@ MonoBehaviour:
   _boxCollider: {fileID: 6000174101203769427}
   _playerStat: {fileID: 11400000, guid: 05b3401297cc6ee48bad1ff84b18ada3, type: 2}
   <DashSpeed>k__BackingField: 20
+  <IsSkill>k__BackingField: 0
+  <IsSkill2>k__BackingField: 0
   _skill: 0
   _playerInput: {fileID: 11400000, guid: 4f8ebb1a14a92be4b9d1e84f3fdb6092, type: 2}
   color: {r: 0, g: 1, b: 0.25246763, a: 1}
@@ -10296,7 +10298,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3430869576770824124}
   - component: {fileID: 6912719897178803256}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Skill2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10344,6 +10346,8 @@ MonoBehaviour:
   _boxCollider: {fileID: 6000174101203769427}
   _playerStat: {fileID: 11400000, guid: 05b3401297cc6ee48bad1ff84b18ada3, type: 2}
   <DashSpeed>k__BackingField: 0
+  <IsSkill>k__BackingField: 0
+  <IsSkill2>k__BackingField: 0
   _skill: 1
   _playerInput: {fileID: 11400000, guid: 4f8ebb1a14a92be4b9d1e84f3fdb6092, type: 2}
   color: {r: 0.9563484, g: 0, b: 1, a: 1}

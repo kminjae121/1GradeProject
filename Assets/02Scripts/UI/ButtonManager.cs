@@ -15,15 +15,6 @@ public class ButtonManager : MonoBehaviour
 
     private void Awake()
     {
-        IsStore = false;
-        MainStore.SetActive(false);
-        StatStore.SetActive(false);
-        SkillStore.SetActive(false);
-    }
-
-
-    private void Start()
-    {
         if (_playerSkill2.IsSkill2 == true)
         {
             _Skill2Button.interactable = false;
@@ -112,7 +103,10 @@ public class ButtonManager : MonoBehaviour
         {
             _coin.Coin -= 20;
             _playerSkill2.IsSkill2 = true;
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 2bc94a7 (attackFix)
         }
     }
 }

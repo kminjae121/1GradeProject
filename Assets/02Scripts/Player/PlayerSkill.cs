@@ -49,6 +49,15 @@ public class PlayerSkill : MonoBehaviour
         }
     }
 
+<<<<<<< HEAD
+=======
+    private void Start()
+    {
+        IsSkill = _playerStat.IsQTrue;
+        IsSkill2 = _playerStat.IsETrue;
+    }
+
+>>>>>>> parent of 2bc94a7 (attackFix)
     private void OnDestroy()
     {
         _playerInput.Skill1Event -= HandleSkill;
@@ -74,6 +83,11 @@ public class PlayerSkill : MonoBehaviour
 
     private void Update()
     {
+<<<<<<< HEAD
+=======
+        _playerStat.IsETrue = IsSkill;
+        _playerStat.IsQTrue = IsSkill2;
+>>>>>>> parent of 2bc94a7 (attackFix)
     }
 
     private void SkillTool()
@@ -86,7 +100,11 @@ public class PlayerSkill : MonoBehaviour
 
             agentHealth.MinusHealth(_skillDamage);
         }
+<<<<<<< HEAD
     } 
+=======
+    }
+>>>>>>> parent of 2bc94a7 (attackFix)
 
     private void OnDrawGizmos()
     {
@@ -95,7 +113,33 @@ public class PlayerSkill : MonoBehaviour
         Gizmos.color = Color.white;    
     }
 
+<<<<<<< HEAD
     IEnumerator Wait(float zero)
+=======
+
+    private void MoveTrue(bool Not, bool Yes)
+    {
+        IsSkilling = Yes;
+        IsSkillAnimator1 = Not;
+        _agentMove.IsMove = Yes;
+    }
+
+    private void GravityTrue(float GravityScale, bool Not)
+    {
+        _rbCompo.gravityScale = GravityScale;
+        _boxCollider.isTrigger = Not;
+    }
+
+    private void MoveFalse(bool Not, bool Yes)
+    {
+        _agentMove.IsMove = Not;
+        IsSkillAnimator1 = Yes;
+        IsSkilling = Not;
+        IsSkill = Not;
+    }
+
+    private void Jump(float zero)
+>>>>>>> parent of 2bc94a7 (attackFix)
     {
         _agentMove.IsMove = false;
         IsSkillAnimator1 = true;
@@ -114,6 +158,22 @@ public class PlayerSkill : MonoBehaviour
         _agentMove.IsMove = true;
         yield return new WaitForSeconds(3);
         IsSkill = true;
+<<<<<<< HEAD
+=======
+    }
+    private void MoveTrue2(bool Not, bool Yes)
+    {
+        IsSkilling = Yes;
+        IsSkillAnimator2 = Not;
+        _agentMove.IsMove = Yes;
+    }
+    private void MoveFalse2(bool Not, bool Yes)
+    {
+        _agentMove.IsMove = Not;
+        IsSkillAnimator2 = Yes;
+        IsSkilling = Not;
+        IsSkill2 = Not;
+>>>>>>> parent of 2bc94a7 (attackFix)
     }
 
     IEnumerator Wait2()

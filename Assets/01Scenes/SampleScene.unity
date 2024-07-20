@@ -11518,6 +11518,7 @@ PrefabInstance:
     - target: {fileID: 1600567817193054303, guid: 1c51af1295f78764eafe9276bb29cf4a, type: 3}
       propertyPath: m_IsActive
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 1
       objectReference: {fileID: 0}
 <<<<<<< HEAD
@@ -11554,6 +11555,9 @@ PrefabInstance:
     - target: {fileID: 6000174101203769427, guid: 1c51af1295f78764eafe9276bb29cf4a, type: 3}
       propertyPath: m_Offset.y
       value: 0.25560188
+=======
+      value: 1
+>>>>>>> parent of 2bc94a7 (attackFix)
       objectReference: {fileID: 0}
 >>>>>>> parent of c1fe26a (fix Store)
     - target: {fileID: 8261080403101071905, guid: 1c51af1295f78764eafe9276bb29cf4a, type: 3}

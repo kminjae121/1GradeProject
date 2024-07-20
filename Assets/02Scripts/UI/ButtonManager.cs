@@ -10,11 +10,15 @@ public class ButtonManager : MonoBehaviour
     [SerializeField] private GameObject MainStore;
     [SerializeField] private PlayerSkill _playerSkill2;
     [SerializeField] private PlayerSkill _playerSkill;
+<<<<<<< HEAD
     public bool IsStore;
+=======
+>>>>>>> parent of ef0db5a (FixAnImation)
 
 
     private void Awake()
     {
+<<<<<<< HEAD
         IsStore = false;
         MainStore.SetActive(false);
         StatStore.SetActive(false);
@@ -60,6 +64,12 @@ public class ButtonManager : MonoBehaviour
 
 
 
+=======
+        //MainStore.SetActive(false);
+        StatStore.SetActive(false);
+        SkillStore.SetActive(false);
+    }
+>>>>>>> parent of ef0db5a (FixAnImation)
     public void PlusHealth()
     {
         if(_coin.Coin >= 5)

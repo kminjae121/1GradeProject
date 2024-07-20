@@ -20,10 +20,10 @@ public class PlayerSkill : MonoBehaviour
     [SerializeField] private Rigidbody2D _rbCompo;
     [SerializeField] private BoxCollider2D _boxCollider;
     [SerializeField] private PlayerStat _playerStat;
-    [field: SerializeField] public float DashSpeed { get; set; }    
-    [field: SerializeField] public bool IsSkill { get; set; }
+    [field: SerializeField] public float DashSpeed { get; set; }
+    public bool IsSkill { get; set; }
     public bool IsSkillAnimator1 { get; set; }
-    [field: SerializeField] public bool IsSkill2 { get; set; }
+    public bool IsSkill2 { get; set; }
     public bool IsSkillAnimator2 { get; set; }
 
     public static bool IsSkilling;

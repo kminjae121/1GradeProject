@@ -23,7 +23,6 @@ public class TextManager : MonoBehaviour
         Skill2TextMachine();
     }
 
-
     private void HealthTextMachine()
     {
         HealthText.text = $"현재 최대 채력: {_player.MaxHealth}";

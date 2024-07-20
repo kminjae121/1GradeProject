@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class ButtonManager : MonoBehaviour
 {
@@ -11,14 +10,11 @@ public class ButtonManager : MonoBehaviour
     [SerializeField] private GameObject MainStore;
     [SerializeField] private PlayerSkill _playerSkill2;
     [SerializeField] private PlayerSkill _playerSkill;
-    private bool IsStore;
-
-    [SerializeField] private Button _Skill2Button;
-    [SerializeField] private Button _Skill1Button;
 
 
     private void Awake()
     {
+<<<<<<< HEAD
         IsStore = false;
         MainStore.SetActive(false);
         StatStore.SetActive(false);
@@ -57,6 +53,12 @@ public class ButtonManager : MonoBehaviour
         }
     }
 
+=======
+        //MainStore.SetActive(false);
+        StatStore.SetActive(false);
+        SkillStore.SetActive(false);
+    }
+>>>>>>> parent of ef0db5a (FixAnImation)
     public void PlusHealth()
     {
         if(_coin.Coin >= 5)
@@ -96,9 +98,8 @@ public class ButtonManager : MonoBehaviour
 
     public void StudySkill1()
     {
-        if (_coin.Coin >= 15 && _playerSkill.IsSkill == false)
+        if (_coin.Coin >= 15)
         {
-            _Skill1Button.interactable = false;
             _coin.Coin -= 15;
             _playerSkill.IsSkill = true;
         }
@@ -106,9 +107,8 @@ public class ButtonManager : MonoBehaviour
 
     public void StudySkill2()
     {
-        if (_coin.Coin >= 20 && _playerSkill2.IsSkill2 == false)
+        if (_coin.Coin >= 20)
         {
-            _Skill2Button.interactable = false;
             _coin.Coin -= 20;
             ;
         }

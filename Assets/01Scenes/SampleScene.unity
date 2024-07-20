@@ -1930,8 +1930,6 @@ MonoBehaviour:
   MainStore: {fileID: 1684155472}
   _playerSkill2: {fileID: 1896197747}
   _playerSkill: {fileID: 187461952}
-  _Skill2Button: {fileID: 923511261}
-  _Skill1Button: {fileID: 2045652138}
 --- !u!4 &514993902
 Transform:
   m_ObjectHideFlags: 0
@@ -3074,10 +3072,6 @@ PrefabInstance:
     - target: {fileID: 8401940982371825186, guid: ed0eb7a4114527743aa58f1c525c94d9, type: 3}
       propertyPath: m_Name
       value: BlackEnergy (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8401940982371825186, guid: ed0eb7a4114527743aa58f1c525c94d9, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6599,10 +6593,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: BlackEnergy
       objectReference: {fileID: 0}
-    - target: {fileID: 8401940982371825186, guid: ed0eb7a4114527743aa58f1c525c94d9, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6624,6 +6614,7 @@ PrefabInstance:
       propertyPath: CollisionModule.m_Planes.Array.data[0]
       value: 
       objectReference: {fileID: 1016252100}
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     - target: {fileID: 1600567817193054303, guid: 1c51af1295f78764eafe9276bb29cf4a, type: 3}
@@ -6660,6 +6651,8 @@ PrefabInstance:
 >>>>>>> parent of c1fe26a (fix Store)
 =======
 >>>>>>> parent of c1fe26a (fix Store)
+=======
+>>>>>>> parent of ef0db5a (FixAnImation)
     - target: {fileID: 8261080403101071905, guid: 1c51af1295f78764eafe9276bb29cf4a, type: 3}
       propertyPath: CollisionModule.m_Planes.Array.data[0]
       value: 

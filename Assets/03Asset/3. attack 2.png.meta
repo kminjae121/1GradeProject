@@ -203,7 +203,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 497
+<<<<<<< HEAD
         y: 15
+=======
+        y: 11
+>>>>>>> parent of ef0db5a (FixAnImation)
         width: 59
         height: 44
       alignment: 0
@@ -265,9 +269,15 @@ TextureImporter:
       name: 3. attack 2_7
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1170
         y: 11
         width: 123
+=======
+        x: 1055
+        y: 11
+        width: 72
+>>>>>>> parent of ef0db5a (FixAnImation)
         height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -286,9 +296,15 @@ TextureImporter:
       name: 3. attack 2_6
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1007
         y: 11
         width: 120
+=======
+        x: 1228
+        y: 11
+        width: 65
+>>>>>>> parent of ef0db5a (FixAnImation)
         height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -307,9 +323,15 @@ TextureImporter:
       name: 3. attack 2_8
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1334
         y: 11
         width: 122
+=======
+        x: 1392
+        y: 11
+        width: 64
+>>>>>>> parent of ef0db5a (FixAnImation)
         height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -330,7 +352,11 @@ TextureImporter:
         serializedVersion: 2
         x: 1557
         y: 11
+<<<<<<< HEAD
         width: 22
+=======
+        width: 24
+>>>>>>> parent of ef0db5a (FixAnImation)
         height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

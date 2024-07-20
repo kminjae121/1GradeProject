@@ -21,6 +21,10 @@ public class PlayerSkill : MonoBehaviour
     [SerializeField] private PlayerDash _playerDash;
     [SerializeField] private Rigidbody2D _rbCompo;
     [SerializeField] private BoxCollider2D _boxCollider;
+<<<<<<< HEAD
+=======
+    [SerializeField] private PlayerStat _playerStat;
+>>>>>>> parent of c1fe26a (fix Store)
     [field: SerializeField] public float DashSpeed { get; set; }
     public bool IsSkill { get; set; }
     public bool IsSkillAnimator1 { get; set; }

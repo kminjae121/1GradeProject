@@ -14,6 +14,7 @@ public class InputReader : ScriptableObject,IPlayerActions
     public event Action Skill2Event;
     public event Action DashEvent;
     public event Action IntractionEvent;
+    public event Action UnintractionEvent;
 
     public Vector2 Movement { get;  set; }
 
@@ -78,6 +79,7 @@ public class InputReader : ScriptableObject,IPlayerActions
         if(context.performed)
         {
             IntractionEvent?.Invoke();
+            UnintractionEvent?.Invoke();
         }
     }
 }

@@ -99,10 +99,10 @@ public class Player : MonoBehaviour
         _agentMove.IsMove = false;
         _isAttack = false;
         _agentAttack._isContinuousAttack = true;
-        _agentAttack.BasicAttack();
+        _agentAttack.BasicAttack(AttackDamage);
         yield return new WaitForSeconds(0.5f);
         _agentAttack._isContinuousAttack = true;
-        _agentAttack.BasicAttack();
+        _agentAttack.BasicAttack(AttackDamage);
         yield return new WaitForSeconds(0.25f);
         _agentMove.IsMove = true;
         _isJump = true;
@@ -131,7 +131,7 @@ public class Player : MonoBehaviour
     private void SetStat()
     {
         _playerStat.MaxHealth = MaxHealth;
-        AttackDamage = _playerStat.AttackDamage;
+        _playerStat.AttackDamage = AttackDamage;
         _playerStat.Coin = Coin;
     }
 }

@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class AgentAttack : MonoBehaviour
 {
-    [Header ("Setting")]
-    [SerializeField] private float _attackDamage;
     [field: SerializeField] public Transform AttackRange { get; set; }
     public bool IsAttack { get;  set; }
     [SerializeField] private Vector2 _boxSize;
@@ -16,7 +14,7 @@ public class AgentAttack : MonoBehaviour
     {
         _isContinuousAttack = false;
     }
-    public void BasicAttack()
+    public void BasicAttack(float AttackDamage)
     {
         if (_isContinuousAttack == true)
         {
@@ -26,7 +24,7 @@ public class AgentAttack : MonoBehaviour
             {
                 Attack.transform.TryGetComponent(out AgentHealth agentHealth);
 
-                agentHealth.MinusHealth(_attackDamage);
+                agentHealth.MinusHealth(AttackDamage);
             }
         }
     }

@@ -4,9 +4,9 @@ using UnityEngine;
 
 public abstract class Agent : MonoBehaviour
 {
-    protected AgentMove _agentMove;
-    protected AgentHealth _agentHealth;
-    protected AgentAttack _agentAttack;
+    public AgentMove _agentMove { get; set; }
+    public AgentHealth _agentHealth { get; set; }
+    public AgentAttack _agentAttack { get; set; }
 
     protected  void Awake()
     {

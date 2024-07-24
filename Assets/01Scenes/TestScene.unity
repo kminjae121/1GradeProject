@@ -603,6 +603,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &146320998 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7943905542946492715, guid: 1c51af1295f78764eafe9276bb29cf4a, type: 3}
+  m_PrefabInstance: {fileID: 4131195351010808713}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &194805000
 GameObject:
   m_ObjectHideFlags: 0
@@ -2390,6 +2395,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemySO: {fileID: 11400000, guid: 99b9148f49f6db54da6879b8db5d94d4, type: 2}
+  Player: {fileID: 146320998}
   _boxSize: {x: 20, y: 5}
   _player:
     serializedVersion: 2
@@ -5650,7 +5656,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2529464797551915279, guid: 1c51af1295f78764eafe9276bb29cf4a, type: 3}
   m_PrefabInstance: {fileID: 4131195351010808713}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 146320998}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a7e9a5c2ef41aac499c1193358bc65c4, type: 3}

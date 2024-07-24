@@ -3,7 +3,7 @@ using UnityEngine;
 public class AgentMove : MonoBehaviour
 {
     [Header("Setting")]
-    public int Movespeed;
+    public float Movespeed;
     public int JumpPower;
     public bool IsJump { get; set; }
     public bool IsMove { get; set; }

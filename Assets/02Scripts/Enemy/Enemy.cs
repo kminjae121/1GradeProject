@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 public enum StateEnum
@@ -22,9 +21,8 @@ public class Enemy : Agent
 
     private void Start()
     {
-        _agentMove.Movespeed = _enemySO.MoveSpeed;
-        Player = GameObject.Find("Player");
         _agentHealth.SetHealth(_enemySO.Health);
+        _agentMove.Movespeed = _enemySO.MoveSpeed;
         IsMove = false;
 
         foreach (StateEnum stateEnum in Enum.GetValues(typeof(StateEnum)))
@@ -34,8 +32,8 @@ public class Enemy : Agent
             EnemyState state = Activator.CreateInstance(t, this) as EnemyState;
             _stateDictionary.Add(stateEnum, state);
         }
-
         ChangeState(StateEnum.EnemyIdle);
+
     }
 
     private void Update()
@@ -46,9 +44,9 @@ public class Enemy : Agent
 
     private void MoveRange()
     {
-        Collider2D hit = Physics2D.OverlapBox(transform.position,_boxSize, 0,_player);
+        Collider2D hit = Physics2D.OverlapBox(transform.position, _boxSize, 0, _player);
 
-        if(hit == true)
+        if (hit == true)
         {
             IsMove = true;
         }

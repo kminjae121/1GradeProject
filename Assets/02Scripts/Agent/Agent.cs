@@ -8,7 +8,7 @@ public abstract class Agent : MonoBehaviour
     public AgentHealth _agentHealth { get; set; }
     public AgentAttack _agentAttack { get; set; }
 
-    protected  void Awake()
+    protected void Awake()
     {
         _agentMove = GetComponent<AgentMove>();
         _agentHealth = GetComponent<AgentHealth>();

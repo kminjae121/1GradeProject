@@ -349,7 +349,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &93750048
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1419,7 +1419,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278190080
   m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -2234,7 +2234,7 @@ GameObject:
   - component: {fileID: 560545763}
   - component: {fileID: 560545762}
   - component: {fileID: 560545761}
-  - component: {fileID: 560545760}
+  - component: {fileID: 560545764}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Untagged
@@ -2383,27 +2383,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &560545760
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 560545755}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcab04f5ffadaf6448e1e85cab00be95, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Movespeed: 0
-  JumpPower: 0
-  _boxSize: {x: 6, y: 1}
-  _whatIsGround:
-    serializedVersion: 2
-    m_Bits: 8
-  <groundChecker>k__BackingField: {fileID: 217775860}
-  _isGround:
-    _value: 0
 --- !u!114 &560545761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2435,7 +2414,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <health>k__BackingField: 0
-  <_agentMove>k__BackingField: {fileID: 560545760}
+  <_agentMove>k__BackingField: {fileID: 560545764}
 --- !u!114 &560545763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2454,6 +2433,27 @@ MonoBehaviour:
   _player:
     serializedVersion: 2
     m_Bits: 128
+--- !u!114 &560545764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560545755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcab04f5ffadaf6448e1e85cab00be95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Movespeed: 0
+  JumpPower: 0
+  _boxSize: {x: 0, y: 0}
+  _whatIsGround:
+    serializedVersion: 2
+    m_Bits: 8
+  <groundChecker>k__BackingField: {fileID: 217775860}
+  _isGround:
+    _value: 0
 --- !u!1 &560731552
 GameObject:
   m_ObjectHideFlags: 0
@@ -4757,7 +4757,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278190080
   m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3

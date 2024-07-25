@@ -19,8 +19,10 @@ public class Enemy : Agent
     private StateEnum _currentStatEnum;
     private Dictionary<StateEnum, EnemyState> _stateDictionary = new Dictionary<StateEnum, EnemyState>();
 
-    private void Start()
+
+    protected override void Awake()
     {
+        base.Awake();
         _agentHealth.SetHealth(_enemySO.Health);
         _agentMove.Movespeed = _enemySO.MoveSpeed;
         IsMove = false;
@@ -33,7 +35,9 @@ public class Enemy : Agent
             _stateDictionary.Add(stateEnum, state);
         }
         ChangeState(StateEnum.EnemyIdle);
-
+    }
+    private void Start()
+    {
     }
 
     private void Update()

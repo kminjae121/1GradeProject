@@ -19,8 +19,13 @@ public class ButtonManager : MonoBehaviour
         MainStore.SetActive(false);
         StatStore.SetActive(false);
         SkillStore.SetActive(false);
-    }
 
+        IsStore = false;
+
+        MainStore.SetActive(false);
+        StatStore.SetActive(false);
+        SkillStore.SetActive(false);
+    }
 
     private void Start()
     {
@@ -31,12 +36,9 @@ public class ButtonManager : MonoBehaviour
         if (_playerSkill.IsSkill == true)
         {
             _Skill1Button.interactable = false;
-        }
-        IsStore = false;
-        MainStore.SetActive(false);
-        StatStore.SetActive(false);
-        SkillStore.SetActive(false);
+        }    
     }
+
 
 
     private void Update()
@@ -98,21 +100,21 @@ public class ButtonManager : MonoBehaviour
 
     public void StudySkill1()
     {
-        if (_coin.Coin >= 15 && _Skill2Button.interactable == false)
+        if (_coin.Coin >= 15 && _Skill2Button.interactable == true)
         {
             _coin.Coin -= 15;
             _playerSkill.IsSkill = true;
-            _Skill1Button.interactable = true;
+            _Skill1Button.interactable = false;
         }
     }
 
     public void StudySkill2()
     {
-        if (_coin.Coin >= 20 && _Skill2Button.interactable == false)
+        if (_coin.Coin >= 20 && _Skill2Button.interactable == true)
         {
             _coin.Coin -= 20;
             _playerSkill2.IsSkill2 = true;
-            _Skill2Button.interactable = true;
+            _Skill2Button.interactable = false;
         }
     }
 }

@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 enum Skill
 {
@@ -38,11 +36,17 @@ public class PlayerSkill : MonoBehaviour
     [SerializeField] private Color color;
     private bool IsTrue = true;
     private bool IsFalse = false;
-  
+
 
     private void OnEnable()
     {
         IsSkilling = true;
+
+        if (_skill == Skill.Skill1)
+            IsSkill = _playerStat.IsQTrue;
+        if (_skill == Skill.Skill2)
+            IsSkill2 = _playerStat.IsETrue;
+
         if (_skill == Skill.Skill1)
         {
             _playerInput.Skill1Event += HandleSkill;
@@ -53,13 +57,6 @@ public class PlayerSkill : MonoBehaviour
         }
     }
 
-
-
-    private void Start()
-    {
-        IsSkill = _playerStat.IsQTrue;
-        IsSkill2 = _playerStat.IsETrue;
-    }
 
 
     private void OnDestroy()
@@ -78,7 +75,7 @@ public class PlayerSkill : MonoBehaviour
 
     private void HandleSkill2()
     {
-        if(_skill ==Skill.Skill2 && IsSkill2 == true && IsSkilling != false && _agentMove._isGround.Value)
+        if (_skill == Skill.Skill2 && IsSkill2 == true && IsSkilling != false && _agentMove._isGround.Value)
         {
             SkillTool();
             StartCoroutine(Wait2());
@@ -87,8 +84,10 @@ public class PlayerSkill : MonoBehaviour
 
     private void Update()
     {
-        _playerStat.IsQTrue = IsSkill;
-        _playerStat.IsETrue = IsSkill2;
+        if (_skill == Skill.Skill1)
+            _playerStat.IsQTrue = IsSkill;
+        else if (_skill == Skill.Skill2)
+            _playerStat.IsETrue = IsSkill2;
     }
 
     private void SkillTool()
@@ -107,7 +106,7 @@ public class PlayerSkill : MonoBehaviour
     {
         Gizmos.color = color;
         Gizmos.DrawWireCube(_skillRange.position, _skillBox);
-        Gizmos.color = Color.white;    
+        Gizmos.color = Color.white;
 
     }
 
@@ -119,7 +118,7 @@ public class PlayerSkill : MonoBehaviour
         MoveFalse(IsFalse, IsTrue);
         Jump(zero);
         yield return new WaitForSeconds(0.25f);
-        GravityTrue(3.14f,IsFalse);
+        GravityTrue(3.14f, IsFalse);
         yield return new WaitForSeconds(_waitTime);
         MoveTrue(IsFalse, IsTrue);
         yield return new WaitForSeconds(3);

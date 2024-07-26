@@ -1,0 +1,619 @@
+fileFormatVersion: 2
+guid: 10d09eab33dbcfe45ab4b3706d300feb
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 15
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638575900531319659
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: vagabond-attack_Frame_0
+    originalName: 
+    pivot: {x: 1.9615386, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 125
+      width: 26
+      height: 19
+    spriteID: 63eb6ee5063315d4baf5961644802e43
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 125}
+  - name: vagabond-attack_Frame_6
+    originalName: 
+    pivot: {x: 0.72131145, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 73
+      width: 61
+      height: 19
+    spriteID: 6d9c096639509824e96d145ae06938ce
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 73}
+  - name: vagabond-attack_Frame_7
+    originalName: 
+    pivot: {x: 0.77192986, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 100
+      width: 57
+      height: 17
+    spriteID: 0e039925103582e419c8a374f2fb7050
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 100}
+  - name: vagabond-attack_Frame_8
+    originalName: 
+    pivot: {x: 2.2, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 179
+      width: 20
+      height: 17
+    spriteID: 4909df824c42eda4892f2c43c732cec4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 179}
+  - name: vagabond-attack_Frame_9
+    originalName: 
+    pivot: {x: 2.3157895, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 230
+      width: 19
+      height: 17
+    spriteID: 2f418b5b185e67a469183bb149b2c3a6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 230}
+  - name: vagabond-attack_Frame_10
+    originalName: 
+    pivot: {x: 2.1904762, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 152
+      width: 21
+      height: 19
+    spriteID: a8c1e9f8573648741a353b115108947a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 152}
+  - name: vagabond-attack_Frame_1
+    originalName: 
+    pivot: {x: 0.73913044, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 47
+      width: 69
+      height: 18
+    spriteID: 3fdf483ea98683d4bb1d85a58b9dcae4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 47}
+  - name: vagabond-attack_Frame_2
+    originalName: 
+    pivot: {x: 1, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 73
+      y: 73
+      width: 44
+      height: 18
+    spriteID: 88c49ae391feb164fb2b76a2ee3b89cd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 73, y: 73}
+  - name: vagabond-attack_Frame_3
+    originalName: 
+    pivot: {x: 1.5714287, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 71
+      y: 4
+      width: 28
+      height: 18
+    spriteID: bf74331e89200f747bf8496f712db68d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 71, y: 4}
+  - name: vagabond-attack_Frame_4
+    originalName: 
+    pivot: {x: 2.4444444, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 204
+      width: 18
+      height: 18
+    spriteID: 676ee8e9553525240a3191119ec48ccc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 204}
+  - name: vagabond-attack_Frame_5
+    originalName: 
+    pivot: {x: 2.5294118, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 107
+      y: 4
+      width: 17
+      height: 20
+    spriteID: f5b8a168fd492e14cb57a6a0d963f7d6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 107, y: 4}
+  - name: vagabond-attack_Frame_11
+    originalName: 
+    pivot: {x: 0.7627119, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 59
+      height: 35
+    spriteID: 514ca5f951db59c4f9874330c223f262
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: vagabond-attack_Frame_12
+    originalName: 
+    pivot: {x: 0.85714287, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 81
+      y: 47
+      width: 42
+      height: 16
+    spriteID: 3067e7b1f66d54940902820ef8c6f1b4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 81, y: 47}
+  - name: vagabond-attack_Frame_13
+    originalName: 
+    pivot: {x: 0.94736844, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 100
+      width: 38
+      height: 13
+    spriteID: 5740edb68b0a8cc4eba71f24ab519e99
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 69, y: 100}
+  - name: vagabond-attack_Frame_14
+    originalName: 
+    pivot: {x: 0.9722222, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 38
+      y: 125
+      width: 36
+      height: 13
+    spriteID: 5fdfa37c3af42ad44b96e6af2552f9d4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 38, y: 125}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1746395513
+    name: vagabond-attack
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: vagabond-attack_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 13
+        y: 0
+        width: 26
+        height: 19
+      spriteId: 63eb6ee5063315d4baf5961644802e43
+    - name: vagabond-attack_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 20
+        y: 0
+        width: 61
+        height: 19
+      spriteId: 6d9c096639509824e96d145ae06938ce
+    - name: vagabond-attack_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 20
+        y: 0
+        width: 57
+        height: 17
+      spriteId: 0e039925103582e419c8a374f2fb7050
+    - name: vagabond-attack_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 20
+        y: 0
+        width: 20
+        height: 17
+      spriteId: 4909df824c42eda4892f2c43c732cec4
+    - name: vagabond-attack_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 20
+        y: 0
+        width: 19
+        height: 17
+      spriteId: 2f418b5b185e67a469183bb149b2c3a6
+    - name: vagabond-attack_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 18
+        y: 0
+        width: 21
+        height: 19
+      spriteId: a8c1e9f8573648741a353b115108947a
+    - name: vagabond-attack_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 13
+        y: 0
+        width: 69
+        height: 18
+      spriteId: 3fdf483ea98683d4bb1d85a58b9dcae4
+    - name: vagabond-attack_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 20
+        y: 0
+        width: 44
+        height: 18
+      spriteId: 88c49ae391feb164fb2b76a2ee3b89cd
+    - name: vagabond-attack_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 20
+        y: 0
+        width: 28
+        height: 18
+      spriteId: bf74331e89200f747bf8496f712db68d
+    - name: vagabond-attack_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 20
+        y: 0
+        width: 18
+        height: 18
+      spriteId: 676ee8e9553525240a3191119ec48ccc
+    - name: vagabond-attack_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 21
+        y: 0
+        width: 17
+        height: 20
+      spriteId: f5b8a168fd492e14cb57a6a0d963f7d6
+    - name: vagabond-attack_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 19
+        y: 0
+        width: 59
+        height: 35
+      spriteId: 514ca5f951db59c4f9874330c223f262
+    - name: vagabond-attack_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 28
+        y: 0
+        width: 42
+        height: 16
+      spriteId: 3067e7b1f66d54940902820ef8c6f1b4
+    - name: vagabond-attack_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 28
+        y: 0
+        width: 38
+        height: 13
+      spriteId: 5740edb68b0a8cc4eba71f24ab519e99
+    - name: vagabond-attack_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 29
+        y: 0
+        width: 36
+        height: 13
+      spriteId: 5fdfa37c3af42ad44b96e6af2552f9d4
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: iPhone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 128, y: 64}

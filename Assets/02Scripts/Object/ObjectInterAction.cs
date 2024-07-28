@@ -12,6 +12,7 @@ enum ObjectName
 public class ObjectInterAction : MonoBehaviour
 {
     [SerializeField] private InputReader _inputReader;
+    private ObjectName _objectName;
 
     private void Awake()
     {
@@ -31,7 +32,13 @@ public class ObjectInterAction : MonoBehaviour
 
     private void HandleInterAction()
     {
-        
+        switch(_objectName)
+        {
+            case ObjectName.Box:
+                break;
+            case ObjectName.tree:
+                break;
+        }
     }
     private void HandleUnInterAction()
     {

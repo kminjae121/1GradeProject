@@ -1,17 +1,39 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+enum ObjectName
+{
+    Box,
+    tree,
+}
 public class ObjectInterAction : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private InputReader _inputReader;
+
+    private void Awake()
+    {
+        _inputReader.IntractionEvent += HandleInterAction;
+        _inputReader.UnintractionEvent += HandleUnInterAction;  
+    }
+
+    private void Start()
+    {
+
+    }
+
+    private void Update()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    private void HandleInterAction()
+    {
+        
+    }
+    private void HandleUnInterAction()
     {
         
     }

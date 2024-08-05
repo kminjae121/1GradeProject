@@ -25,8 +25,7 @@ public class InputReader : ScriptableObject,IPlayerActions
             _controll = new Controll();
         }
         _controll.Player.SetCallbacks(this);
-        _controll.Player.Enable();
-        
+        _controll.Player.Enable();       
     }
 
     public void OnMove(InputAction.CallbackContext context)

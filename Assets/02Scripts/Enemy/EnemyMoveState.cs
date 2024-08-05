@@ -15,11 +15,7 @@ public class EnemyMoveState : EnemyState
     {
         if (Enemy.IsMove == true)
         {
-            _agentMove.SetMovement(Enemy.Player.transform.position.x - Enemy.transform.position.x);
-        }
-        else if (Enemy.IsMove == false)
-        {
-            Enemy.ChangeState(StateEnum.EnemyIdle);
+            Enemy._agentMove.SetMovement(Enemy.Player.transform.position.x - Enemy.transform.position.x);
         }
     }
 
@@ -33,5 +29,9 @@ public class EnemyMoveState : EnemyState
     public override void StateUpdate()
     {
         base.StateUpdate();
+        if (Enemy.IsMove == false)
+        {
+            Enemy.ChangeState(StateEnum.EnemyIdle);
+        }
     }
 }

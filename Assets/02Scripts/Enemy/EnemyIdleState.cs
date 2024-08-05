@@ -20,5 +20,9 @@ public class EnemyIdleState : EnemyState
     public override void StateUpdate()
     {
         base.StateUpdate();
+        if(Enemy.IsMove == true)
+        {
+            Enemy.ChangeState(StateEnum.EnemyMove);
+        }
     }
 }

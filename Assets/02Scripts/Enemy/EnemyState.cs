@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyState : Enemy
+public class EnemyState
 {
     protected Enemy Enemy;
 

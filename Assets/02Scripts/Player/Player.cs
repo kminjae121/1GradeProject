@@ -126,6 +126,12 @@ public class Player : MonoBehaviour
             FilpX();
         }
         _agentMove.SetMovement(PlayerInput.Movement.x);
+
+        if(Coin <=0)
+        {
+            Coin = 0;
+        }
+           
     }
 
     private void SetStat()

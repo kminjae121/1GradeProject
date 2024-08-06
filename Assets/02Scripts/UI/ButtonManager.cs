@@ -36,7 +36,7 @@ public class ButtonManager : MonoBehaviour
         if (_playerSkill.IsSkill == true)
         {
             _Skill1Button.interactable = false;
-        }    
+        }
     }
 
 
@@ -65,6 +65,7 @@ public class ButtonManager : MonoBehaviour
     {
         if (_coin.Coin >= 5)
         {
+            _coin._isAttack = true;
             _coin.Coin -= 5;
             _coin.MaxHealth += 10;
         }
@@ -72,17 +73,20 @@ public class ButtonManager : MonoBehaviour
 
     public void EnterStatStore()
     {
+        _coin._isAttack = true;
         StatStore.SetActive(true);
         MainStore.SetActive(false);
     }
     public void EnterSkillStore()
     {
+        _coin._isAttack = true;
         SkillStore.SetActive(true);
         MainStore.SetActive(false);
     }
 
     public void ExitMainStore()
     {
+        _coin._isAttack = true;
         MainStore.SetActive(true);
         StatStore.SetActive(false);
         SkillStore.SetActive(false);
@@ -90,11 +94,9 @@ public class ButtonManager : MonoBehaviour
 
     public void PlusAttackDamage()
     {
-        if (_coin.Coin >= 10)
-        {
-            _coin.Coin -= 10;
-            _coin.AttackDamage += 10;
-        }
+        _coin._isAttack = true;
+        _coin.Coin -= 10;
+        _coin.AttackDamage += 10;
     }
 
 
@@ -102,6 +104,7 @@ public class ButtonManager : MonoBehaviour
     {
         if (_coin.Coin >= 15 && _Skill2Button.interactable == true)
         {
+            _coin._isAttack = true;
             _coin.Coin -= 15;
             _playerSkill.IsSkill = true;
             _Skill1Button.interactable = false;
@@ -112,6 +115,7 @@ public class ButtonManager : MonoBehaviour
     {
         if (_coin.Coin >= 20 && _Skill2Button.interactable == true)
         {
+            _coin._isAttack = true;
             _coin.Coin -= 20;
             _playerSkill2.IsSkill2 = true;
             _Skill2Button.interactable = false;

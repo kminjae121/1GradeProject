@@ -29,13 +29,14 @@ public class Enemy : Agent
         {
             string EnumName = stateEnum.ToString();
             Type t = Type.GetType(EnumName + "State");
-            EnemyState state = Activator.CreateInstance(t, this) as EnemyState;
+            EnemyState state = Activator.CreateInstance(t, this as object) as EnemyState;
             _stateDictionary.Add(stateEnum, state);
         }
         ChangeState(StateEnum.EnemyIdle);
     }
     private void Start()
     {
+
     }
 
     private void Update()

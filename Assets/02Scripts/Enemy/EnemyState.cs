@@ -17,7 +17,7 @@ public class EnemyState
     }
     public virtual void StateUpdate()
     {
-
+        
     }
     public virtual void Exit()
     {

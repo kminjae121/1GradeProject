@@ -2426,6 +2426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d26c930e72bc254098ef1afae07d513, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _sprite: {fileID: 560545757}
   _enemySO: {fileID: 11400000, guid: 99b9148f49f6db54da6879b8db5d94d4, type: 2}
   Player: {fileID: 146320998}
   _boxSize: {x: 20, y: 5}

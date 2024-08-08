@@ -9,6 +9,7 @@ public enum StateEnum
 
 public class Enemy : Agent
 {
+    [SerializeField] private SpriteRenderer _sprite;
     [SerializeField] private EnemyStat _enemySO;
     public GameObject Player;
     [SerializeField] private Vector2 _boxSize;
@@ -43,6 +44,19 @@ public class Enemy : Agent
     {
         _stateDictionary[_currentStatEnum].StateUpdate();
         MoveRange();
+        FollowPlayer();
+    }
+
+    private void FollowPlayer()
+    {
+        if (transform.position.x > Player.transform.position.x)
+        {
+            _sprite.flipX = true;
+        }
+        else
+        {
+            _sprite.flipX = false;
+        }
     }
 
     private void MoveRange()

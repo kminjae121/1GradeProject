@@ -18,6 +18,7 @@ public class ObjectInterAction : MonoBehaviour
     [SerializeField] private LayerMask _player;
     [SerializeField] private GameObject _textBox;
     [SerializeField] private TextMeshPro _Text;
+    private bool IsInteraction;
     private Collider2D hit;
 
 
@@ -40,39 +41,38 @@ public class ObjectInterAction : MonoBehaviour
 
     private void HandleInterAction()
     {
-
-        if (hit == true)
+        if (IsInteraction == false)
         {
-            _textBox.SetActive(true);
+            if (hit == true)
+            {
+                switch (_objectName)
+                {
+                    case ObjectName.Box:
+                        TextboxSet();
+                        _Text.text = "이것은 박스군";
+                        break;
+                    case ObjectName.tree:
+                        TextboxSet();
+                        _Text.text = "이것은 나무군";
+                        break;
+                }
+            }
         }
-        else
-        {
-            _textBox.SetActive(false);
-        }
-
-        switch (_objectName)
-        {
-            case ObjectName.Box:
-                StartCoroutine(Text());
-                break;
-            case ObjectName.tree:
-                break;
-        }
-
         
     }
+
+    private void TextboxSet()
+    {
+        _textBox.SetActive(true);
+        _Text.text = null;
+        IsInteraction = true;
+    }
+
     private void HandleUnInterAction()
     {
-        
-    }
-
-    IEnumerator Text()
-    {
-        for(int i = 0; i < 10; i++)
+        if(IsInteraction == true)
         {
-
-
-            yield return new WaitForSeconds(0.5f);
+            _textBox.SetActive(false);
         }
     }
 }

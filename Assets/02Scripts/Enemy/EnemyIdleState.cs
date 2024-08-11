@@ -24,5 +24,10 @@ public class EnemyIdleState : EnemyState
         {
             Enemy.ChangeState(StateEnum.EnemyMove);
         }
+
+        if (Enemy.IsAttack == true)
+        {
+            Enemy.ChangeState(StateEnum.EnemyAttack);
+        }
     }
 }

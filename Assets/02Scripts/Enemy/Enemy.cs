@@ -16,6 +16,7 @@ public class Enemy : Agent
     [SerializeField] private Vector2 _boxSize;
     [SerializeField] private LayerMask _player;
     public bool IsMove { get; private set; }
+    public bool IsAttack { get; private set; }
     private StateEnum _currentStatEnum;
     private Dictionary<StateEnum, EnemyState> _stateDictionary = new Dictionary<StateEnum, EnemyState>();
 
@@ -46,6 +47,7 @@ public class Enemy : Agent
         _stateDictionary[_currentStatEnum].StateUpdate();
         MoveRange();
         FollowPlayer();
+        AttackRange();
     }
 
     private void FollowPlayer()
@@ -71,6 +73,20 @@ public class Enemy : Agent
         else
         {
             IsMove = false;
+        }
+    }
+
+    private void AttackRange()
+    {
+        Collider2D Attack = Physics2D.OverlapBox(transform.position, _boxSize, 0, _player);
+
+        if(Attack == true)
+        {
+            IsAttack = true;
+        }
+        else
+        {
+            IsAttack = false;
         }
     }
 

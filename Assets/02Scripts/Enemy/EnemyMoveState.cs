@@ -33,5 +33,9 @@ public class EnemyMoveState : EnemyState
         {
             Enemy.ChangeState(StateEnum.EnemyIdle);
         }
+        if(Enemy.IsAttack == true)
+        {
+            Enemy.ChangeState(StateEnum.EnemyAttack);
+        }
     }
 }

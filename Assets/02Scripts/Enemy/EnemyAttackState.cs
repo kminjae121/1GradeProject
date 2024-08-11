@@ -6,6 +6,7 @@ public class EnemyAttackState : EnemyState
 {
     public EnemyAttackState(Enemy owner) : base(owner)
     {
+
     }
 
     public override void Enter()

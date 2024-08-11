@@ -5,6 +5,7 @@ public enum StateEnum
 {
     EnemyIdle,
     EnemyMove,
+    EnemyAttack,
 }
 
 public class Enemy : Agent

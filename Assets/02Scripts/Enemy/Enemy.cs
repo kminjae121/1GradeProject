@@ -10,6 +10,7 @@ public enum StateEnum
 
 public class Enemy : Agent
 {
+    [field : SerializeField] public float _attackDamage { get; set; }
     [SerializeField] private SpriteRenderer _sprite;
     [SerializeField] private EnemyStat _enemySO;
     public GameObject Player;

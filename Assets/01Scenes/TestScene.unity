@@ -2426,6 +2426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d26c930e72bc254098ef1afae07d513, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <_attackDamage>k__BackingField: 0
   _sprite: {fileID: 560545757}
   _enemySO: {fileID: 11400000, guid: 99b9148f49f6db54da6879b8db5d94d4, type: 2}
   Player: {fileID: 146320998}
@@ -5845,6 +5846,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2529464797551915279, guid: 1c51af1295f78764eafe9276bb29cf4a, type: 3}
+      propertyPath: _buttonManager
+      value: 
+      objectReference: {fileID: 620792448}
     - target: {fileID: 3349910414405773656, guid: 1c51af1295f78764eafe9276bb29cf4a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -21.13

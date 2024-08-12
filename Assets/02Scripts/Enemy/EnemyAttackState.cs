@@ -12,6 +12,12 @@ public class EnemyAttackState : EnemyState
     public override void Enter()
     {
         base.Enter();
+        Attack();
+    }
+
+    private void Attack()
+    {
+        Enemy._agentAttack.BasicAttack(Enemy._attackDamage);
     }
 
     public override void Exit()

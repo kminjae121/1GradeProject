@@ -49,12 +49,12 @@ public class ButtonManager : MonoBehaviour
 
     private void StartStore()
     {
-        if (IsStore == false && Input.GetKeyDown(KeyCode.Escape))
+        if (IsStore == false && Input.GetKeyDown(KeyCode.G))
         {
             MainStore.SetActive(true);
             IsStore = true;
         }
-        else if (IsStore == true && Input.GetKeyDown(KeyCode.Escape))
+        else if (IsStore == true && Input.GetKeyDown(KeyCode.G))
         {
             MainStore.SetActive(false);
             IsStore = false;
@@ -94,9 +94,12 @@ public class ButtonManager : MonoBehaviour
 
     public void PlusAttackDamage()
     {
-        _coin._isAttack = true;
-        _coin.Coin -= 10;
-        _coin.AttackDamage += 10;
+        if (_coin.Coin >= 10)
+        {
+            _coin._isAttack = true;
+            _coin.Coin -= 10;
+            _coin.AttackDamage += 10;
+        }
     }
 
 

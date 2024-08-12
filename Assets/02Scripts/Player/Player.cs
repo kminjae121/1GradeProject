@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    private Controll _controll;
+    [SerializeField] private ButtonManager _buttonManager;
+
     private WaitForSeconds _waitTimeSec;
     private WaitForSeconds _waitTimeSecond;
     public bool _isAttack { get; set; }
@@ -26,6 +29,7 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
+        _controll = new Controll();
         GetComp();
         _waitTimeSec = new WaitForSeconds(0.65f);
         _waitTimeSecond = new WaitForSeconds(0.08f);
@@ -130,6 +134,15 @@ public class Player : MonoBehaviour
         if(Coin <=0)
         {
             Coin = 0;
+        }
+
+        if(_buttonManager.IsStore == true)
+        {
+            _controll.Disable();
+        }
+        else
+        {
+            _controll.Enable();
         }
            
     }

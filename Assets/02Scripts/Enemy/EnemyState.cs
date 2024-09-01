@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class EnemyState
 {
-    protected Enemy Enemy;
+    protected Enemy enemy;
 
     public EnemyState(Enemy owner)
     {
-        Enemy = owner;
+        enemy = owner;
     }
 
     public virtual void Enter()
@@ -21,5 +21,6 @@ public class EnemyState
     }
     public virtual void Exit()
     {
+
     }
 }

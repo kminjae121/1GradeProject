@@ -15,6 +15,6 @@ MonoBehaviour:
   <AttackDamage>k__BackingField: 10
   <Health>k__BackingField: 10
   <MaxHealth>k__BackingField: 10
-  <Coin>k__BackingField: 195
+  <Coin>k__BackingField: 215
   <IsQTrue>k__BackingField: 0
   <IsETrue>k__BackingField: 0

@@ -10,14 +10,17 @@ public enum StateEnum
 
 public class Enemy : Agent
 {
-    [field : SerializeField] public float _attackDamage { get; set; }
+    [field: SerializeField] public float _attackDamage { get; set; }
     [SerializeField] private SpriteRenderer _sprite;
     [SerializeField] private EnemyStat _enemySO;
     public GameObject Player;
-    [SerializeField] private Vector2 _boxSize;
+    [SerializeField] private Vector2 _moveboxSize;
+    [SerializeField] private Vector2 _attackboxSize;
     [SerializeField] private LayerMask _player;
+
+    [SerializeField] private Transform _attackBoxTransform;
     public bool IsMove { get; private set; }
-    public bool IsAttack { get; private set; }
+    public bool IsAttack { get; set; }
     private StateEnum _currentStatEnum;
     private Dictionary<StateEnum, EnemyState> _stateDictionary = new Dictionary<StateEnum, EnemyState>();
 
@@ -63,33 +66,40 @@ public class Enemy : Agent
         }
     }
 
-    private void MoveRange()
-    {
-        Collider2D hit = Physics2D.OverlapBox(transform.position, _boxSize, 0, _player);
-
-        if (hit == true)
-        {
-            IsMove = true;
-        }
-        else
-        {
-            IsMove = false;
-        }
-    }
-
     private void AttackRange()
     {
-        Collider2D Attack = Physics2D.OverlapBox(transform.position, _boxSize, 0, _player);
+        Collider2D hit = Physics2D.OverlapBox(_attackBoxTransform.position, _attackboxSize, 0, _player);
 
-        if(Attack == true)
+        if(hit == true)
         {
             IsAttack = true;
         }
         else
         {
             IsAttack = false;
-        }
+
+        }    
     }
+
+
+    private void MoveRange()
+    {
+        Collider2D hit = Physics2D.OverlapBox(transform.position, _moveboxSize, 0, _player);
+
+        if (hit == true)
+        {
+            IsMove = true;
+        }
+        else if(IsAttack == true)
+        {
+            IsMove = false;
+        }
+        else if(hit == false)
+        {
+            IsMove = false;
+        }    
+    }
+
 
     public void ChangeState(StateEnum idle)
     {
@@ -101,7 +111,11 @@ public class Enemy : Agent
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
-        Gizmos.DrawWireCube(transform.position, _boxSize);
+        Gizmos.DrawWireCube(transform.position, _moveboxSize);
+        Gizmos.color = Color.white;
+
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireCube(_attackBoxTransform.position, _attackboxSize);
         Gizmos.color = Color.white;
     }
 }

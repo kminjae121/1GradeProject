@@ -39,7 +39,7 @@ public class Enemy : Agent
             EnemyState state = Activator.CreateInstance(t, this as object) as EnemyState;
             _stateDictionary.Add(stateEnum, state);
         }
-        ChangeState(StateEnum.EnemyIdle);
+        ChangeState(StateEnum.EnemyIdle);   
     }
     private void Start()
     {
